@@ -22,11 +22,18 @@ const Tree = ({ position = 'left' }) => (
 );
 
 const PetWorld = ({ children, onPetClick, onAllergyClinicClick }) => {
+  const handlePetAreaClick = (e) => {
+    // AllergyClinicHouse 영역 제외
+    if (e.target.closest('[data-clinic]')) {
+      return;
+    }
+    onPetClick(e);
+  };
 
   return (
     <div
       className="relative w-full h-screen bg-gradient-to-b from-sky via-sky to-grass overflow-hidden"
-      onClick={onPetClick}
+      onClick={handlePetAreaClick}
     >
       {/* 구름들 */}
       <Cloud delay={0} />

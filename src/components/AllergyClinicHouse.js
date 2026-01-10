@@ -1,16 +1,21 @@
 import React from 'react';
 
 const AllergyClinicHouse = ({ onClick, position = 'right' }) => {
+  const handleClick = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    console.log('🏥 알러지 검사소 클릭됨');
+    onClick();
+  };
+
   return (
     <div
-      onClick={(e) => {
-        e.stopPropagation();
-        onClick();
-      }}
+      data-clinic="true"
+      onClick={handleClick}
       className={`absolute cursor-pointer transition-transform hover:scale-110 ${
         position === 'right' ? 'right-20' : 'left-20'
       }`}
-      style={{ bottom: '80px' }}
+      style={{ bottom: '80px', zIndex: 50 }}
     >
       {/* 건물 */}
       <div className="relative w-24 h-32">

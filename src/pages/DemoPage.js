@@ -264,7 +264,7 @@ const DemoPage = () => {
 
   return (
     <div>
-      <PetWorld onPetClick={handlePetClick} onAllergyClinicClick={() => alert('데모 버전에서는 알러지 검사소를 사용할 수 없습니다.')}>
+      <PetWorld onPetClick={handlePetClick} onAllergyClinicClick={() => navigate('/demo-allergy')}>
         <PetCharacter
           stage={pet.stage || 1}
           stage_name={pet.stage_name || '신비한 알'}
