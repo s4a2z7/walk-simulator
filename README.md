@@ -1,8 +1,8 @@
-# Phoenix Pet Frontend 🔥
+# Walk Simulator 🔥
 
-React + Tailwind CSS로 만든 **3D 캐주얼 게임 스타일** 불꽃 새 키우기 게임 프론트엔드입니다.
+React + Tailwind CSS로 만든 **3D 캐주얼 게임 스타일** 불사조 키우기 게임입니다.
 
-## 특징
+🚶 **걸음으로 키워봅시다! Walk Simulator - 불사조를 키우는 신나는 게임입니다!**
 
 ✨ **생생한 3D 게임 스타일 UI**
 - 밝은 초록색 잔디 배경

@@ -1,7 +1,7 @@
 {
-  "name": "phoenix-pet-backend",
+  "name": "walk-simulator-backend",
   "version": "1.0.0",
-  "description": "Phoenix Pet Raising App - Backend API",
+  "description": "Walk Simulator - Pet Raising App - Backend API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
