@@ -1,221 +1,277 @@
-import React, { useRef, Suspense } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { Sphere, Cylinder, Cone } from '@react-three/drei';
+import React, { useEffect, useRef } from 'react';
+import * as THREE from 'three';
 
-// 3D 불사조 메인 컴포넌트
-const Phoenix = ({ stage = 1, isAnimating = false }) => {
-  const groupRef = useRef();
-  const wingLeftRef = useRef();
-  const wingRightRef = useRef();
-  const headRef = useRef();
-
-  useFrame(({ clock }) => {
-    if (!groupRef.current) return;
-
-    const time = clock.getElapsedTime();
-
-    // 떠다니는 애니메이션
-    if (!isAnimating) {
-      groupRef.current.position.y = Math.sin(time * 1.5) * 0.3;
-      groupRef.current.rotation.z = Math.cos(time * 1.5) * 0.1;
-    } else {
-      // 점프 애니메이션
-      const jumpY = Math.abs(Math.sin(time * 8)) * 0.8;
-      groupRef.current.position.y = jumpY;
-    }
-
-    // 날개 움직임 (4단계 이상)
-    if (wingLeftRef.current && stage >= 4) {
-      wingLeftRef.current.rotation.z = Math.sin(time * 4) * 0.5;
-      wingLeftRef.current.position.y = Math.cos(time * 4) * 0.1;
-    }
-
-    if (wingRightRef.current && stage >= 4) {
-      wingRightRef.current.rotation.z = -Math.sin(time * 4) * 0.5;
-      wingRightRef.current.position.y = Math.cos(time * 4) * 0.1;
-    }
-
-    // 머리 회전
-    if (headRef.current) {
-      headRef.current.rotation.y = Math.sin(time * 2) * 0.2;
-    }
-  });
-
-  // 단계별 색상
-  const getBodyColor = () => {
-    if (stage === 1) return '#808080'; // 회색 (알)
-    if (stage === 2) return '#FFD700'; // 노란색 (병아리)
-    if (stage === 3) return '#FF8C00'; // 주황색 (새)
-    if (stage === 4) return '#FF4500'; // 빨간색 (불사조)
-    if (stage === 5) return '#FFD700'; // 금색 (황금 불사조)
-  };
-
-  const getEmissive = () => {
-    if (stage === 5) return '#FFD700'; // 황금 발광
-    if (stage === 4) return '#FF6347'; // 불꽃 발광
-    return '#000000';
-  };
-
-  return (
-    <group ref={groupRef}>
-      {/* 몸체 */}
-      <Sphere args={[0.6, 32, 32]} position={[0, 0, 0]}>
-        <meshStandardMaterial
-          color={getBodyColor()}
-          emissive={getEmissive()}
-          emissiveIntensity={stage >= 4 ? 0.5 : 0}
-          roughness={stage === 5 ? 0.2 : 0.7}
-          metalness={stage === 5 ? 0.8 : 0}
-        />
-      </Sphere>
-
-      {/* 머리 */}
-      <Sphere args={[0.4, 32, 32]} position={[0, 0.7, 0.3]} ref={headRef}>
-        <meshStandardMaterial
-          color={getBodyColor()}
-          emissive={getEmissive()}
-          emissiveIntensity={stage >= 4 ? 0.5 : 0}
-        />
-      </Sphere>
-
-      {/* 눈 */}
-      <Sphere args={[0.1, 32, 32]} position={[-0.12, 0.85, 0.6]}>
-        <meshStandardMaterial color="#000000" />
-      </Sphere>
-      <Sphere args={[0.1, 32, 32]} position={[0.12, 0.85, 0.6]}>
-        <meshStandardMaterial color="#000000" />
-      </Sphere>
-
-      {/* 부리 */}
-      <Cone args={[0.15, 0.4, 16]} position={[0, 0.6, 0.7]} rotation={[Math.PI / 2, 0, 0]}>
-        <meshStandardMaterial color="#FFA500" />
-      </Cone>
-
-      {/* 다리 */}
-      <Cylinder args={[0.08, 0.08, 0.4, 16]} position={[-0.2, -0.65, 0]}>
-        <meshStandardMaterial color="#8B4513" />
-      </Cylinder>
-      <Cylinder args={[0.08, 0.08, 0.4, 16]} position={[0.2, -0.65, 0]}>
-        <meshStandardMaterial color="#8B4513" />
-      </Cylinder>
-
-      {/* 꼬리 */}
-      <Sphere args={[0.25, 32, 32]} position={[0, 0.2, -0.8]}>
-        <meshStandardMaterial
-          color={getBodyColor()}
-          emissive={getEmissive()}
-          emissiveIntensity={stage >= 4 ? 0.5 : 0}
-        />
-      </Sphere>
-
-      {/* 날개 (4단계 이상) */}
-      {stage >= 4 && (
-        <>
-          {/* 왼쪽 날개 */}
-          <group ref={wingLeftRef} position={[-0.7, 0.2, 0]}>
-            <Sphere args={[0.2, 32, 32]} position={[-0.3, 0, 0]}>
-              <meshStandardMaterial
-                color="#FF4500"
-                emissive="#FF6347"
-                emissiveIntensity={0.6}
-              />
-            </Sphere>
-            <Sphere args={[0.15, 32, 32]} position={[-0.65, 0.15, 0.1]}>
-              <meshStandardMaterial
-                color="#FF4500"
-                emissive="#FF6347"
-                emissiveIntensity={0.6}
-              />
-            </Sphere>
-          </group>
-
-          {/* 오른쪽 날개 */}
-          <group ref={wingRightRef} position={[0.7, 0.2, 0]}>
-            <Sphere args={[0.2, 32, 32]} position={[0.3, 0, 0]}>
-              <meshStandardMaterial
-                color="#FF4500"
-                emissive="#FF6347"
-                emissiveIntensity={0.6}
-              />
-            </Sphere>
-            <Sphere args={[0.15, 32, 32]} position={[0.65, 0.15, 0.1]}>
-              <meshStandardMaterial
-                color="#FF4500"
-                emissive="#FF6347"
-                emissiveIntensity={0.6}
-              />
-            </Sphere>
-          </group>
-        </>
-      )}
-
-      {/* 황금 왕관 (5단계) */}
-      {stage === 5 && (
-        <group position={[0, 1.4, 0.3]}>
-          <Cylinder args={[0.5, 0.5, 0.1, 32]}>
-            <meshStandardMaterial
-              color="#FFD700"
-              emissive="#FFD700"
-              emissiveIntensity={1}
-              metalness={1}
-              roughness={0}
-            />
-          </Cylinder>
-          <Cone args={[0.15, 0.3, 16]} position={[-0.3, 0.15, 0]}>
-            <meshStandardMaterial
-              color="#FFD700"
-              emissive="#FFD700"
-              emissiveIntensity={1}
-            />
-          </Cone>
-          <Cone args={[0.15, 0.3, 16]} position={[0.3, 0.15, 0]}>
-            <meshStandardMaterial
-              color="#FFD700"
-              emissive="#FFD700"
-              emissiveIntensity={1}
-            />
-          </Cone>
-        </group>
-      )}
-    </group>
-  );
-};
-
-// 3D 캔버스 래퍼
 const Phoenix3D = ({ stage = 1, isAnimating = false }) => {
-  return (
-    <div style={{ width: '400px', height: '400px' }}>
-      <Suspense fallback={<div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>로딩 중...</div>}>
-        <Canvas
-          camera={{ position: [0, 0, 3], fov: 50 }}
-          style={{ width: '100%', height: '100%' }}
-          dpr={[1, 2]}
-        >
-          <ambientLight intensity={0.6} />
-          <pointLight position={[10, 10, 10]} intensity={1} />
-          <pointLight position={[-10, -10, 10]} intensity={0.5} />
-          
-          {/* 5단계 황금 빛 */}
-          {stage === 5 && (
-            <>
-              <pointLight position={[5, 5, 5]} intensity={1} color="#FFD700" />
-              <pointLight position={[-5, -5, 5]} intensity={0.8} color="#FFD700" />
-            </>
-          )}
+  const containerRef = useRef(null);
+  const sceneRef = useRef(null);
+  const cameraRef = useRef(null);
+  const rendererRef = useRef(null);
+  const phoenixRef = useRef(null);
+  const animationIdRef = useRef(null);
 
-          {/* 4단계 불꽃 빛 */}
-          {stage === 4 && (
-            <pointLight position={[5, 0, 5]} intensity={0.8} color="#FF6347" />
-          )}
+  useEffect(() => {
+    if (!containerRef.current) return;
 
-          <Phoenix stage={stage} isAnimating={isAnimating} />
+    // Scene 설정
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xe0f7ff);
+    sceneRef.current = scene;
 
-          {/* 배경 */}
-          <color attach="background" args={['#e0f7ff']} />
-        </Canvas>
-      </Suspense>
-    </div>
-  );
+    // Camera 설정
+    const camera = new THREE.PerspectiveCamera(
+      50,
+      containerRef.current.clientWidth / containerRef.current.clientHeight,
+      0.1,
+      1000
+    );
+    camera.position.set(0, 0, 3);
+    cameraRef.current = camera;
+
+    // Renderer 설정
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(containerRef.current.clientWidth, containerRef.current.clientHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    containerRef.current.appendChild(renderer.domElement);
+    rendererRef.current = renderer;
+
+    // 조명
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+    scene.add(ambientLight);
+
+    const pointLight1 = new THREE.PointLight(0xffffff, 1);
+    pointLight1.position.set(10, 10, 10);
+    scene.add(pointLight1);
+
+    const pointLight2 = new THREE.PointLight(0xffffff, 0.5);
+    pointLight2.position.set(-10, -10, 10);
+    scene.add(pointLight2);
+
+    // 단계별 조명 추가
+    if (stage === 5) {
+      const goldLight1 = new THREE.PointLight(0xFFD700, 1);
+      goldLight1.position.set(5, 5, 5);
+      scene.add(goldLight1);
+
+      const goldLight2 = new THREE.PointLight(0xFFD700, 0.8);
+      goldLight2.position.set(-5, -5, 5);
+      scene.add(goldLight2);
+    } else if (stage === 4) {
+      const fireLight = new THREE.PointLight(0xFF6347, 0.8);
+      fireLight.position.set(5, 0, 5);
+      scene.add(fireLight);
+    }
+
+    // 불사조 생성
+    const phoenix = new THREE.Group();
+    phoenixRef.current = phoenix;
+
+    // 색상 정의
+    const getBodyColor = () => {
+      if (stage === 1) return 0x808080; // 회색 (알)
+      if (stage === 2) return 0xFFD700; // 노란색 (병아리)
+      if (stage === 3) return 0xFF8C00; // 주황색 (새)
+      if (stage === 4) return 0xFF4500; // 빨간색 (불사조)
+      if (stage === 5) return 0xFFD700; // 금색 (황금 불사조)
+      return 0xFF8C00;
+    };
+
+    const getEmissive = () => {
+      if (stage === 5) return 0xFFD700;
+      if (stage === 4) return 0xFF6347;
+      return 0x000000;
+    };
+
+    const bodyColor = getBodyColor();
+    const emissiveColor = getEmissive();
+
+    // 몸체
+    const bodyGeometry = new THREE.SphereGeometry(0.6, 32, 32);
+    const bodyMaterial = new THREE.MeshStandardMaterial({
+      color: bodyColor,
+      emissive: emissiveColor,
+      emissiveIntensity: stage >= 4 ? 0.5 : 0,
+      roughness: stage === 5 ? 0.2 : 0.7,
+      metalness: stage === 5 ? 0.8 : 0,
+    });
+    const body = new THREE.Mesh(bodyGeometry, bodyMaterial);
+    body.position.set(0, 0, 0);
+    phoenix.add(body);
+
+    // 머리
+    const headGeometry = new THREE.SphereGeometry(0.4, 32, 32);
+    const headMaterial = new THREE.MeshStandardMaterial({
+      color: bodyColor,
+      emissive: emissiveColor,
+      emissiveIntensity: stage >= 4 ? 0.5 : 0,
+    });
+    const head = new THREE.Mesh(headGeometry, headMaterial);
+    head.position.set(0, 0.7, 0.3);
+    phoenix.add(head);
+
+    // 눈
+    const eyeGeometry = new THREE.SphereGeometry(0.1, 32, 32);
+    const eyeMaterial = new THREE.MeshStandardMaterial({ color: 0x000000 });
+    const leftEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+    leftEye.position.set(-0.12, 0.85, 0.6);
+    phoenix.add(leftEye);
+
+    const rightEye = new THREE.Mesh(eyeGeometry, eyeMaterial);
+    rightEye.position.set(0.12, 0.85, 0.6);
+    phoenix.add(rightEye);
+
+    // 부리
+    const beakGeometry = new THREE.ConeGeometry(0.15, 0.4, 16);
+    const beakMaterial = new THREE.MeshStandardMaterial({ color: 0xFFA500 });
+    const beak = new THREE.Mesh(beakGeometry, beakMaterial);
+    beak.position.set(0, 0.6, 0.7);
+    beak.rotation.x = Math.PI / 2;
+    phoenix.add(beak);
+
+    // 다리
+    const legGeometry = new THREE.CylinderGeometry(0.08, 0.08, 0.4, 16);
+    const legMaterial = new THREE.MeshStandardMaterial({ color: 0x8B4513 });
+    const leftLeg = new THREE.Mesh(legGeometry, legMaterial);
+    leftLeg.position.set(-0.2, -0.65, 0);
+    phoenix.add(leftLeg);
+
+    const rightLeg = new THREE.Mesh(legGeometry, legMaterial);
+    rightLeg.position.set(0.2, -0.65, 0);
+    phoenix.add(rightLeg);
+
+    // 꼬리
+    const tailGeometry = new THREE.SphereGeometry(0.25, 32, 32);
+    const tailMaterial = new THREE.MeshStandardMaterial({
+      color: bodyColor,
+      emissive: emissiveColor,
+      emissiveIntensity: stage >= 4 ? 0.5 : 0,
+    });
+    const tail = new THREE.Mesh(tailGeometry, tailMaterial);
+    tail.position.set(0, 0.2, -0.8);
+    phoenix.add(tail);
+
+    // 날개 (4단계 이상)
+    if (stage >= 4) {
+      const wingGeometry = new THREE.SphereGeometry(0.2, 32, 32);
+      const wingMaterial = new THREE.MeshStandardMaterial({
+        color: 0xFF4500,
+        emissive: 0xFF6347,
+        emissiveIntensity: 0.6,
+      });
+
+      const leftWing = new THREE.Mesh(wingGeometry, wingMaterial);
+      leftWing.position.set(-0.7, 0.2, 0);
+      leftWing.name = 'leftWing';
+      phoenix.add(leftWing);
+
+      const rightWing = new THREE.Mesh(wingGeometry, wingMaterial);
+      rightWing.position.set(0.7, 0.2, 0);
+      rightWing.name = 'rightWing';
+      phoenix.add(rightWing);
+    }
+
+    // 왕관 (5단계)
+    if (stage === 5) {
+      const crownGeometry = new THREE.CylinderGeometry(0.5, 0.5, 0.1, 32);
+      const crownMaterial = new THREE.MeshStandardMaterial({
+        color: 0xFFD700,
+        emissive: 0xFFD700,
+        emissiveIntensity: 1,
+        metalness: 1,
+        roughness: 0,
+      });
+      const crown = new THREE.Mesh(crownGeometry, crownMaterial);
+      crown.position.set(0, 1.4, 0.3);
+      phoenix.add(crown);
+
+      // 왕관 장식
+      const gemGeometry = new THREE.ConeGeometry(0.15, 0.3, 16);
+      const gemMaterial = new THREE.MeshStandardMaterial({
+        color: 0xFFD700,
+        emissive: 0xFFD700,
+        emissiveIntensity: 1,
+      });
+
+      const leftGem = new THREE.Mesh(gemGeometry, gemMaterial);
+      leftGem.position.set(-0.3, 1.55, 0.3);
+      phoenix.add(leftGem);
+
+      const rightGem = new THREE.Mesh(gemGeometry, gemMaterial);
+      rightGem.position.set(0.3, 1.55, 0.3);
+      phoenix.add(rightGem);
+    }
+
+    scene.add(phoenix);
+
+    // 애니메이션 루프
+    const clock = new THREE.Clock();
+
+    const animate = () => {
+      animationIdRef.current = requestAnimationFrame(animate);
+      const time = clock.getElapsedTime();
+
+      // 떠다니는 애니메이션
+      if (!isAnimating) {
+        phoenix.position.y = Math.sin(time * 1.5) * 0.3;
+        phoenix.rotation.z = Math.cos(time * 1.5) * 0.1;
+      } else {
+        // 점프 애니메이션
+        const jumpY = Math.abs(Math.sin(time * 8)) * 0.8;
+        phoenix.position.y = jumpY;
+      }
+
+      // 머리 회전
+      const head = phoenix.children[1];
+      if (head) {
+        head.rotation.y = Math.sin(time * 2) * 0.2;
+      }
+
+      // 날개 움직임 (4단계 이상)
+      if (stage >= 4) {
+        const leftWing = phoenix.children.find(child => child.name === 'leftWing');
+        const rightWing = phoenix.children.find(child => child.name === 'rightWing');
+
+        if (leftWing) {
+          leftWing.rotation.z = Math.sin(time * 4) * 0.5;
+          leftWing.position.y = 0.2 + Math.cos(time * 4) * 0.1;
+        }
+
+        if (rightWing) {
+          rightWing.rotation.z = -Math.sin(time * 4) * 0.5;
+          rightWing.position.y = 0.2 + Math.cos(time * 4) * 0.1;
+        }
+      }
+
+      renderer.render(scene, camera);
+    };
+
+    animate();
+
+    // 윈도우 리사이즈 처리
+    const handleResize = () => {
+      if (!containerRef.current) return;
+      const width = containerRef.current.clientWidth;
+      const height = containerRef.current.clientHeight;
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+      renderer.setSize(width, height);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // 정리
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      if (animationIdRef.current) {
+        cancelAnimationFrame(animationIdRef.current);
+      }
+      if (containerRef.current && renderer.domElement.parentNode === containerRef.current) {
+        containerRef.current.removeChild(renderer.domElement);
+      }
+      renderer.dispose();
+    };
+  }, [stage, isAnimating]);
+
+  return <div ref={containerRef} style={{ width: '100%', height: '100%', minHeight: '400px' }} />;
 };
 
 export default Phoenix3D;
