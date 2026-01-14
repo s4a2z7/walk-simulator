@@ -10,7 +10,6 @@ const authRoutes = require('./routes/auth');
 const petRoutes = require('./routes/pet');
 const rankingRoutes = require('./routes/ranking');
 const statisticsRoutes = require('./routes/statistics');
-const allergyRoutes = require('./routes/allergy');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -47,7 +46,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/pet', petRoutes);
 app.use('/api/ranking', rankingRoutes);
 app.use('/api/statistics', statisticsRoutes);
-app.use('/api/allergy', allergyRoutes);
 
 // 404 handler
 app.use((req, res) => {

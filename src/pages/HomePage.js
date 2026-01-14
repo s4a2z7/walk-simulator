@@ -173,7 +173,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <PetWorld onPetClick={handlePetClick} onAllergyClinicClick={() => navigate('/allergy')}>
+      <PetWorld onPetClick={handlePetClick}>
         <PetCharacter
           stage={pet.stage || 1}
           stage_name={pet.stage_name || '신비한 알'}

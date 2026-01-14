@@ -1,5 +1,4 @@
 import React from 'react';
-import AllergyClinicHouse from './AllergyClinicHouse';
 
 const Cloud = ({ delay = 0 }) => (
   <div
@@ -21,12 +20,8 @@ const Tree = ({ position = 'left' }) => (
   </div>
 );
 
-const PetWorld = ({ children, onPetClick, onAllergyClinicClick }) => {
+const PetWorld = ({ children, onPetClick }) => {
   const handlePetAreaClick = (e) => {
-    // AllergyClinicHouse 영역 제외
-    if (e.target.closest('[data-clinic]')) {
-      return;
-    }
     onPetClick(e);
   };
 
@@ -43,14 +38,6 @@ const PetWorld = ({ children, onPetClick, onAllergyClinicClick }) => {
       {/* 나무들 */}
       <Tree position="left" />
       <Tree position="right" />
-
-      {/* 알러지 검사소 건물 */}
-      {onAllergyClinicClick && (
-        <AllergyClinicHouse
-          position="right"
-          onClick={onAllergyClinicClick}
-        />
-      )}
 
       {/* 메인 콘텐츠 */}
       <div className="absolute inset-0 flex items-center justify-center pt-20 pb-32">

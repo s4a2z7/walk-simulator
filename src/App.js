@@ -3,9 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import HomePage from './pages/HomePage';
-import AllergyCheckPage from './pages/AllergyCheckPage';
 import DemoPage from './pages/DemoPage';
-import DemoAllergyPage from './pages/DemoAllergyPage';
 
 const ProtectedRoute = ({ children }) => {
   const token = localStorage.getItem('token');
@@ -26,16 +24,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route
-          path="/allergy"
-          element={
-            <ProtectedRoute>
-              <AllergyCheckPage />
-            </ProtectedRoute>
-          }
-        />
         <Route path="/demo" element={<DemoPage />} />
-        <Route path="/demo-allergy" element={<DemoAllergyPage />} />
         <Route path="/" element={<Navigate to="/demo" />} />
       </Routes>
     </BrowserRouter>

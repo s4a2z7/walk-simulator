@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const petController = require('../controllers/petController');
-const authenticateToken = require('../middleware/auth');
+const { authenticateToken } = require('../middleware/auth');
 
 // All pet routes require authentication
 router.use(authenticateToken);
