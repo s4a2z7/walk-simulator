@@ -1,0 +1,175 @@
+{
+  "input": {
+    "raw_path": "C:/Users/cutep/OneDrive/바탕 화면/yurim251202/VibeCoding/CareLog AI/data/step2_raw_text_expanded_mg_700_300.csv",
+    "preprocessed_path": "out/step2_preprocessed.csv"
+  },
+  "raw": {
+    "rows": 1000,
+    "missing_required_cols": [],
+    "rows_with_null_required": 584,
+    "rows_with_null_required_after_fill": 0,
+    "filled_text_from_raw_text": 0,
+    "generated_text_id": 584,
+    "dup_raw_text": 515,
+    "dedup_key_duplicates": 431,
+    "too_short_after_normalize(<8)": 10,
+    "text_len_raw": {
+      "min": 8,
+      "max": 58,
+      "mean": 18.948
+    },
+    "text_len_normalized": {
+      "min": 7,
+      "max": 50,
+      "mean": 18.097
+    },
+    "pii": {
+      "url": 0,
+      "email": 0,
+      "phone": 0,
+      "sample_text_ids": {
+        "url": [],
+        "email": [],
+        "phone": []
+      }
+    },
+    "label_quality": {
+      "sentiment_label": {
+        "exists": true,
+        "total": 1000,
+        "missing_count": 273,
+        "missing_rate": 0.273,
+        "invalid_count": 0,
+        "invalid_top_values": {},
+        "top_distribution": {
+          "neutral": 527,
+          "positive": 166,
+          "negative": 34
+        },
+        "allowed_values": [
+          "positive",
+          "neutral",
+          "negative"
+        ]
+      },
+      "topic_label": {
+        "exists": true,
+        "total": 1000,
+        "missing_count": 273,
+        "missing_rate": 0.273,
+        "invalid_count": 0,
+        "invalid_top_values": {},
+        "top_distribution": {
+          "other": 186,
+          "reservation": 164,
+          "prep": 76,
+          "wait": 71,
+          "explain": 68,
+          "location": 39,
+          "staff": 37,
+          "price": 34,
+          "policy": 11,
+          "speed": 10
+        },
+        "allowed_values": [
+          "reservation",
+          "policy",
+          "location",
+          "opening_hours",
+          "prep",
+          "pickup",
+          "wait",
+          "staff",
+          "price",
+          "explain",
+          "process",
+          "clean",
+          "speed",
+          "other"
+        ]
+      }
+    },
+    "label_autofill": {
+      "enabled": true,
+      "filled_sentiment": 273,
+      "filled_topic": 273,
+      "sentiment_flag_col": "sentiment_auto",
+      "topic_flag_col": "topic_auto",
+      "missing_after": {
+        "total": 1000,
+        "sentiment_missing_count": 0,
+        "sentiment_missing_rate": 0.0,
+        "topic_missing_count": 0,
+        "topic_missing_rate": 0.0
+      },
+      "label_quality_after_autofill": {
+        "sentiment_label": {
+          "exists": true,
+          "total": 1000,
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "invalid_count": 0,
+          "invalid_top_values": {},
+          "top_distribution": {
+            "neutral": 782,
+            "positive": 176,
+            "negative": 42
+          },
+          "allowed_values": [
+            "positive",
+            "neutral",
+            "negative"
+          ]
+        },
+        "topic_label": {
+          "exists": true,
+          "total": 1000,
+          "missing_count": 0,
+          "missing_rate": 0.0,
+          "invalid_count": 0,
+          "invalid_top_values": {},
+          "top_distribution": {
+            "other": 278,
+            "reservation": 218,
+            "prep": 105,
+            "explain": 82,
+            "wait": 74,
+            "location": 54,
+            "price": 49,
+            "staff": 48,
+            "pickup": 30,
+            "clean": 15
+          },
+          "allowed_values": [
+            "reservation",
+            "policy",
+            "location",
+            "opening_hours",
+            "prep",
+            "pickup",
+            "wait",
+            "staff",
+            "price",
+            "explain",
+            "process",
+            "clean",
+            "speed",
+            "other"
+          ]
+        }
+      }
+    },
+    "provider_type_distribution": {
+      "HOSPITAL": 380,
+      "CHECKUP_CENTER": 320,
+      "PHARMACY": 300
+    },
+    "source_type_distribution": {
+      "inquiry": 302,
+      "review": 301,
+      "faq": 200,
+      "dataset": 100,
+      "notice": 97
+    }
+  }
+}

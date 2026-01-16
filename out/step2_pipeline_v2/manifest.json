@@ -1,0 +1,48 @@
+{
+  "tag": "step2_pipeline_v2",
+  "generated_at": "2026-01-07T12:22:08.644828+00:00",
+  "raw": {
+    "path": "data/step2_raw_text_expanded_mg_700_300.csv",
+    "baseline_copy": "C:/Users/cutep/OneDrive/바탕 화면/yurim251202/VibeCoding/CareLog AI/data/baselines/step2_pipeline_v2_raw.csv",
+    "sha256": "d1f7476808b4608efd5a10e41a429ecdd3e36af360e45d37f5f9dd688c1e0839",
+    "bytes": 210537
+  },
+  "out": {
+    "step2_quality_report.json": {
+      "sha256": "a62a1560d43b958cf7e9467b2268daf70557981252d22ca590a8d0aab0e4d421",
+      "bytes": 4340
+    },
+    "step2_quality_report.md": {
+      "sha256": "7b5a21126f8cb91724110cf550a488da3ef8d12026cee60e94e68789ffcee7cc",
+      "bytes": 2086
+    },
+    "step2_preprocess_summary.json": {
+      "sha256": "aad9c54c39f80571350a69913bf4bd4b3fe4400efde8a0e4102ee8eafe915ee1",
+      "bytes": 751
+    },
+    "step2_preprocessed.csv": {
+      "sha256": "6ff1d654b11d3b8616e514d0720052c708ba1758bdcbc7d5bbe18e6d90ac8819",
+      "bytes": 216762
+    },
+    "eda_length_hist.png": {
+      "sha256": "4a3e8d3becd679874a5695356aa0a75bfea71d74981a167946f222f16378b8e9",
+      "bytes": 27524
+    },
+    "eda_top_keywords.csv": {
+      "sha256": "f249dd4cc954dba7d78c683ba83db020dd6f0ed1dc8d201e1c9f1e6a63d2ca1a",
+      "bytes": 427
+    },
+    "eda_sentiment_distribution.png": {
+      "sha256": "251752f979b7fd76761ccfd595d2425f6566fd5ead8ce32e39a5a13ec31256cb",
+      "bytes": 24461
+    },
+    "eda_topic_distribution.png": {
+      "sha256": "f4371dd6a2b7363decdd4eb8b5b6d6fd2dfd2b67fa30301a1f1e40e195b5ed91",
+      "bytes": 54725
+    },
+    "step2_eda_report.md": {
+      "sha256": "86a90427bd816312116d1e371217603ee79072713698ad95f2bc9effea48606f",
+      "bytes": 2512
+    }
+  }
+}

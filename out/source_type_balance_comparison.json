@@ -1,0 +1,33 @@
+{
+  "target_min": {
+    "inquiry": 0.25,
+    "review": 0.25
+  },
+  "before": {
+    "rows": 350,
+    "source_type_counts": {
+      "faq": 111,
+      "review": 87,
+      "inquiry": 57,
+      "dataset": 51,
+      "notice": 44
+    }
+  },
+  "added": {
+    "planned": {
+      "inquiry": 46,
+      "review": 16
+    },
+    "actual_rows": 62
+  },
+  "after": {
+    "rows": 412,
+    "source_type_counts": {
+      "faq": 111,
+      "review": 103,
+      "inquiry": 103,
+      "dataset": 51,
+      "notice": 44
+    }
+  }
+}

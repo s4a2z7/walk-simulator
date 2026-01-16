@@ -1,0 +1,65 @@
+text_id,provider_type,source_type,provider_name,text,source_url,created_at
+FAQ_HOSP_0001,HOSPITAL,faq,서울대학교병원,"예약 변경은 진료 시작 1시간 전까지 가능하며, 홈페이지에서 직접 변경하실 수 있습니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0002,HOSPITAL,faq,서울아산병원,진료비 세부 내역은 홈페이지에서 조회 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0003,HOSPITAL,faq,삼성서울병원,재진 환자는 이전 진료 기록을 바탕으로 빠른 접수가 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0004,HOSPITAL,faq,경희대학교병원,"비급여 항목은 수납 전 안내드리며, 사전 문의도 가능합니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0005,HOSPITAL,faq,삼성서울병원,"카드 결제, 현금, 계좌이체 모두 가능하며, 영수증은 자동 발급됩니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0006,HOSPITAL,faq,경희대학교병원,"편의점과 카페는 본관 1층에 있으며, 오전 7시부터 오후 8시까지 이용 가능합니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0008,HOSPITAL,faq,경희대학교병원,혈액 검사 결과는 당일 오후 또는 익일 오전 확인 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0009,HOSPITAL,faq,가톨릭대서울성모병원,"진료 예약은 전화, 홈페이지, 모바일 앱을 통해 가능합니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0011,HOSPITAL,faq,가톨릭대서울성모병원,진료 시 신분증과 건강보험증을 지참해 주시기 바랍니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0012,HOSPITAL,faq,서울대학교병원,휠체어 및 유모차 대여는 안내 데스크에서 신분증 맡기시면 무료로 이용하실 수 있습니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0013,HOSPITAL,faq,연세세브란스병원,"초음파 검사는 당일 예약 가능하며, 검사 전 4시간 금식이 필요합니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0014,HOSPITAL,faq,연세세브란스병원,"병원 내 약국은 1층에 위치하며, 평일 오전 9시부터 오후 6시까지 운영됩니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0020,HOSPITAL,faq,가톨릭대서울성모병원,예약 취소는 진료 당일 오전 9시 이전까지 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0021,HOSPITAL,faq,삼성서울병원,"MRI 검사는 예약제로 운영되며, 평균 대기 기간은 3~5일입니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0024,HOSPITAL,faq,경희대학교병원,"X-ray 검사는 예약 없이 접수 가능하며, 촬영 후 10~20분 내 결과 확인이 가능합니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0030,HOSPITAL,faq,서울대학교병원,진단서 발급은 진료과에서 신청 후 원무과에서 수령 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0032,HOSPITAL,faq,서울아산병원,야간 진료는 평일 오후 6시부터 9시까지 운영됩니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0033,HOSPITAL,faq,가톨릭대서울성모병원,환자 보호자는 1인까지 병실 출입이 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0041,HOSPITAL,faq,서울대학교병원,진료비는 수납 창구 또는 자동수납기에서 결제 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0043,HOSPITAL,faq,삼성서울병원,"면회 시간은 평일 오후 6시부터 8시까지이며, 주말은 오전 10시부터 오후 6시까지입니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0044,HOSPITAL,faq,서울아산병원,"응급실은 24시간 운영되며, 중증 환자 우선 진료 원칙을 따릅니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0053,HOSPITAL,faq,서울아산병원,당일 예약은 오전 9시부터 선착순으로 접수됩니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0055,HOSPITAL,faq,가톨릭대서울성모병원,의료 기록 열람 및 사본 발급은 환자 본인 또는 법정 대리인만 가능합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0057,HOSPITAL,faq,연세세브란스병원,초진 환자는 전화 예약 후 방문 30분 전 도착을 권장합니다.,https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_HOSP_0061,HOSPITAL,faq,삼성서울병원,"주차장은 지하 1~3층에 위치하며, 진료 환자는 2시간 무료 주차가 가능합니다.",https://example.com/hospital/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0001,PHARMACY,notice,온약국,일반의약품은 건강보험 적용 대상이 아닙니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0002,PHARMACY,notice,온약국,어지럼증이나 졸음이 올 수 있는 약은 운전 전 복용을 피해 주세요.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0003,PHARMACY,notice,강남약국,"처방전 유효기간은 발행일로부터 3일이며, 기간 내 조제하셔야 합니다.",https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0006,PHARMACY,notice,온약국,"복약 상담은 약사가 직접 진행하며, 복용 방법과 주의사항을 안내해 드립니다.",https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0007,PHARMACY,notice,강남약국,조제 완료 시 문자 알림 서비스를 제공합니다(사전 신청 필요).,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0009,PHARMACY,notice,강남약국,카드 결제와 현금 결제 모두 가능합니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0012,PHARMACY,notice,강남약국,건강 상담은 약사에게 언제든지 문의 가능합니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0013,PHARMACY,notice,참약국,토요일은 오전 9시부터 오후 1시까지 운영됩니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0015,PHARMACY,notice,연세약국,일요일 및 공휴일은 휴무입니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0016,PHARMACY,notice,연세약국,약 복용 중 이상 반응이 나타나면 즉시 복용을 중단하고 약사 또는 의사와 상담하세요.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0017,PHARMACY,notice,케어약국,점심 시간(오후 12시 30분~1시 30분)에도 운영됩니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0018,PHARMACY,notice,서울약국,처방전 없이 구매 가능한 일반의약품도 다수 구비되어 있습니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0019,PHARMACY,notice,강남약국,약 배달 서비스는 거동이 불편한 환자에 한해 제공됩니다(사전 문의 필수).,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0034,PHARMACY,notice,서울약국,약국 내 혈압 측정기와 체온계를 무료로 이용하실 수 있습니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0046,PHARMACY,notice,메디팜약국,항생제는 처방된 기간 동안 빠짐없이 복용해야 합니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0050,PHARMACY,notice,메디팜약국,"처방약은 건강보험이 적용되며, 본인 부담금만 납부하시면 됩니다.",https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0051,PHARMACY,notice,메디팜약국,평일 운영 시간은 오전 9시부터 오후 7시까지입니다.,https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_PHARM_0060,PHARMACY,notice,온약국,"식전 복용 약은 식사 30분 전, 식후 복용 약은 식사 30분 후 복용하세요.",https://example.com/pharmacy/guide,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0001,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,검진 당일 신분증을 반드시 지참해 주세요.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0002,CHECKUP_CENTER,faq,강남세브란스건강증진센터,재검사가 필요한 경우 안내 전화를 드립니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0003,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,임신 중이거나 임신 가능성이 있는 경우 사전에 알려주세요(X-ray 제외 조치).,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0004,CHECKUP_CENTER,faq,서울대병원건강증진센터,자궁경부암 검진은 만 20세 이상 여성에게 권장됩니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0005,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,"주차는 건물 지하 주차장을 이용하시면 되며, 검진 환자는 무료 주차가 가능합니다.",https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0006,CHECKUP_CENTER,faq,강남세브란스건강증진센터,국가건강검진은 공단 부담으로 본인 부담금이 없습니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0007,CHECKUP_CENTER,faq,강남세브란스건강증진센터,위내시경 검진은 수면 또는 비수면 중 선택 가능합니다(수면 시 보호자 동반 필수).,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0011,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,"검진 당일 아침 식사, 물, 커피, 담배, 껌 모두 금지입니다.",https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0012,CHECKUP_CENTER,faq,강남세브란스건강증진센터,"검진 비용은 현금, 카드, 계좌이체로 결제 가능합니다.",https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0013,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,"예약 취소는 검진 7일 전까지 무료이며, 이후에는 취소 수수료가 부과됩니다.",https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0015,CHECKUP_CENTER,faq,서울아산병원건강증진센터,국가건강검진 대상자는 공단에서 발송된 검진표를 지참해 주세요.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0016,CHECKUP_CENTER,faq,강남세브란스건강증진센터,건강검진 예약은 전화 또는 홈페이지를 통해 가능합니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0018,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,수면 내시경 검진 시 회복실에서 충분히 휴식 후 귀가하시기 바랍니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0019,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,검진 결과는 검진 후 7~10일 이내에 우편 또는 이메일로 발송됩니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0021,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,여성 검진 대상자는 생리 기간을 피해서 예약해 주세요.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0022,CHECKUP_CENTER,faq,강남세브란스건강증진센터,"기본 검진 항목은 신장, 체중, 혈압, 시력, 청력, 혈액검사, 소변검사, 흉부 X-ray를 포함합니다.",https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0024,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,혈압약은 소량의 물과 함께 복용 가능합니다(사전 문의 권장).,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0029,CHECKUP_CENTER,faq,서울대병원건강증진센터,유방암 검진(유방촬영 또는 초음파)은 만 40세 이상 여성에게 권장됩니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0032,CHECKUP_CENTER,faq,서울아산병원건강증진센터,"예약 변경은 검진 3일 전까지 가능하며, 그 이후에는 수수료가 발생할 수 있습니다.",https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0036,CHECKUP_CENTER,faq,서울대병원건강증진센터,대장내시경은 전날 장 정결제 복용이 필요합니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00
+FAQ_CHK_0040,CHECKUP_CENTER,faq,삼성서울병원건강의학센터,결과 상담은 예약 후 전문의와 1:1 상담이 가능합니다.,https://example.com/checkup/faq,2026-01-05T12:49:22.010485+00:00

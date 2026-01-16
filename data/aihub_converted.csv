@@ -1,0 +1,52 @@
+text_id,provider_type,source_type,provider_name,text,source_url,created_at
+AIHUB_00001_475bf980,HOSPITAL,dataset,AI Hub,진료비는 어떻게 결제하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00002_e7fb152f,HOSPITAL,dataset,AI Hub,내과 진료 예약하고 싶은데 오늘 가능한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00003_6a297328,HOSPITAL,dataset,AI Hub,진료 과목은 어떤 게 있나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00004_930c9d64,HOSPITAL,dataset,AI Hub,병원 위치가 어디인가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00006_72de7852,HOSPITAL,dataset,AI Hub,건강보험 적용되나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00008_7585912c,HOSPITAL,dataset,AI Hub,복통이 심한데 바로 진료 가능한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00009_e5713ac0,HOSPITAL,dataset,AI Hub,예약 없이 당일 접수 가능한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00010_66850c3c,PHARMACY,dataset,AI Hub,두통약 처방받고 싶어요.,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00011_13e1b633,CHECKUP_CENTER,dataset,AI Hub,혈액 검사 결과는 언제 나오나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00012_5671b98b,HOSPITAL,dataset,AI Hub,진료 예약을 변경하고 싶어요. 어떻게 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00015_a1b6fb5e,HOSPITAL,dataset,AI Hub,주차 가능한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00017_d93c2bdd,HOSPITAL,dataset,AI Hub,감기 증상인데 어느 과에 가야 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00018_f1ee208b,HOSPITAL,dataset,AI Hub,진료 기록 발급 받으려면 어떻게 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00025_0b2a0d65,HOSPITAL,dataset,AI Hub,입원 상담은 어디서 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00029_501615cf,HOSPITAL,dataset,AI Hub,진료 시간이 어떻게 되시나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00031_216deae7,HOSPITAL,dataset,AI Hub,진료 대기 시간이 얼마나 걸리나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00038_92b4a760,CHECKUP_CENTER,dataset,AI Hub,초음파 검사는 어떻게 예약하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00040_3ddeefe2,CHECKUP_CENTER,dataset,AI Hub,MRI 검사 예약하고 싶어요.,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00051_751ee28e,HOSPITAL,dataset,AI Hub,예약 취소는 언제까지 가능한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00071_ce864df8,HOSPITAL,dataset,AI Hub,항생제 복용 중인데 술 마셔도 되나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00072_d2f4e252,HOSPITAL,dataset,AI Hub,일요일에도 영업하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00073_4e1dc8b8,HOSPITAL,dataset,AI Hub,약 가격이 얼마인가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00074_6dfd8b97,HOSPITAL,dataset,AI Hub,약 반납은 어떻게 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00077_41c9ffa1,PHARMACY,dataset,AI Hub,처방약 조제 시간이 얼마나 걸리나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00078_c6d9e288,HOSPITAL,dataset,AI Hub,진통제 부작용이 있나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00080_4aa1e893,PHARMACY,dataset,AI Hub,조제 완료되면 알림 받을 수 있나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00081_310c4bda,HOSPITAL,dataset,AI Hub,소화제는 어떤 게 좋나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00083_867c2c68,PHARMACY,dataset,AI Hub,약국 운영 시간이 어떻게 되나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00085_a2b63609,HOSPITAL,dataset,AI Hub,감기약 추천해주세요.,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00086_74327b0f,HOSPITAL,dataset,AI Hub,약 복용 방법 상담 가능한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00094_041e8205,HOSPITAL,dataset,AI Hub,약 배달 서비스가 있나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00095_dd44f4fc,PHARMACY,dataset,AI Hub,처방전 유효기간이 어떻게 되나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00096_9e978507,HOSPITAL,dataset,AI Hub,건강보험 적용 약인가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00098_3c10ee6e,PHARMACY,dataset,AI Hub,처방전 없이도 약 구매 가능한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00116_ac388a2f,CHECKUP_CENTER,dataset,AI Hub,유방암 검진은 포함되나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00117_387a770c,CHECKUP_CENTER,dataset,AI Hub,검진 전 복용 중인 약은 어떻게 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00118_4563f024,CHECKUP_CENTER,dataset,AI Hub,검진 소요 시간이 얼마나 걸리나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00119_dcb374ad,CHECKUP_CENTER,dataset,AI Hub,국가건강검진 대상자인지 확인하고 싶어요.,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00121_bf806f85,CHECKUP_CENTER,dataset,AI Hub,검진 예약 취소 수수료가 있나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00122_8ed158d7,CHECKUP_CENTER,dataset,AI Hub,검진 결과 상담은 어떻게 받나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00125_5158f4d2,CHECKUP_CENTER,dataset,AI Hub,재검사가 필요하다고 나왔는데 어떻게 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00126_09096249,CHECKUP_CENTER,dataset,AI Hub,자궁경부암 검진도 같이 받을 수 있나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00129_b4ec85f9,HOSPITAL,dataset,AI Hub,대장내시경은 어떻게 준비하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00132_efcc8d57,HOSPITAL,dataset,AI Hub,신분증 꼭 가져가야 하나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00133_b313923d,CHECKUP_CENTER,dataset,AI Hub,검진 당일 준비물이 있나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00134_c35a98df,CHECKUP_CENTER,dataset,AI Hub,검진 전날 물은 마셔도 되나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00135_ca2e57e7,CHECKUP_CENTER,dataset,AI Hub,검진 전 금식이 필요한가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00136_ea4350ee,CHECKUP_CENTER,dataset,AI Hub,검진 당일 커피 마셔도 되나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00138_78974b0c,CHECKUP_CENTER,dataset,AI Hub,검진 결과는 언제 나오나요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00140_3902cc65,CHECKUP_CENTER,dataset,AI Hub,검진센터 위치가 어디인가요?,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00
+AIHUB_00149_65550817,CHECKUP_CENTER,dataset,AI Hub,건강검진 예약하고 싶어요.,https://aihub.or.kr/dataset/medical_conversation,2026-01-05T12:38:50.278376+00:00

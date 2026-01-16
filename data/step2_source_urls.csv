@@ -1,0 +1,13 @@
+provider_type,source_type,provider_name,source_url,note
+HOSPITAL,faq,서울대학교병원,https://www.snuh.org/intro/etc.do?sch_tab=02,공공기관 공식 FAQ(예약/진료 안내)
+HOSPITAL,faq,서울아산병원,https://www.amc.seoul.kr/asan/healthinfo/info/infoList.do,진료 안내/예약 정보
+HOSPITAL,faq,연세세브란스병원,https://sev.severance.healthcare/sev/info/intro.do,진료/예약 FAQ
+HOSPITAL,faq,삼성서울병원,https://www.samsunghospital.com/home/reservation/reservationInfo.do,예약 안내
+CHECKUP_CENTER,faq,국민건강보험공단,https://www.nhis.or.kr/nhis/healthin/wbhaec06600m01.do,건강검진 안내(공공)
+CHECKUP_CENTER,faq,건강보험심사평가원,https://www.hira.or.kr/dummy.do,검진기관 정보(공공)
+PHARMACY,notice,대한약사회,https://www.kpanews.co.kr/,약국 이용 안내(협회 공식)
+HOSPITAL,faq,고려대학교안암병원,https://anam.kumc.or.kr/about/intro/intro02.do,진료 안내
+HOSPITAL,faq,가톨릭대학교서울성모병원,https://www.cmcseoul.or.kr/main,예약/진료 정보
+CHECKUP_CENTER,faq,강남세브란스건강증진센터,https://gs.iseverance.com/health_promotion/,검진 예약/준비사항
+
+

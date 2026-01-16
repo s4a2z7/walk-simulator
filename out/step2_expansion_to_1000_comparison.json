@@ -1,0 +1,40 @@
+{
+  "target_total": 1000,
+  "target_distribution": {
+    "inquiry": 0.3,
+    "review": 0.3,
+    "faq": 0.2,
+    "dataset": 0.1,
+    "notice": 0.1
+  },
+  "before": {
+    "total": 412,
+    "distribution": {
+      "faq": 111,
+      "review": 103,
+      "inquiry": 103,
+      "dataset": 51,
+      "notice": 44
+    }
+  },
+  "added": {
+    "total": 588,
+    "needed": {
+      "inquiry": 197,
+      "review": 197,
+      "faq": 89,
+      "dataset": 49,
+      "notice": 56
+    }
+  },
+  "after": {
+    "total": 1000,
+    "distribution": {
+      "review": 300,
+      "inquiry": 300,
+      "faq": 200,
+      "dataset": 100,
+      "notice": 100
+    }
+  }
+}

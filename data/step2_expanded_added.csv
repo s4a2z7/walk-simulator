@@ -1,0 +1,589 @@
+﻿text_id,source_type,provider_type,provider_name,created_at,rating,sentiment_label,topic_label,text,__source_file,source_url,raw_text,dedup_key,collected_at
+hosp_1000_2958,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,aa8c0df75b801b4e,2026-01-07
+phar_1001_9776,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,2e58845c86a69066,2026-01-07
+hosp_1002_5861,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,5cee7e103f4bdda1,2026-01-07
+hosp_1003_9614,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,85872795c64f181e,2026-01-07
+hosp_1004_2474,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요,,,약 복용 방법을 알려주세요,39614293e76946cf,2026-01-07
+phar_1005_2054,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,reservation,예약 변경은 어떻게 하나요?,,,예약 변경은 어떻게 하나요?,24fa93c1af4a801f,2026-01-07
+chec_1006_1520,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,location,주차는 될까요?,,,주차는 될까요?,fd55cc667a7f0060,2026-01-07
+phar_1007_1698,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,other,부작용이 있을까요?,,,부작용이 있을까요?,c145e63b9eff0342,2026-01-07
+hosp_1008_9393,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,예약 없이 방문 가능한가요?,,,예약 없이 방문 가능한가요?,c523ad8eb3110360,2026-01-07
+phar_1009_1682,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,reservation,온라인 예약이 되나요?,,,온라인 예약이 되나요?,4f22d4d44a174015,2026-01-07
+hosp_1010_6408,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,78e97f5a80099c48,2026-01-07
+hosp_1011_2253,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,7486c929f5bb2690,2026-01-07
+hosp_1012_1198,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,947531d5afe1387f,2026-01-07
+phar_1013_3831,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,other,처방전 없이도 구매 가능한가요?,,,처방전 없이도 구매 가능한가요?,9393995a4df221ec,2026-01-07
+hosp_1014_2853,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,64ba9547e163a999,2026-01-07
+hosp_1015_9500,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,reservation,전화 예약만 될까요?,,,전화 예약만 될까요?,97ed475c4586d727,2026-01-07
+hosp_1016_5645,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,651e1e2383c92949,2026-01-07
+hosp_1017_9798,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,5c71770414224054,2026-01-07
+hosp_1018_9329,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 변경은 어떻게 하나요?,,,예약 변경은 어떻게 하나요?,a9cee3eff88213f0,2026-01-07
+phar_1019_4102,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,875ca706f31a49d1,2026-01-07
+hosp_1020_6628,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,주말에도 예약 가능한가요?,,,주말에도 예약 가능한가요?,2acd49f1211b7054,2026-01-07
+hosp_1021_1763,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,1e22162952e0e209,2026-01-07
+hosp_1022_5309,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,other,부작용이 있을까요?,,,부작용이 있을까요?,96a2dfef54db6911,2026-01-07
+hosp_1023_4487,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,538b5ed4dc459dae,2026-01-07
+phar_1024_4047,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,8a94238ba720b329,2026-01-07
+chec_1025_2711,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,wait,영업 시간이 어떻게 되나요?,,,영업 시간이 어떻게 되나요?,fd5de09d9dd02895,2026-01-07
+chec_1026_2167,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,10bb2bb8480d5ad9,2026-01-07
+chec_1027_9618,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,wait,영업 시간이 어떻게 되나요?,,,영업 시간이 어떻게 되나요?,7249208b5dac4e49,2026-01-07
+hosp_1028_6454,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,온라인 예약이 되나요?,,,온라인 예약이 되나요?,1a842a56a344bad6,2026-01-07
+hosp_1029_5721,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요.,,,약 복용 방법을 알려주세요.,d9b93beff7540068,2026-01-07
+chec_1030_5087,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,d51eed8dde36b3a8,2026-01-07
+hosp_1031_6824,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,c8e928e2e2e95f14,2026-01-07
+chec_1032_9642,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,7d788e2ece06bfe8,2026-01-07
+hosp_1033_6019,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,aa8aac20a16fe601,2026-01-07
+hosp_1034_9469,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,1381165fdcc35d55,2026-01-07
+phar_1035_1877,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,738c49e315a85f09,2026-01-07
+hosp_1036_4518,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,8fe1c278a512b379,2026-01-07
+chec_1037_1483,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,wait,영업 시간이 어떻게 되나요?,,,영업 시간이 어떻게 되나요?,aaf603316c5a896a,2026-01-07
+chec_1038_7590,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,c532f96903aa5c02,2026-01-07
+phar_1039_4510,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요,,,약 복용 방법을 알려주세요,d63f22c817c3ea9c,2026-01-07
+phar_1040_7717,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,wait,영업 시간이 어떻게 되나요?,,,영업 시간이 어떻게 되나요?,3b7e942ad12da756,2026-01-07
+hosp_1041_8658,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,cd93e1cd65536471,2026-01-07
+hosp_1042_5445,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요,,,약 복용 방법을 알려주세요,76bb5464c9f43b54,2026-01-07
+hosp_1043_4308,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,5c71770414224054,2026-01-07
+chec_1044_2177,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,예약 변경은 어케 하나요?,,,예약 변경은 어케 하나요?,1ce2a2db33d98452,2026-01-07
+chec_1045_8593,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,10a044b55239dadf,2026-01-07
+chec_1046_4082,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,674f1baf05ce8317,2026-01-07
+phar_1047_6176,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,a23d9a23c76dee20,2026-01-07
+phar_1048_6772,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,c21adcf7000b4bc3,2026-01-07
+phar_1049_4369,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,2c598a948cb0b919,2026-01-07
+chec_1050_6841,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,예약 변경은 어케 하나요?,,,예약 변경은 어케 하나요?,7bbe6556d46d14c2,2026-01-07
+phar_1051_5541,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,reservation,온라인 예약이 되나요?,,,온라인 예약이 되나요?,4f22d4d44a174015,2026-01-07
+chec_1052_1171,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,ecec62752890def3,2026-01-07
+chec_1053_4403,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,8a77c58e84b903d4,2026-01-07
+chec_1054_2358,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,940258bcff481b1e,2026-01-07
+chec_1055_5655,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,other,처방전 없이도 구매 가능한가요?,,,처방전 없이도 구매 가능한가요?,a25a3f8518765d48,2026-01-07
+phar_1056_2387,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,reservation,주말에도 예약 될까요?,,,주말에도 예약 될까요?,f868eba2d9ad50f3,2026-01-07
+hosp_1057_7845,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,f463f25d38cdeab6,2026-01-07
+chec_1058_8030,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,08ae11f06beafc27,2026-01-07
+phar_1059_7174,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,9de58e761f2001ce,2026-01-07
+hosp_1060_5647,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,c8e928e2e2e95f14,2026-01-07
+phar_1061_2488,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,other,휴무일은 언제인가요?,,,휴무일은 언제인가요?,9198c15b25663981,2026-01-07
+chec_1062_6983,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,91b4754aa1368d51,2026-01-07
+chec_1063_7558,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,4db648a8b7f059e7,2026-01-07
+chec_1064_5898,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,64bf3dbdfdb9775f,2026-01-07
+chec_1065_6679,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,0edbbb2bc21727ba,2026-01-07
+chec_1066_7233,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,예약 취소는 어케 하나요?,,,예약 취소는 어케 하나요?,6f8478fd47513a69,2026-01-07
+phar_1067_9800,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,5a93934751289584,2026-01-07
+hosp_1068_8103,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,aa8aac20a16fe601,2026-01-07
+chec_1069_1811,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,reservation,예약 없이 방문 될까요?,,,예약 없이 방문 될까요?,89ad21f33c8e15e1,2026-01-07
+chec_1070_5275,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,reservation,주말에도 예약 가능한가요?,,,주말에도 예약 가능한가요?,cd1ea112abcdbc5b,2026-01-07
+chec_1071_3245,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,5e9fc760e3eb4ce1,2026-01-07
+hosp_1072_9756,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,other,처방전 없이도 구매 가능한가요?,,,처방전 없이도 구매 가능한가요?,bc0e652990c4e32d,2026-01-07
+phar_1073_6783,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,fe06f6947624df89,2026-01-07
+phar_1074_3324,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,reservation,전화 예약만 될까요?,,,전화 예약만 될까요?,a0934216b01e611e,2026-01-07
+chec_1075_8068,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요,,,약 복용 방법을 알려주세요,ae2b4da3ae8ced53,2026-01-07
+phar_1076_6369,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,2e58845c86a69066,2026-01-07
+chec_1077_4650,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,예약 취소는 어케 하나요?,,,예약 취소는 어케 하나요?,6f8478fd47513a69,2026-01-07
+hosp_1078_4250,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,5f2b32e2d99446f3,2026-01-07
+hosp_1079_5049,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다.,,,당일 예약이 가능한지 알고 싶습니다.,6a33d6984cc2a293,2026-01-07
+phar_1080_1318,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,other,처방전 없이도 구매 가능한가요?,,,처방전 없이도 구매 가능한가요?,a43fec7364ddd9ca,2026-01-07
+phar_1081_9611,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,other,휴무일은 언제인가요?,,,휴무일은 언제인가요?,6599cde71974f191,2026-01-07
+hosp_1082_6246,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,aa8aac20a16fe601,2026-01-07
+hosp_1083_2990,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,fc63a3df7823b054,2026-01-07
+chec_1084_4154,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,reservation,주말에도 예약 가능한가요?,,,주말에도 예약 가능한가요?,99de25dc70f0e263,2026-01-07
+hosp_1085_2855,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,aa8c0df75b801b4e,2026-01-07
+hosp_1086_7078,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,예약 없이 방문 가능한가요?,,,예약 없이 방문 가능한가요?,aeb318fae3022ab7,2026-01-07
+chec_1087_8506,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,5b7cd1ba8855e2d0,2026-01-07
+chec_1088_6399,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,a98082985920eb56,2026-01-07
+phar_1089_5010,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요,,,약 복용 방법을 알려주세요,61366c88d26587a3,2026-01-07
+hosp_1090_1249,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,08efbd7e30ac2e4b,2026-01-07
+phar_1091_2025,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,63d66db7fbd4661d,2026-01-07
+hosp_1092_6100,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,온라인 예약이 되나요?,,,온라인 예약이 되나요?,d150e53bb5e5a39e,2026-01-07
+phar_1093_3502,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,2c598a948cb0b919,2026-01-07
+hosp_1094_4134,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,2e56a3f1b091de43,2026-01-07
+phar_1095_1283,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,1a1fe36afc7d95c8,2026-01-07
+hosp_1096_9070,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,b1746e7dd70bcd0a,2026-01-07
+phar_1097_1798,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요,,,약 복용 방법을 알려주세요,61366c88d26587a3,2026-01-07
+chec_1098_2662,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,1dbb8824fa4a4cc7,2026-01-07
+chec_1099_2375,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,주말에도 예약 가능해요?,,,주말에도 예약 가능해요?,53ea7fd0fadafa87,2026-01-07
+phar_1100_4192,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,wait,진료 시간이 어케 되나요?,,,진료 시간이 어케 되나요?,810e3ec28b17a4a4,2026-01-07
+hosp_1101_7265,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,c8e928e2e2e95f14,2026-01-07
+chec_1102_3606,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,reservation,예약 변경은 어떻게 하나요?,,,예약 변경은 어떻게 하나요?,601e411c9171fd8c,2026-01-07
+chec_1103_5518,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,주말에도 예약 가능한가요?,,,주말에도 예약 가능한가요?,97362b4c8cad6f3c,2026-01-07
+phar_1104_4596,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,wait,영업 시간이 어떻게 되나요?,,,영업 시간이 어떻게 되나요?,f8630b28b221e4e7,2026-01-07
+hosp_1105_9441,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,136fcb89d38eca94,2026-01-07
+chec_1106_5675,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,예약 취소는 어케 하나요?,,,예약 취소는 어케 하나요?,6f8478fd47513a69,2026-01-07
+hosp_1107_8023,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,a7b7cb8ba20563f3,2026-01-07
+phar_1108_9047,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,reservation,주말에도 예약 가능한가요?,,,주말에도 예약 가능한가요?,70995b7b3debbe9e,2026-01-07
+hosp_1109_7630,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,a4de3069c6b1ab82,2026-01-07
+hosp_1110_9600,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,other,부작용이 있을까요?,,,부작용이 있을까요?,497a31703e754c4e,2026-01-07
+phar_1111_6854,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,5a93934751289584,2026-01-07
+hosp_1112_3247,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,240f9e37b5241cd0,2026-01-07
+chec_1113_8509,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,860bec23f4fdb68b,2026-01-07
+phar_1114_8494,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,1c3fa78dceccaac1,2026-01-07
+hosp_1115_1442,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,71f94bcfcf9f9350,2026-01-07
+hosp_1116_6577,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,5ff53dcf41bf5e0f,2026-01-07
+hosp_1117_9803,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,12a23f24b0a716dc,2026-01-07
+chec_1118_5085,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,64bf3dbdfdb9775f,2026-01-07
+chec_1119_2292,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,reservation,온라인 예약이 되나요?,,,온라인 예약이 되나요?,98e8d41f328b32f7,2026-01-07
+chec_1120_6914,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,aa777159a1862098,2026-01-07
+chec_1121_8822,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,cc6ede89429e99b3,2026-01-07
+phar_1122_5170,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,fa9244842d0e920d,2026-01-07
+hosp_1123_3737,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,c644dbfb74e83362,2026-01-07
+chec_1124_9798,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,db6649cc2576622e,2026-01-07
+hosp_1125_6735,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,32cd847c519f2e7a,2026-01-07
+chec_1126_4944,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,8ffdfbbdcf405a17,2026-01-07
+phar_1127_1736,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,3af053b01f1d7488,2026-01-07
+phar_1128_6741,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,2c598a948cb0b919,2026-01-07
+hosp_1129_8732,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,efb35e3cb02eac19,2026-01-07
+hosp_1130_8967,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,wait,영업 시간이 어케 되나요?,,,영업 시간이 어케 되나요?,4d5585cd4b916bea,2026-01-07
+hosp_1131_3255,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요.,,,약 복용 방법을 알려주세요.,d9b93beff7540068,2026-01-07
+phar_1132_3217,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,810759ac7aade5d8,2026-01-07
+hosp_1133_7837,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 변경은 어떻게 하나요?,,,예약 변경은 어떻게 하나요?,a9cee3eff88213f0,2026-01-07
+phar_1134_2654,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,reservation,예약 변경은 어떻게 하나요?,,,예약 변경은 어떻게 하나요?,12834ac8f3609ccd,2026-01-07
+hosp_1135_7804,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,947531d5afe1387f,2026-01-07
+chec_1136_2941,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,beb2a8a348c562d6,2026-01-07
+chec_1137_2625,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,reservation,주말에도 예약 될까요?,,,주말에도 예약 될까요?,7c9b639a09efe1c1,2026-01-07
+chec_1138_2053,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,6523ddc3a9f69b64,2026-01-07
+hosp_1139_6802,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,location,주차는 가능해요?,,,주차는 가능해요?,dab7cd6fd51ea7ca,2026-01-07
+phar_1140_7644,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,other,처방전 없이도 구매 가능한가요?,,,처방전 없이도 구매 가능한가요?,a43fec7364ddd9ca,2026-01-07
+chec_1141_1457,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,5870dad5a244a59e,2026-01-07
+phar_1142_1392,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,fe06f6947624df89,2026-01-07
+phar_1143_4943,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다.,,,당일 예약이 가능한지 알고 싶습니다.,d982d17d3a6d3787,2026-01-07
+hosp_1144_6128,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,ef813b62f8fa792a,2026-01-07
+phar_1145_3794,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,9c6432fb0c635081,2026-01-07
+hosp_1146_2457,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,other,부작용이 있을까요?,,,부작용이 있을까요?,013a025659fe7bbd,2026-01-07
+hosp_1147_2064,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,214acc00202cd0ae,2026-01-07
+phar_1148_4757,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,4fd149681824bc22,2026-01-07
+chec_1149_3582,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,c34f9ddf199cd70c,2026-01-07
+hosp_1150_3141,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,other,배송도 되나요?,,,배송도 되나요?,82b0dfdd447aa85c,2026-01-07
+hosp_1151_5585,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,예약 변경은 어떻게 하나요?,,,예약 변경은 어떻게 하나요?,68e204b47dcb8d68,2026-01-07
+hosp_1152_2948,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,wait,영업 시간이 어떻게 되나요?,,,영업 시간이 어떻게 되나요?,5eb8271844cd9389,2026-01-07
+phar_1153_1941,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,reservation,주말에도 예약 가능한가요?,,,주말에도 예약 가능한가요?,f7eca48cb279c6ee,2026-01-07
+chec_1154_8820,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,860bec23f4fdb68b,2026-01-07
+hosp_1155_4343,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,1381165fdcc35d55,2026-01-07
+hosp_1156_3580,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,fc63a3df7823b054,2026-01-07
+chec_1157_6071,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,4f4e2d413441ced2,2026-01-07
+chec_1158_2197,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,reservation,전화 예약만 가능한가요?,,,전화 예약만 가능한가요?,7d788e2ece06bfe8,2026-01-07
+phar_1159_7008,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,738c49e315a85f09,2026-01-07
+phar_1160_6608,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,other,휴무일은 언제인가요?,,,휴무일은 언제인가요?,8fbf1b6067e93d95,2026-01-07
+phar_1161_1154,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,other,예악 취소는 어떻게 하나요?,,,예악 취소는 어떻게 하나요?,4b6fb15b3aca3cfe,2026-01-07
+chec_1162_6349,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,휴무일은 언제인가요?,,,휴무일은 언제인가요?,c13d307f7f1128df,2026-01-07
+chec_1163_9340,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,other,휴무일은 언제인가요?,,,휴무일은 언제인가요?,7f438b0b3c6ef23a,2026-01-07
+phar_1164_6586,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,reservation,전화 예약만 될까요?,,,전화 예약만 될까요?,c92b4be79f4c0580,2026-01-07
+hosp_1165_2556,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,other,부작용이 있을까요?,,,부작용이 있을까요?,974ac9ccc0892fd7,2026-01-07
+hosp_1166_4227,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,wait,진료 시간이 어떻게 되나요?,,,진료 시간이 어떻게 되나요?,512afe977ca6a55b,2026-01-07
+chec_1167_9368,inquiry,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,674f1baf05ce8317,2026-01-07
+phar_1168_8591,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,f24fc856dd5731e0,2026-01-07
+phar_1169_6842,inquiry,PHARMACY,강남약국,2026-01-07,,neutral,reservation,예약 취소는 어떻게 하나요?,,,예약 취소는 어떻게 하나요?,6f91611680d943a1,2026-01-07
+phar_1170_4755,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,e5e28f300d45bb17,2026-01-07
+hosp_1171_1337,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,prep,검진 결과는 언제 나오나요?,,,검진 결과는 언제 나오나요?,1381165fdcc35d55,2026-01-07
+hosp_1172_2496,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,reservation,주말에도 예약 가능해요?,,,주말에도 예약 가능해요?,0978c5cb0c4745f6,2026-01-07
+phar_1173_5579,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,other,부작용이 있을까요?,,,부작용이 있을까요?,c145e63b9eff0342,2026-01-07
+hosp_1174_3796,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,wait,영업 시간이 어떻게 되나요?,,,영업 시간이 어떻게 되나요?,73f8693d3a1320a7,2026-01-07
+hosp_1175_3448,inquiry,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,당일 예약이 가능한지 알고 싶습니다,,,당일 예약이 가능한지 알고 싶습니다,85872795c64f181e,2026-01-07
+hosp_1176_7046,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,8c569cb46d7f3756,2026-01-07
+hosp_1177_3767,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,9b8e65f46a5c6575,2026-01-07
+hosp_1178_6030,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요,,,약 복용 방법을 알려주세요,805e59abcd449d9b,2026-01-07
+hosp_1179_4637,inquiry,HOSPITAL,부산병원,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,84a7611b1ac59c52,2026-01-07
+hosp_1180_5873,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,explain,약 복용 방법을 알려주세요?,,,약 복용 방법을 알려주세요?,94cecf76ad99f861,2026-01-07
+hosp_1181_6578,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,other,처방전 없이도 구매 가능한가요?,,,처방전 없이도 구매 가능한가요?,9e4561b08fcd8b5d,2026-01-07
+phar_1182_3221,inquiry,PHARMACY,서울약국,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,2038a102f4fb463e,2026-01-07
+hosp_1183_2559,inquiry,HOSPITAL,광주병원,2026-01-07,,neutral,reservation,예약 취소는 어케 하나요?,,,예약 취소는 어케 하나요?,79128bd8d01cea1f,2026-01-07
+phar_1184_8533,inquiry,PHARMACY,부산약국,2026-01-07,,neutral,wait,대기 시간이 얼마나 걸리나요?,,,대기 시간이 얼마나 걸리나요?,9c6432fb0c635081,2026-01-07
+phar_1185_9348,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,reservation,예약 변경은 어케 하나요?,,,예약 변경은 어케 하나요?,dd931cfdd323c213,2026-01-07
+hosp_1186_5448,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,other,부작용이 있을까요?,,,부작용이 있을까요?,013a025659fe7bbd,2026-01-07
+chec_1187_3911,inquiry,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,location,주차는 가능한가요?,,,주차는 가능한가요?,1d06ab4c119f0ab8,2026-01-07
+chec_1188_2961,inquiry,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,온라인 예약이 되나요?,,,온라인 예약이 되나요?,bb4f8963ccfbcbb2,2026-01-07
+phar_1189_7121,inquiry,PHARMACY,대전약국,2026-01-07,,neutral,other,휴무일은 언제인가요?,,,휴무일은 언제인가요?,8fbf1b6067e93d95,2026-01-07
+chec_1190_5208,inquiry,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,주말에도 예약 가능한가요?,,,주말에도 예약 가능한가요?,6a3f897af8e5f455,2026-01-07
+hosp_1191_7062,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,prep,검진 전 준비사항이 있나요?,,,검진 전 준비사항이 있나요?,b1746e7dd70bcd0a,2026-01-07
+hosp_1192_7184,inquiry,HOSPITAL,강남병원,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,78e97f5a80099c48,2026-01-07
+hosp_1193_4125,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,e293b38b5debff3c,2026-01-07
+phar_1194_3024,inquiry,PHARMACY,광주약국,2026-01-07,,neutral,wait,진료 시간이 어케 되나요?,,,진료 시간이 어케 되나요?,810e3ec28b17a4a4,2026-01-07
+hosp_1195_7744,inquiry,HOSPITAL,서울병원,2026-01-07,,neutral,price,비용이 얼마나 드나요?,,,비용이 얼마나 드나요?,e293b38b5debff3c,2026-01-07
+chec_1196_2357,inquiry,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,보험 적용이 되나요?,,,보험 적용이 되나요?,5b7cd1ba8855e2d0,2026-01-07
+phar_1197_2154,review,PHARMACY,강남약국,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,b41164450d27b905,2026-01-07
+phar_1198_3956,review,PHARMACY,서울약국,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,86f826d847a89cd2,2026-01-07
+phar_1199_1037,review,PHARMACY,대전약국,2026-01-07,,positive,explain,약 효과가 좋았습니다?,,,약 효과가 좋았습니다?,95ddc2646544531a,2026-01-07
+hosp_1200_2933,review,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,2efca56f62c335f1,2026-01-07
+hosp_1201_9982,review,HOSPITAL,광주병원,2026-01-07,,neutral,price,가격이 합리적이에요,,,가격이 합리적이에요,af58fa1cc3335454,2026-01-07
+phar_1202_4379,review,PHARMACY,서울약국,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다,,,친절하고 빠른 진료 감사합니다,6eb11bf4ea403562,2026-01-07
+chec_1203_8776,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,70e67de1dd767492,2026-01-07
+phar_1204_5831,review,PHARMACY,강남약국,2026-01-07,,neutral,other,다음에도 이용할게요 !!,,,다음에도 이용할게요 !!,33cce9d063884232,2026-01-07
+chec_1205_2591,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,8a482ddedda2a8a6,2026-01-07
+phar_1206_1249,review,PHARMACY,대전약국,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,1b073a5a12aa1a0d,2026-01-07
+chec_1207_7919,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,positive,other,전문적인 상담 감사합니다,,,전문적인 상담 감사합니다,c482d3631a247121,2026-01-07
+chec_1208_7671,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,explain,약 효과가 좋았습니다?,,,약 효과가 좋았습니다?,17aac2125f15d145,2026-01-07
+phar_1209_5194,review,PHARMACY,광주약국,2026-01-07,,positive,staff,직원분들이 친절하셨습니다,,,직원분들이 친절하셨습니다,a265104140f3d917,2026-01-07
+hosp_1210_5182,review,HOSPITAL,대전병원,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다,,,친절하고 빠른 진료 감사합니다,cbbee0936827e5fb,2026-01-07
+hosp_1211_9551,review,HOSPITAL,서울병원,2026-01-07,,neutral,other,추천할 만한 곳이에요.,,,추천할 만한 곳이에요.,7abe72ff4a0eab43,2026-01-07
+chec_1212_9475,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,04269b98b4b7085d,2026-01-07
+hosp_1213_4465,review,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,4787485ce04bccd5,2026-01-07
+chec_1214_1065,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,positive,explain,약 효과가 좋았습니다,,,약 효과가 좋았습니다,ccc06af047cb56a4,2026-01-07
+phar_1215_4058,review,PHARMACY,부산약국,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다,,,친절하고 빠른 진료 감사합니다,6d4356ef8849e89b,2026-01-07
+chec_1216_3089,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다?,,,처음 방문인데 만족스럽습니다?,07a84dbbf7dcaea0,2026-01-07
+phar_1217_7950,review,PHARMACY,강남약국,2026-01-07,,neutral,other,결과 설명이 명확했어요,,,결과 설명이 명확했어요,ac6ceeff2283aa49,2026-01-07
+phar_1218_7591,review,PHARMACY,부산약국,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,f84b015a89d8e0f3,2026-01-07
+chec_1219_9948,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다. !!,,,검진이 꼼꼼하게 진행되었습니다. !!,be2842840fc80d01,2026-01-07
+hosp_1220_6771,review,HOSPITAL,대전병원,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,173fdfc2836f4c8f,2026-01-07
+hosp_1221_9553,review,HOSPITAL,강남병원,2026-01-07,,positive,reservation,예약 시스템이 편리해요,,,예약 시스템이 편리해요,a7092fb3745a29de,2026-01-07
+chec_1222_2262,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,positive,reservation,예약 시스템이 편리해요? !!,,,예약 시스템이 편리해요? !!,47592cf5e77761b5,2026-01-07
+hosp_1223_9626,review,HOSPITAL,대전병원,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다?,,,검진이 꼼꼼하게 진행되었습니다?,1d9cf8965dbf4a92,2026-01-07
+phar_1224_6987,review,PHARMACY,부산약국,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,25643654e58223e7,2026-01-07
+chec_1225_1505,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,positive,staff,직원분들이 친절하셨습니다?,,,직원분들이 친절하셨습니다?,f199fe144d7748cc,2026-01-07
+hosp_1226_7866,review,HOSPITAL,광주병원,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,b56dec8c92bbf3b1,2026-01-07
+phar_1227_6271,review,PHARMACY,강남약국,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,2a183f49c55f7079,2026-01-07
+phar_1228_8938,review,PHARMACY,광주약국,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,4882a64153dcbe1a,2026-01-07
+phar_1229_9661,review,PHARMACY,강남약국,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,302279918df8fd12,2026-01-07
+hosp_1230_9014,review,HOSPITAL,대전병원,2026-01-07,,neutral,other,재방문 의사 있습니다?,,,재방문 의사 있습니다?,bd190fc141115249,2026-01-07
+chec_1231_6249,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다 ...,,,검진이 꼼꼼하게 진행되었습니다 ...,68f14841be2fed34,2026-01-07
+hosp_1232_7682,review,HOSPITAL,부산병원,2026-01-07,,neutral,other,결과 설명이 명확했어요 ㅜㅜ,,,결과 설명이 명확했어요 ㅜㅜ,e8f6a8011dfe9878,2026-01-07
+chec_1233_5191,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,ba5f94fddeccca59,2026-01-07
+hosp_1234_2521,review,HOSPITAL,광주병원,2026-01-07,,neutral,other,결과 설명이 명확했어요?,,,결과 설명이 명확했어요?,26b140f6088b5f91,2026-01-07
+chec_1235_2116,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,2997357bc6baa809,2026-01-07
+chec_1236_6233,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다 ㅠㅠ,,,친절하고 빠른 진료 감사합니다 ㅠㅠ,e4300adf90065651,2026-01-07
+chec_1237_6812,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요 ㅠㅠ,,,추천할 만한 곳이에요 ㅠㅠ,6e82d8a46f6de929,2026-01-07
+hosp_1238_9365,review,HOSPITAL,대전병원,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다.,,,처음 방문인데 만족스럽습니다.,05b981016c6cac22,2026-01-07
+hosp_1239_3890,review,HOSPITAL,서울병원,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,1ae116be16259fac,2026-01-07
+chec_1240_1698,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,4754fe58c321e987,2026-01-07
+phar_1241_5298,review,PHARMACY,서울약국,2026-01-07,,neutral,price,가격이 합리적이에요,,,가격이 합리적이에요,9edb725a06e3a379,2026-01-07
+hosp_1242_8020,review,HOSPITAL,부산병원,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다.,,,처음 방문인데 만족스럽습니다.,3c8a1bc415fd4ca7,2026-01-07
+phar_1243_2794,review,PHARMACY,부산약국,2026-01-07,,positive,reservation,예약 시스템이 편리해요,,,예약 시스템이 편리해요,bde8ac0a15eecba7,2026-01-07
+phar_1244_8331,review,PHARMACY,부산약국,2026-01-07,,positive,other,전문적인 상담 감사합니다 !!,,,전문적인 상담 감사합니다 !!,24bd0c521705f9ee,2026-01-07
+hosp_1245_1802,review,HOSPITAL,부산병원,2026-01-07,,neutral,other,다음에도 이용할게요.,,,다음에도 이용할게요.,6adf2eb1f621d2f8,2026-01-07
+hosp_1246_9200,review,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,dcb099a3c0863200,2026-01-07
+phar_1247_4290,review,PHARMACY,서울약국,2026-01-07,,neutral,other,추천할 만한 곳이에요 ...,,,추천할 만한 곳이에요 ...,0c54c08590166e72,2026-01-07
+chec_1248_7284,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,positive,reservation,예약 시스템이 편리해요. ㅜㅜ,,,예약 시스템이 편리해요. ㅜㅜ,7aff89a343a00e7f,2026-01-07
+chec_1249_8535,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,positive,explain,약 효과가 좋았습니다,,,약 효과가 좋았습니다,9acea669713c4701,2026-01-07
+chec_1250_5892,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,positive,other,시설이 깨끗하고 좋네요,,,시설이 깨끗하고 좋네요,dd6dfa1e204679b0,2026-01-07
+phar_1251_3199,review,PHARMACY,부산약국,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다.,,,처음 방문인데 만족스럽습니다.,6be75f3c88c628f0,2026-01-07
+phar_1252_2995,review,PHARMACY,대전약국,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,71af8729352dca8b,2026-01-07
+chec_1253_4293,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,2997357bc6baa809,2026-01-07
+hosp_1254_6901,review,HOSPITAL,광주병원,2026-01-07,,positive,other,전문적인 상담 감사합니다,,,전문적인 상담 감사합니다,2b9eedcee24c0868,2026-01-07
+phar_1255_4427,review,PHARMACY,서울약국,2026-01-07,,neutral,other,결과 설명이 명확했어요,,,결과 설명이 명확했어요,5271476631e3e0e8,2026-01-07
+hosp_1256_3300,review,HOSPITAL,광주병원,2026-01-07,,positive,wait,대기 시간이 좀 길었지만 만족스러웠어요,,,대기 시간이 좀 길었지만 만족스러웠어요,2a781f38b66316a2,2026-01-07
+phar_1257_6069,review,PHARMACY,부산약국,2026-01-07,,positive,wait,대기 시간이 좀 길었지만 만족스러웠어요? ㅠㅠ,,,대기 시간이 좀 길었지만 만족스러웠어요? ㅠㅠ,537722d5507fd48b,2026-01-07
+phar_1258_2600,review,PHARMACY,서울약국,2026-01-07,,neutral,other,다음에도 이용할게요?,,,다음에도 이용할게요?,ac932bc8cc1c0806,2026-01-07
+chec_1259_5825,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,2b1fb841136a4e41,2026-01-07
+chec_1260_1835,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,36781109dc10316e,2026-01-07
+hosp_1261_6928,review,HOSPITAL,대전병원,2026-01-07,,neutral,price,가격이 합리적이에요,,,가격이 합리적이에요,12b0d2b2b567b54f,2026-01-07
+phar_1262_8443,review,PHARMACY,강남약국,2026-01-07,,positive,staff,직원분들이 친절하셨습니다,,,직원분들이 친절하셨습니다,2e619b3a4c48e618,2026-01-07
+phar_1263_2795,review,PHARMACY,부산약국,2026-01-07,,positive,explain,약 효과가 좋았습니다?,,,약 효과가 좋았습니다?,f544c1e213046914,2026-01-07
+hosp_1264_8386,review,HOSPITAL,부산병원,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,eb55275456bba520,2026-01-07
+phar_1265_8311,review,PHARMACY,강남약국,2026-01-07,,positive,other,시설이 깨끗하고 좋네요,,,시설이 깨끗하고 좋네요,660f8f46a3385ab2,2026-01-07
+hosp_1266_9532,review,HOSPITAL,광주병원,2026-01-07,,positive,other,전문적인 상담 감사합니다,,,전문적인 상담 감사합니다,2b9eedcee24c0868,2026-01-07
+hosp_1267_4786,review,HOSPITAL,서울병원,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,22f7965e40d6d284,2026-01-07
+hosp_1268_3751,review,HOSPITAL,강남병원,2026-01-07,,neutral,price,가격이 합리적이에요,,,가격이 합리적이에요,4d29eeec6a2de190,2026-01-07
+hosp_1269_7349,review,HOSPITAL,광주병원,2026-01-07,,positive,other,시설이 깨끗하고 좋네요 ...,,,시설이 깨끗하고 좋네요 ...,cbfa0614a79a4a07,2026-01-07
+chec_1270_1306,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,c47f786fc0dbd364,2026-01-07
+hosp_1271_7513,review,HOSPITAL,대전병원,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다,,,친절하고 빠른 진료 감사합니다,cbbee0936827e5fb,2026-01-07
+hosp_1272_2979,review,HOSPITAL,서울병원,2026-01-07,,neutral,other,다음에도 이용할게요,,,다음에도 이용할게요,9d9fb741b41bef27,2026-01-07
+chec_1273_5371,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,2b1fb841136a4e41,2026-01-07
+chec_1274_2822,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다?,,,설명을 자세히 해주셔서 좋았습니다?,2ce01cbc1ef415dd,2026-01-07
+hosp_1275_1225,review,HOSPITAL,광주병원,2026-01-07,,neutral,price,가격이 합리적이에요.,,,가격이 합리적이에요.,d09a6a2e73002067,2026-01-07
+chec_1276_5547,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,다음에도 이용할게요,,,다음에도 이용할게요,f2bc4e92e7456570,2026-01-07
+chec_1277_2489,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,fedb2dd4b4d3adaf,2026-01-07
+phar_1278_3247,review,PHARMACY,서울약국,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다? ㅜㅜ,,,처음 방문인데 만족스럽습니다? ㅜㅜ,4323c044545b3181,2026-01-07
+phar_1279_6042,review,PHARMACY,부산약국,2026-01-07,,neutral,other,추천할 만한 곳이에요. !!,,,추천할 만한 곳이에요. !!,d7eec2c651f79827,2026-01-07
+hosp_1280_1692,review,HOSPITAL,대전병원,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다? !!,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다? !!,d78a49a2f672d632,2026-01-07
+hosp_1281_3874,review,HOSPITAL,대전병원,2026-01-07,,positive,explain,약 효과가 좋았습니다,,,약 효과가 좋았습니다,50c7a5d1f7e5a616,2026-01-07
+hosp_1282_5435,review,HOSPITAL,강남병원,2026-01-07,,positive,other,배송이 빨라서 좋았어요.,,,배송이 빨라서 좋았어요.,785902695abd128d,2026-01-07
+hosp_1283_6451,review,HOSPITAL,강남병원,2026-01-07,,positive,staff,직원분들이 친절하셨습니다,,,직원분들이 친절하셨습니다,6055d590d94bc6c6,2026-01-07
+chec_1284_1272,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,positive,staff,직원분들이 친절하셨습니다,,,직원분들이 친절하셨습니다,00dad4e98be4a558,2026-01-07
+phar_1285_2445,review,PHARMACY,대전약국,2026-01-07,,neutral,other,결과 설명이 명확했어요,,,결과 설명이 명확했어요,079759e6aa8cd148,2026-01-07
+hosp_1286_3747,review,HOSPITAL,대전병원,2026-01-07,,neutral,other,재방문 의사 있습니다 !!,,,재방문 의사 있습니다 !!,8cabc0bf15f640b2,2026-01-07
+chec_1287_8085,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,other,전문적인 상담 감사합니다.,,,전문적인 상담 감사합니다.,c76abfe51fdaea7d,2026-01-07
+hosp_1288_3540,review,HOSPITAL,부산병원,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,9a45559514ccd512,2026-01-07
+chec_1289_4984,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다,,,친절하고 빠른 진료 감사합니다,a0b79be4ef1bf5bb,2026-01-07
+hosp_1290_4830,review,HOSPITAL,서울병원,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,1c0ffaf1ce019460,2026-01-07
+hosp_1291_4161,review,HOSPITAL,강남병원,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,1046d21216c7ff90,2026-01-07
+chec_1292_1462,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,c47f786fc0dbd364,2026-01-07
+phar_1293_6563,review,PHARMACY,부산약국,2026-01-07,,neutral,other,재방문 의사 있습니다?,,,재방문 의사 있습니다?,df3d4150c1ee49bd,2026-01-07
+chec_1294_7692,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,ba5f94fddeccca59,2026-01-07
+hosp_1295_5468,review,HOSPITAL,강남병원,2026-01-07,,neutral,price,가격이 합리적이에요 ㅠㅠ,,,가격이 합리적이에요 ㅠㅠ,8cb857eae241c9d9,2026-01-07
+chec_1296_8615,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,bcc810fcb69f7aeb,2026-01-07
+phar_1297_5976,review,PHARMACY,서울약국,2026-01-07,,positive,other,전문적인 상담 감사합니다,,,전문적인 상담 감사합니다,fa614f3dc931644b,2026-01-07
+hosp_1298_6368,review,HOSPITAL,광주병원,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다,,,처음 방문인데 만족스럽습니다,bed34b17dfe808b8,2026-01-07
+chec_1299_1628,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,price,가격이 합리적이에요 !!,,,가격이 합리적이에요 !!,ea653cbf3709bc49,2026-01-07
+hosp_1300_9754,review,HOSPITAL,부산병원,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,99eaac27aa993f94,2026-01-07
+hosp_1301_5192,review,HOSPITAL,대전병원,2026-01-07,,positive,other,전문적인 상담 감사합니다,,,전문적인 상담 감사합니다,cc60d8fc92dcfeec,2026-01-07
+chec_1302_9463,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,13f73388abd38acc,2026-01-07
+phar_1303_9374,review,PHARMACY,부산약국,2026-01-07,,positive,location,주차가 편리해서 좋았습니다,,,주차가 편리해서 좋았습니다,e013b76780c0dde6,2026-01-07
+phar_1304_9134,review,PHARMACY,부산약국,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,e864bb4dfbd6eb65,2026-01-07
+hosp_1305_3935,review,HOSPITAL,서울병원,2026-01-07,,positive,location,주차가 편리해서 좋았습니다.,,,주차가 편리해서 좋았습니다.,7addf911bae9d23c,2026-01-07
+phar_1306_9766,review,PHARMACY,대전약국,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,79aba7c68ff21385,2026-01-07
+hosp_1307_5245,review,HOSPITAL,서울병원,2026-01-07,,neutral,other,결과 설명이 명확했어요,,,결과 설명이 명확했어요,d50d322e45aa80f9,2026-01-07
+phar_1308_7646,review,PHARMACY,부산약국,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,1f472a19167adc2d,2026-01-07
+phar_1309_6793,review,PHARMACY,서울약국,2026-01-07,,neutral,other,다음에도 이용할게요,,,다음에도 이용할게요,572b9c52f599078c,2026-01-07
+hosp_1310_8744,review,HOSPITAL,대전병원,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다,,,처음 방문인데 만족스럽습니다,23ee3e9c1bd04350,2026-01-07
+hosp_1311_3342,review,HOSPITAL,부산병원,2026-01-07,,neutral,other,다음에도 이용할게요.,,,다음에도 이용할게요.,6adf2eb1f621d2f8,2026-01-07
+hosp_1312_8041,review,HOSPITAL,강남병원,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다,,,처음 방문인데 만족스럽습니다,0000cd5f44a0725e,2026-01-07
+phar_1313_2048,review,PHARMACY,서울약국,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요 ...,,,예약 없이 갔는데도 대기 시간이 짧았어요 ...,1928d9c3ff10a665,2026-01-07
+phar_1314_9828,review,PHARMACY,대전약국,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,60f068883b17ba57,2026-01-07
+phar_1315_9479,review,PHARMACY,대전약국,2026-01-07,,positive,explain,약 효과가 좋았습니다?,,,약 효과가 좋았습니다?,95ddc2646544531a,2026-01-07
+hosp_1316_9989,review,HOSPITAL,광주병원,2026-01-07,,neutral,price,가격이 합리적이에요. ㅜㅜ,,,가격이 합리적이에요. ㅜㅜ,00ec47b30009f36d,2026-01-07
+hosp_1317_9995,review,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요 ...,,,예약 없이 갔는데도 대기 시간이 짧았어요 ...,77e09db922ae310c,2026-01-07
+phar_1318_7185,review,PHARMACY,강남약국,2026-01-07,,neutral,other,추천할 만한 곳이에요 !!,,,추천할 만한 곳이에요 !!,636fbd35fb171593,2026-01-07
+phar_1319_3309,review,PHARMACY,광주약국,2026-01-07,,positive,reservation,예약 시스템이 편리해요?,,,예약 시스템이 편리해요?,fdd409aeace94b2f,2026-01-07
+hosp_1320_3592,review,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,2efca56f62c335f1,2026-01-07
+hosp_1321_4365,review,HOSPITAL,강남병원,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,5e1952a8c5c030b8,2026-01-07
+hosp_1322_9989,review,HOSPITAL,서울병원,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,1c0ffaf1ce019460,2026-01-07
+hosp_1323_6397,review,HOSPITAL,대전병원,2026-01-07,,positive,explain,약 효과가 좋았습니다,,,약 효과가 좋았습니다,50c7a5d1f7e5a616,2026-01-07
+chec_1324_2903,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요 ㅜㅜ,,,추천할 만한 곳이에요 ㅜㅜ,381d6f645821ca8e,2026-01-07
+chec_1325_6194,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,price,가격이 합리적이에요,,,가격이 합리적이에요,8f8b720bec73a996,2026-01-07
+chec_1326_3382,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,positive,explain,약 효과가 좋았습니다,,,약 효과가 좋았습니다,3fbd17672de81de9,2026-01-07
+phar_1327_3310,review,PHARMACY,대전약국,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,bef91bb71b484bf3,2026-01-07
+phar_1328_7271,review,PHARMACY,대전약국,2026-01-07,,neutral,other,결과 설명이 명확했어요,,,결과 설명이 명확했어요,079759e6aa8cd148,2026-01-07
+phar_1329_3388,review,PHARMACY,대전약국,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,79aba7c68ff21385,2026-01-07
+hosp_1330_4201,review,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,35ba5e7fe8745285,2026-01-07
+hosp_1331_4831,review,HOSPITAL,강남병원,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,5e1952a8c5c030b8,2026-01-07
+chec_1332_3448,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,2997357bc6baa809,2026-01-07
+chec_1333_9841,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,location,주차가 편리해서 좋았습니다 !!,,,주차가 편리해서 좋았습니다 !!,ccf15458f32ddc92,2026-01-07
+hosp_1334_8643,review,HOSPITAL,강남병원,2026-01-07,,neutral,explain,복용 방법을 자세히 알려주셨어요,,,복용 방법을 자세히 알려주셨어요,68e4c1a45034ea58,2026-01-07
+phar_1335_2390,review,PHARMACY,부산약국,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,2fc7c830b0411c2f,2026-01-07
+hosp_1336_7296,review,HOSPITAL,대전병원,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,74952450ed4e7470,2026-01-07
+hosp_1337_5815,review,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요?,,,예약 없이 갔는데도 대기 시간이 짧았어요?,2fe38bda7c0f840f,2026-01-07
+chec_1338_8743,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다,,,친절하고 빠른 진료 감사합니다,c8cf29a5b3440216,2026-01-07
+hosp_1339_8293,review,HOSPITAL,강남병원,2026-01-07,,neutral,other,결과 설명이 명확했어요.,,,결과 설명이 명확했어요.,7ca65e3c71bcd8cb,2026-01-07
+phar_1340_1660,review,PHARMACY,부산약국,2026-01-07,,positive,staff,직원분들이 친절하셨습니다,,,직원분들이 친절하셨습니다,b196ee32be84caa2,2026-01-07
+hosp_1341_5509,review,HOSPITAL,대전병원,2026-01-07,,positive,location,주차가 편리해서 좋았습니다? !!,,,주차가 편리해서 좋았습니다? !!,3adfe4c9cd529651,2026-01-07
+hosp_1342_4673,review,HOSPITAL,강남병원,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다 !!,,,친절하고 빠른 진료 감사합니다 !!,6e3705210fdda3cd,2026-01-07
+hosp_1343_3436,review,HOSPITAL,강남병원,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,5e1952a8c5c030b8,2026-01-07
+hosp_1344_9126,review,HOSPITAL,대전병원,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다,,,친절하고 빠른 진료 감사합니다,cbbee0936827e5fb,2026-01-07
+chec_1345_4891,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,fe23ae54303f7412,2026-01-07
+chec_1346_5116,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,positive,wait,대기 시간이 좀 길었지만 만족스러웠어요,,,대기 시간이 좀 길었지만 만족스러웠어요,fe74481cd78b8b65,2026-01-07
+hosp_1347_1784,review,HOSPITAL,대전병원,2026-01-07,,positive,other,전문적인 상담 감사합니다? ㅜㅜ,,,전문적인 상담 감사합니다? ㅜㅜ,7f4cf5fa68641d2c,2026-01-07
+phar_1348_2338,review,PHARMACY,광주약국,2026-01-07,,neutral,price,가격이 합리적이에요,,,가격이 합리적이에요,932e6c9030d10fed,2026-01-07
+phar_1349_1943,review,PHARMACY,부산약국,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,1f472a19167adc2d,2026-01-07
+phar_1350_8391,review,PHARMACY,광주약국,2026-01-07,,positive,other,전문적인 상담 감사합니다,,,전문적인 상담 감사합니다,0279a832829a01f9,2026-01-07
+phar_1351_4790,review,PHARMACY,서울약국,2026-01-07,,positive,wait,대기 시간이 좀 길었지만 만족스러웠어요,,,대기 시간이 좀 길었지만 만족스러웠어요,1dfa2460dc01b3a2,2026-01-07
+chec_1352_2654,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,other,결과 설명이 명확했어요,,,결과 설명이 명확했어요,9225da069690f5b8,2026-01-07
+chec_1353_6980,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,price,가격이 합리적이에요,,,가격이 합리적이에요,5ade72ce93e26ecd,2026-01-07
+phar_1354_4394,review,PHARMACY,부산약국,2026-01-07,,positive,other,배송이 빨라서 좋았어요?,,,배송이 빨라서 좋았어요?,d22ced7dac65e642,2026-01-07
+chec_1355_6866,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,positive,other,배송이 빨라서 좋았어요 ㅜㅜ,,,배송이 빨라서 좋았어요 ㅜㅜ,e6e2c085233b3738,2026-01-07
+chec_1356_6268,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,positive,other,시설이 깨끗하고 좋네요?,,,시설이 깨끗하고 좋네요?,57c46abcb6be4b63,2026-01-07
+phar_1357_6451,review,PHARMACY,서울약국,2026-01-07,,neutral,other,다음에도 이용할게요,,,다음에도 이용할게요,572b9c52f599078c,2026-01-07
+chec_1358_3836,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,other,배송이 빨라서 좋았어요,,,배송이 빨라서 좋았어요,ba5f94fddeccca59,2026-01-07
+chec_1359_8752,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요. ㅜㅜ,,,추천할 만한 곳이에요. ㅜㅜ,586db49d254bd554,2026-01-07
+phar_1360_3560,review,PHARMACY,부산약국,2026-01-07,,positive,reservation,예약 시스템이 편리해요,,,예약 시스템이 편리해요,bde8ac0a15eecba7,2026-01-07
+hosp_1361_8671,review,HOSPITAL,대전병원,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,95220bcd1cd0f4cc,2026-01-07
+hosp_1362_8190,review,HOSPITAL,대전병원,2026-01-07,,positive,other,시설이 깨끗하고 좋네요,,,시설이 깨끗하고 좋네요,29cb29667e4f8fea,2026-01-07
+hosp_1363_1763,review,HOSPITAL,서울병원,2026-01-07,,positive,reservation,예약 시스템이 편리해요,,,예약 시스템이 편리해요,e2a6236cc51b4c7f,2026-01-07
+hosp_1364_7120,review,HOSPITAL,서울병원,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,883b283615a207fa,2026-01-07
+chec_1365_2992,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,재방문 의사 있습니다 !!,,,재방문 의사 있습니다 !!,0121a91d495447cf,2026-01-07
+hosp_1366_9807,review,HOSPITAL,강남병원,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,1046d21216c7ff90,2026-01-07
+chec_1367_3718,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,location,주차가 편리해서 좋았습니다,,,주차가 편리해서 좋았습니다,59a4b35b3bb7dd3c,2026-01-07
+phar_1368_2613,review,PHARMACY,강남약국,2026-01-07,,neutral,other,결과 설명이 명확했어요?,,,결과 설명이 명확했어요?,8a7a36eee02e2045,2026-01-07
+phar_1369_8597,review,PHARMACY,부산약국,2026-01-07,,positive,explain,약 효과가 좋았습니다,,,약 효과가 좋았습니다,35d0398d95af1d30,2026-01-07
+hosp_1370_2740,review,HOSPITAL,서울병원,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다,a4152af9b7f15867,2026-01-07
+chec_1371_1230,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,fd6efc778162ca04,2026-01-07
+chec_1372_7584,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,f5c15da9e9fe48be,2026-01-07
+hosp_1373_8627,review,HOSPITAL,서울병원,2026-01-07,,positive,wait,대기 시간이 좀 길었지만 만족스러웠어요 ...,,,대기 시간이 좀 길었지만 만족스러웠어요 ...,a5cb978a7f786ece,2026-01-07
+chec_1374_2361,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다,,,처음 방문인데 만족스럽습니다,08110bbcbd981534,2026-01-07
+chec_1375_6132,review,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,예약 없이 갔는데도 대기 시간이 짧았어요,,,예약 없이 갔는데도 대기 시간이 짧았어요,ed1bca577e2a0219,2026-01-07
+phar_1376_9824,review,PHARMACY,강남약국,2026-01-07,,positive,other,배송이 빨라서 좋았어요.,,,배송이 빨라서 좋았어요.,a97c9ac235eae004,2026-01-07
+phar_1377_9900,review,PHARMACY,강남약국,2026-01-07,,positive,staff,친절하고 빠른 진료 감사합니다?,,,친절하고 빠른 진료 감사합니다?,507d536cbf708a2b,2026-01-07
+hosp_1378_3762,review,HOSPITAL,대전병원,2026-01-07,,negative,other,아쉬운 점이 있었지만 전반적으로 괜찮았습니다.,,,아쉬운 점이 있었지만 전반적으로 괜찮았습니다.,3a14533188a9176c,2026-01-07
+hosp_1379_6216,review,HOSPITAL,강남병원,2026-01-07,,neutral,other,다음에도 이용할게요?,,,다음에도 이용할게요?,eae968d630d80f7e,2026-01-07
+chec_1380_8605,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,other,시설이 깨끗하고 좋네요?,,,시설이 깨끗하고 좋네요?,3531054dd6a9c15b,2026-01-07
+phar_1381_6805,review,PHARMACY,대전약국,2026-01-07,,positive,wait,대기 시간이 좀 길었지만 만족스러웠어요,,,대기 시간이 좀 길었지만 만족스러웠어요,babce76be46cdec0,2026-01-07
+chec_1382_7012,review,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,cbbc9fa0fb441eaa,2026-01-07
+chec_1383_7426,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요 ㅠㅠ,,,추천할 만한 곳이에요 ㅠㅠ,6e82d8a46f6de929,2026-01-07
+phar_1384_7515,review,PHARMACY,광주약국,2026-01-07,,positive,other,시설이 깨끗하고 좋네요,,,시설이 깨끗하고 좋네요,5abd189090c0d6b5,2026-01-07
+chec_1385_3654,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,결과 설명이 명확했어요,,,결과 설명이 명확했어요,626de00a6a5d727c,2026-01-07
+phar_1386_2604,review,PHARMACY,서울약국,2026-01-07,,positive,other,처음 방문인데 만족스럽습니다,,,처음 방문인데 만족스럽습니다,43bb99b325b6e982,2026-01-07
+hosp_1387_8616,review,HOSPITAL,대전병원,2026-01-07,,neutral,other,추천할 만한 곳이에요?,,,추천할 만한 곳이에요?,d3033646bef56b27,2026-01-07
+hosp_1388_2242,review,HOSPITAL,광주병원,2026-01-07,,neutral,prep,검진이 꼼꼼하게 진행되었습니다,,,검진이 꼼꼼하게 진행되었습니다,b56dec8c92bbf3b1,2026-01-07
+hosp_1389_5553,review,HOSPITAL,대전병원,2026-01-07,,neutral,other,재방문 의사 있습니다,,,재방문 의사 있습니다,95220bcd1cd0f4cc,2026-01-07
+chec_1390_7761,review,CHECKUP_CENTER,대전검진센터,2026-01-07,,positive,location,주차가 편리해서 좋았습니다,,,주차가 편리해서 좋았습니다,59a4b35b3bb7dd3c,2026-01-07
+chec_1391_1233,review,CHECKUP_CENTER,부산검진센터,2026-01-07,,positive,other,설명을 자세히 해주셔서 좋았습니다,,,설명을 자세히 해주셔서 좋았습니다,f5c15da9e9fe48be,2026-01-07
+chec_1392_2508,review,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,95870b52b85b55d6,2026-01-07
+hosp_1393_2391,review,HOSPITAL,서울병원,2026-01-07,,neutral,other,추천할 만한 곳이에요,,,추천할 만한 곳이에요,4aabfcf1021d8bbe,2026-01-07
+phar_1394_9696,faq,PHARMACY,부산약국,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,2f054678fdefcabc,2026-01-07
+chec_1395_5996,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,wait,대기 시간은 평균 30분 정도입니다,,,대기 시간은 평균 30분 정도입니다,21bb63911937477b,2026-01-07
+phar_1396_7279,faq,PHARMACY,강남약국,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,13dfca9f5a5a283b,2026-01-07
+hosp_1397_1593,faq,HOSPITAL,서울병원,2026-01-07,,neutral,other,주말 진료는 토요일 오전만 가능합니다,,,주말 진료는 토요일 오전만 가능합니다,346bc54419ecf535,2026-01-07
+chec_1398_9125,faq,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,185bf6ad55df58f4,2026-01-07
+hosp_1399_5959,faq,HOSPITAL,대전병원,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,fd004260c85829fb,2026-01-07
+chec_1400_6956,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,d6336993a121d232,2026-01-07
+chec_1401_1537,faq,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,wait,대기 시간은 평균 30분 정도입니다,,,대기 시간은 평균 30분 정도입니다,cfd6f739f646f627,2026-01-07
+chec_1402_1882,faq,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,b1e11b1d546959e2,2026-01-07
+phar_1403_5020,faq,PHARMACY,강남약국,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,13dfca9f5a5a283b,2026-01-07
+hosp_1404_2571,faq,HOSPITAL,서울병원,2026-01-07,,neutral,prep,검진 전 8시간 금식이 필요합니다,,,검진 전 8시간 금식이 필요합니다,8343bd381dbc28ad,2026-01-07
+phar_1405_2067,faq,PHARMACY,부산약국,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,d7d40d6e2ad154b7,2026-01-07
+chec_1406_8163,faq,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,6ef348bd6d60a684,2026-01-07
+phar_1407_5365,faq,PHARMACY,부산약국,2026-01-07,,neutral,other,보험 적용 여부는 사전에 문의해주시기 바랍니다,,,보험 적용 여부는 사전에 문의해주시기 바랍니다,5fe217f1af1f0bb1,2026-01-07
+phar_1408_3786,faq,PHARMACY,강남약국,2026-01-07,,neutral,price,진료 비용은 항목에 따라 다릅니다,,,진료 비용은 항목에 따라 다릅니다,e2c465226f6e7273,2026-01-07
+hosp_1409_4632,faq,HOSPITAL,부산병원,2026-01-07,,neutral,prep,검진 결과는 일주일 이내에 확인 가능합니다,,,검진 결과는 일주일 이내에 확인 가능합니다,10b2309839d4e59f,2026-01-07
+chec_1410_9665,faq,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,264bf3b8ec733273,2026-01-07
+phar_1411_1717,faq,PHARMACY,서울약국,2026-01-07,,neutral,price,진료 비용은 항목에 따라 다릅니다,,,진료 비용은 항목에 따라 다릅니다,f05be62daf573f2c,2026-01-07
+phar_1412_2201,faq,PHARMACY,강남약국,2026-01-07,,neutral,wait,대기 시간은 평균 30분 정도입니다,,,대기 시간은 평균 30분 정도입니다,c02e144dc9d84432,2026-01-07
+phar_1413_3659,faq,PHARMACY,강남약국,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,46bb3438b3adfcb1,2026-01-07
+chec_1414_3725,faq,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,21f484c61bd71f36,2026-01-07
+chec_1415_4041,faq,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,76510a13e4fd8407,2026-01-07
+hosp_1416_5132,faq,HOSPITAL,대전병원,2026-01-07,,neutral,wait,영업 시간은 평일 9시부터 18시까지입니다,,,영업 시간은 평일 9시부터 18시까지입니다,0e0ff26b6f192919,2026-01-07
+phar_1417_7988,faq,PHARMACY,광주약국,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,42621eae920c4d76,2026-01-07
+phar_1418_8702,faq,PHARMACY,부산약국,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,3575ac3c6a8414fd,2026-01-07
+chec_1419_7155,faq,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,보험 적용 여부는 사전에 문의해주시기 바랍니다,,,보험 적용 여부는 사전에 문의해주시기 바랍니다,ee95af25eba2af83,2026-01-07
+hosp_1420_9956,faq,HOSPITAL,대전병원,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,9885efbedab3a300,2026-01-07
+phar_1421_6327,faq,PHARMACY,강남약국,2026-01-07,,neutral,other,보험 적용 여부는 사전에 문의해주시기 바랍니다,,,보험 적용 여부는 사전에 문의해주시기 바랍니다,d44acda3472e8f88,2026-01-07
+hosp_1422_9107,faq,HOSPITAL,부산병원,2026-01-07,,neutral,price,진료 비용은 항목에 따라 다릅니다,,,진료 비용은 항목에 따라 다릅니다,2e0bb2082ccbfe49,2026-01-07
+hosp_1423_4778,faq,HOSPITAL,광주병원,2026-01-07,,neutral,explain,약은 처방전이 있어야 구매 가능합니다,,,약은 처방전이 있어야 구매 가능합니다,7e05ea3a769a5bb1,2026-01-07
+hosp_1424_9980,faq,HOSPITAL,부산병원,2026-01-07,,neutral,other,주말 진료는 토요일 오전만 가능합니다,,,주말 진료는 토요일 오전만 가능합니다,d631dc60834443f8,2026-01-07
+hosp_1425_6555,faq,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,당일 예약은 전화로만 가능합니다,,,당일 예약은 전화로만 가능합니다,fbd8ed2d0fdfa506,2026-01-07
+hosp_1426_8532,faq,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,당일 예약은 전화로만 가능합니다,,,당일 예약은 전화로만 가능합니다,760b20e67e9e85f8,2026-01-07
+phar_1427_4138,faq,PHARMACY,강남약국,2026-01-07,,neutral,other,주말 진료는 토요일 오전만 가능합니다,,,주말 진료는 토요일 오전만 가능합니다,26c7816ab649c8b4,2026-01-07
+hosp_1428_4313,faq,HOSPITAL,부산병원,2026-01-07,,neutral,prep,검진 전 8시간 금식이 필요합니다,,,검진 전 8시간 금식이 필요합니다,c59bcaf6a205a8d9,2026-01-07
+phar_1429_4352,faq,PHARMACY,대전약국,2026-01-07,,neutral,other,주말 진료는 토요일 오전만 가능합니다,,,주말 진료는 토요일 오전만 가능합니다,a922b7218b1c592a,2026-01-07
+chec_1430_4647,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,prep,검진 전 8시간 금식이 필요합니다,,,검진 전 8시간 금식이 필요합니다,d9d9dad36d4c5da1,2026-01-07
+chec_1431_3850,faq,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,6a7076019bc68efd,2026-01-07
+phar_1432_2380,faq,PHARMACY,강남약국,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,8a5c5962f8bc1ead,2026-01-07
+phar_1433_6705,faq,PHARMACY,부산약국,2026-01-07,,neutral,prep,검진 결과는 일주일 이내에 확인 가능합니다,,,검진 결과는 일주일 이내에 확인 가능합니다,7191d30f563b57ee,2026-01-07
+phar_1434_3663,faq,PHARMACY,서울약국,2026-01-07,,neutral,reservation,예약 취소는 최소 하루 전까지 가능합니다,,,예약 취소는 최소 하루 전까지 가능합니다,0c6e903e7097e905,2026-01-07
+chec_1435_8628,faq,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,price,진료 비용은 항목에 따라 다릅니다,,,진료 비용은 항목에 따라 다릅니다,4066dd2f210f226c,2026-01-07
+phar_1436_7917,faq,PHARMACY,부산약국,2026-01-07,,neutral,explain,약은 처방전이 있어야 구매 가능합니다,,,약은 처방전이 있어야 구매 가능합니다,1f882bc7586e39b6,2026-01-07
+phar_1437_1083,faq,PHARMACY,부산약국,2026-01-07,,neutral,reservation,당일 예약은 전화로만 가능합니다,,,당일 예약은 전화로만 가능합니다,b36793ad1291a53e,2026-01-07
+hosp_1438_7339,faq,HOSPITAL,서울병원,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,c99c97bf6713fd9b,2026-01-07
+chec_1439_1715,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,explain,약은 처방전이 있어야 구매 가능합니다,,,약은 처방전이 있어야 구매 가능합니다,66fa0b06d3713659,2026-01-07
+phar_1440_7101,faq,PHARMACY,강남약국,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,71132a897244d758,2026-01-07
+hosp_1441_1086,faq,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,109328f212f8c816,2026-01-07
+chec_1442_3115,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,prep,검진 결과는 일주일 이내에 확인 가능합니다,,,검진 결과는 일주일 이내에 확인 가능합니다,993ae914d6aa818a,2026-01-07
+chec_1443_6565,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,efdf707cf683dadb,2026-01-07
+hosp_1444_2706,faq,HOSPITAL,광주병원,2026-01-07,,neutral,other,주말 진료는 토요일 오전만 가능합니다,,,주말 진료는 토요일 오전만 가능합니다,45c1033d07642d16,2026-01-07
+hosp_1445_4661,faq,HOSPITAL,대전병원,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,0f810209079282d8,2026-01-07
+hosp_1446_8747,faq,HOSPITAL,부산병원,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,5db2dff384130bbd,2026-01-07
+chec_1447_1736,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,prep,검진 전 8시간 금식이 필요합니다,,,검진 전 8시간 금식이 필요합니다,d9d9dad36d4c5da1,2026-01-07
+chec_1448_5265,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,9321bf204deef161,2026-01-07
+phar_1449_4322,faq,PHARMACY,광주약국,2026-01-07,,neutral,other,주말 진료는 토요일 오전만 가능합니다,,,주말 진료는 토요일 오전만 가능합니다,1f7b14ba8e066272,2026-01-07
+hosp_1450_1235,faq,HOSPITAL,광주병원,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,f84abc2880cba443,2026-01-07
+phar_1451_3935,faq,PHARMACY,강남약국,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,71132a897244d758,2026-01-07
+phar_1452_6705,faq,PHARMACY,대전약국,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,31072d7d40286b23,2026-01-07
+hosp_1453_5427,faq,HOSPITAL,서울병원,2026-01-07,,neutral,wait,영업 시간은 평일 9시부터 18시까지입니다,,,영업 시간은 평일 9시부터 18시까지입니다,6ee225ba92b0be73,2026-01-07
+phar_1454_5550,faq,PHARMACY,대전약국,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,878eeb0a9ba7ef09,2026-01-07
+chec_1455_7504,faq,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,05458bbf4fe0f647,2026-01-07
+chec_1456_5877,faq,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,wait,영업 시간은 평일 9시부터 18시까지입니다,,,영업 시간은 평일 9시부터 18시까지입니다,acca706629849053,2026-01-07
+chec_1457_9072,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,ce591d095bc5d81a,2026-01-07
+chec_1458_3837,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,d6336993a121d232,2026-01-07
+hosp_1459_8299,faq,HOSPITAL,대전병원,2026-01-07,,neutral,price,진료 비용은 항목에 따라 다릅니다,,,진료 비용은 항목에 따라 다릅니다,83534ad822f3c019,2026-01-07
+hosp_1460_9678,faq,HOSPITAL,광주병원,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,928c9a1f08d022bc,2026-01-07
+hosp_1461_4481,faq,HOSPITAL,광주병원,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,1a0b299c8743905b,2026-01-07
+chec_1462_9279,faq,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,other,주말 진료는 토요일 오전만 가능합니다,,,주말 진료는 토요일 오전만 가능합니다,03000be442a75c69,2026-01-07
+phar_1463_3459,faq,PHARMACY,서울약국,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,a7a674b34f21fb63,2026-01-07
+phar_1464_5412,faq,PHARMACY,부산약국,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,d7d40d6e2ad154b7,2026-01-07
+phar_1465_6089,faq,PHARMACY,서울약국,2026-01-07,,neutral,price,진료 비용은 항목에 따라 다릅니다,,,진료 비용은 항목에 따라 다릅니다,f05be62daf573f2c,2026-01-07
+phar_1466_7698,faq,PHARMACY,서울약국,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,0b4bf6da0c6693bf,2026-01-07
+hosp_1467_1272,faq,HOSPITAL,광주병원,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,f84abc2880cba443,2026-01-07
+hosp_1468_2051,faq,HOSPITAL,광주병원,2026-01-07,,neutral,wait,영업 시간은 평일 9시부터 18시까지입니다,,,영업 시간은 평일 9시부터 18시까지입니다,2661ee0873654cbf,2026-01-07
+hosp_1469_8663,faq,HOSPITAL,부산병원,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,ef7f10843bef318f,2026-01-07
+hosp_1470_9980,faq,HOSPITAL,강남병원,2026-01-07,,neutral,prep,검진 결과는 일주일 이내에 확인 가능합니다,,,검진 결과는 일주일 이내에 확인 가능합니다,a4c96767f1a6ca6b,2026-01-07
+chec_1471_2867,faq,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,explain,약은 처방전이 있어야 구매 가능합니다,,,약은 처방전이 있어야 구매 가능합니다,dbf208aab51f5e74,2026-01-07
+hosp_1472_6429,faq,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,초진은 예약 필수입니다,,,초진은 예약 필수입니다,21e793da9edce010,2026-01-07
+phar_1473_2454,faq,PHARMACY,서울약국,2026-01-07,,neutral,prep,검진 결과는 일주일 이내에 확인 가능합니다,,,검진 결과는 일주일 이내에 확인 가능합니다,1c3221506c740c12,2026-01-07
+hosp_1474_4870,faq,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 취소는 최소 하루 전까지 가능합니다,,,예약 취소는 최소 하루 전까지 가능합니다,70d2e65dfbe27f65,2026-01-07
+hosp_1475_8081,faq,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,bc48dec508eff861,2026-01-07
+chec_1476_8984,faq,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,wait,영업 시간은 평일 9시부터 18시까지입니다,,,영업 시간은 평일 9시부터 18시까지입니다,7404a64a6ac8cbc7,2026-01-07
+hosp_1477_3185,faq,HOSPITAL,부산병원,2026-01-07,,neutral,wait,대기 시간은 평균 30분 정도입니다,,,대기 시간은 평균 30분 정도입니다,c0bb572267cffee8,2026-01-07
+phar_1478_6242,faq,PHARMACY,부산약국,2026-01-07,,neutral,other,휴무일은 일요일과 공휴일입니다,,,휴무일은 일요일과 공휴일입니다,2f054678fdefcabc,2026-01-07
+hosp_1479_1643,faq,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,예약은 전화 또는 온라인으로 가능합니다,,,예약은 전화 또는 온라인으로 가능합니다,bc48dec508eff861,2026-01-07
+hosp_1480_3013,faq,HOSPITAL,강남병원,2026-01-07,,neutral,price,진료 비용은 항목에 따라 다릅니다,,,진료 비용은 항목에 따라 다릅니다,fed3d25b0b19ecc6,2026-01-07
+hosp_1481_6524,faq,HOSPITAL,서울병원,2026-01-07,,neutral,location,주차는 건물 지하 주차장을 이용하실 수 있습니다,,,주차는 건물 지하 주차장을 이용하실 수 있습니다,6a53633ff4b7ad45,2026-01-07
+hosp_1482_4194,faq,HOSPITAL,강남병원,2026-01-07,,neutral,other,배송은 영업일 기준 2-3일 소요됩니다,,,배송은 영업일 기준 2-3일 소요됩니다,fbf812511cbb4435,2026-01-07
+phar_1483_6994,dataset,PHARMACY,광주약국,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,88afd195bcaa83d6,2026-01-07
+hosp_1484_9934,dataset,HOSPITAL,대전병원,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,485d5a9dcf3f2721,2026-01-07
+hosp_1485_3945,dataset,HOSPITAL,광주병원,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,f094b92c532ddda2,2026-01-07
+phar_1486_7662,dataset,PHARMACY,광주약국,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,58aade5b263e4662,2026-01-07
+phar_1487_9832,dataset,PHARMACY,대전약국,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,b70ac7d7da0d4b57,2026-01-07
+phar_1488_9996,dataset,PHARMACY,광주약국,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,58aade5b263e4662,2026-01-07
+hosp_1489_4916,dataset,HOSPITAL,서울병원,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,5f44821d723657a4,2026-01-07
+chec_1490_4574,dataset,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,524ac05b2fe9b9b5,2026-01-07
+hosp_1491_3270,dataset,HOSPITAL,광주병원,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,704e9bcf7a6b2e9e,2026-01-07
+hosp_1492_6876,dataset,HOSPITAL,서울병원,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,d53b034b048d9267,2026-01-07
+hosp_1493_6958,dataset,HOSPITAL,대전병원,2026-01-07,,neutral,other,당뇨 환자의 식이요법에 대해 설명드립니다,,,당뇨 환자의 식이요법에 대해 설명드립니다,caa6bec6a859b388,2026-01-07
+chec_1494_7855,dataset,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,524ac05b2fe9b9b5,2026-01-07
+chec_1495_9115,dataset,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,당뇨 환자의 식이요법에 대해 설명드립니다,,,당뇨 환자의 식이요법에 대해 설명드립니다,c1940bf0ba76c2fc,2026-01-07
+phar_1496_9931,dataset,PHARMACY,대전약국,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,5a726829fc81baa9,2026-01-07
+chec_1497_4063,dataset,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,9721a2e02f05b69d,2026-01-07
+phar_1498_3790,dataset,PHARMACY,부산약국,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,fc5e0320664bd337,2026-01-07
+chec_1499_8958,dataset,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,9e164dd644766355,2026-01-07
+phar_1500_2574,dataset,PHARMACY,강남약국,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,88f10180c4f51632,2026-01-07
+phar_1501_6260,dataset,PHARMACY,서울약국,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,0a7274cdbbbf7f84,2026-01-07
+chec_1502_5857,dataset,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,5e9a96d407aff8d9,2026-01-07
+hosp_1503_9946,dataset,HOSPITAL,서울병원,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,d385eecdcf20ce88,2026-01-07
+phar_1504_5312,dataset,PHARMACY,광주약국,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,58aade5b263e4662,2026-01-07
+hosp_1505_3688,dataset,HOSPITAL,광주병원,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,423326502c343812,2026-01-07
+phar_1506_4986,dataset,PHARMACY,부산약국,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,d7367513cd8868b7,2026-01-07
+hosp_1507_6817,dataset,HOSPITAL,서울병원,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,d385eecdcf20ce88,2026-01-07
+hosp_1508_7585,dataset,HOSPITAL,서울병원,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,fca4ed1fc2258ecb,2026-01-07
+chec_1509_9866,dataset,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,9e164dd644766355,2026-01-07
+chec_1510_1707,dataset,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,당뇨 환자의 식이요법에 대해 설명드립니다,,,당뇨 환자의 식이요법에 대해 설명드립니다,c1940bf0ba76c2fc,2026-01-07
+phar_1511_4460,dataset,PHARMACY,대전약국,2026-01-07,,neutral,other,당뇨 환자의 식이요법에 대해 설명드립니다,,,당뇨 환자의 식이요법에 대해 설명드립니다,72fdc13661cdc9f4,2026-01-07
+chec_1512_6544,dataset,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,77b76d95bd0f3842,2026-01-07
+hosp_1513_2846,dataset,HOSPITAL,서울병원,2026-01-07,,neutral,other,당뇨 환자의 식이요법에 대해 설명드립니다,,,당뇨 환자의 식이요법에 대해 설명드립니다,7c53920e6490e44c,2026-01-07
+phar_1514_8758,dataset,PHARMACY,대전약국,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,5a726829fc81baa9,2026-01-07
+phar_1515_6183,dataset,PHARMACY,대전약국,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,5a726829fc81baa9,2026-01-07
+chec_1516_9860,dataset,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,b0a2bb166ae8b58c,2026-01-07
+phar_1517_8618,dataset,PHARMACY,강남약국,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,88f10180c4f51632,2026-01-07
+hosp_1518_9900,dataset,HOSPITAL,대전병원,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,b6809046cf9ffd74,2026-01-07
+hosp_1519_2743,dataset,HOSPITAL,부산병원,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,0ffa0d25e3cbd7d5,2026-01-07
+phar_1520_2067,dataset,PHARMACY,대전약국,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,df78fce0fc89b04b,2026-01-07
+chec_1521_8256,dataset,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,fa3a63ef8b75d87c,2026-01-07
+phar_1522_2231,dataset,PHARMACY,강남약국,2026-01-07,,neutral,prep,건강검진 항목별 의미를 설명드립니다,,,건강검진 항목별 의미를 설명드립니다,2ca3932994fc4f92,2026-01-07
+chec_1523_7062,dataset,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,ed5e462b296318e4,2026-01-07
+chec_1524_6226,dataset,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,7b3f1659512feda0,2026-01-07
+chec_1525_5980,dataset,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,fa3a63ef8b75d87c,2026-01-07
+hosp_1526_1709,dataset,HOSPITAL,부산병원,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,71009d32e2318986,2026-01-07
+chec_1527_5728,dataset,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,46ebe946c97f27db,2026-01-07
+phar_1528_6107,dataset,PHARMACY,광주약국,2026-01-07,,neutral,explain,고혈압 약 복용 시 주의사항을 알려드립니다,,,고혈압 약 복용 시 주의사항을 알려드립니다,253fb191e69a1371,2026-01-07
+chec_1529_9238,dataset,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,f6f89cbe6e993daf,2026-01-07
+chec_1530_8897,dataset,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,prep,정기 검진의 중요성에 대해 안내드립니다,,,정기 검진의 중요성에 대해 안내드립니다,f6f89cbe6e993daf,2026-01-07
+phar_1531_3625,dataset,PHARMACY,부산약국,2026-01-07,,neutral,explain,감기약 복용 방법을 안내드립니다,,,감기약 복용 방법을 안내드립니다,c1211f754f5de621,2026-01-07
+chec_1532_8247,notice,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,5d2e2eda21a6661b,2026-01-07
+hosp_1533_8999,notice,HOSPITAL,광주병원,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,e8c2e3235c5b67ea,2026-01-07
+hosp_1534_4357,notice,HOSPITAL,강남병원,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,ebc1dddbd51fbfbf,2026-01-07
+chec_1535_1399,notice,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,143976dba96e5622,2026-01-07
+phar_1536_1496,notice,PHARMACY,서울약국,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,35e3bac0be2470ea,2026-01-07
+hosp_1537_6444,notice,HOSPITAL,강남병원,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,5d20fa782d4f90c3,2026-01-07
+hosp_1538_5070,notice,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,dc078ed2eb78ae5c,2026-01-07
+hosp_1539_6023,notice,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,b5fe07adabc3a85e,2026-01-07
+hosp_1540_3495,notice,HOSPITAL,광주병원,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,95d2b5bef6fe6c67,2026-01-07
+hosp_1541_4649,notice,HOSPITAL,서울병원,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,5d99e093a98ac4fd,2026-01-07
+phar_1542_6153,notice,PHARMACY,강남약국,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,86671a09afcc4324,2026-01-07
+hosp_1543_1283,notice,HOSPITAL,광주병원,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,778298f814c358a0,2026-01-07
+chec_1544_6970,notice,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,5fac142ebb5b9e66,2026-01-07
+hosp_1545_4842,notice,HOSPITAL,서울병원,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,e9537e72b9710732,2026-01-07
+phar_1546_1272,notice,PHARMACY,부산약국,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,8aad59b8f1552642,2026-01-07
+phar_1547_7187,notice,PHARMACY,광주약국,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,a0c76893484e58ee,2026-01-07
+hosp_1548_4751,notice,HOSPITAL,부산병원,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,9d2b883f1682a9ef,2026-01-07
+hosp_1549_6047,notice,HOSPITAL,광주병원,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,95d2b5bef6fe6c67,2026-01-07
+hosp_1550_1739,notice,HOSPITAL,광주병원,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,632dd0b5d45a2d4b,2026-01-07
+chec_1551_8485,notice,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,bb2e07ce204d7d38,2026-01-07
+chec_1552_8784,notice,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,58a0c5a71fda9715,2026-01-07
+hosp_1553_9064,notice,HOSPITAL,대전병원,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,8224ea063b6c9f4a,2026-01-07
+hosp_1554_3040,notice,HOSPITAL,강남병원,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,dc078ed2eb78ae5c,2026-01-07
+chec_1555_7313,notice,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,5fac142ebb5b9e66,2026-01-07
+phar_1556_1282,notice,PHARMACY,대전약국,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,e7abcc9fad63a858,2026-01-07
+chec_1557_1169,notice,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,30cee7168b23f48c,2026-01-07
+hosp_1558_9436,notice,HOSPITAL,강남병원,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,ba204dc8ddbb5357,2026-01-07
+hosp_1559_6467,notice,HOSPITAL,강남병원,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,57ab0b8dad5c189c,2026-01-07
+chec_1560_5986,notice,CHECKUP_CENTER,대전검진센터,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,b16c6d7ec83b03e0,2026-01-07
+chec_1561_4166,notice,CHECKUP_CENTER,서울검진센터,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,991f2177766964ec,2026-01-07
+phar_1562_3267,notice,PHARMACY,대전약국,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,711495c1b30889ea,2026-01-07
+phar_1563_4396,notice,PHARMACY,광주약국,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,edac08a1be15310b,2026-01-07
+phar_1564_4409,notice,PHARMACY,광주약국,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,f42b94e634499d0c,2026-01-07
+phar_1565_4364,notice,PHARMACY,대전약국,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,c12e2b0cc4053aaf,2026-01-07
+chec_1566_3901,notice,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,f6e97697eb476fc2,2026-01-07
+chec_1567_6089,notice,CHECKUP_CENTER,광주검진센터,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,16dd10eb5b3e83b6,2026-01-07
+phar_1568_9086,notice,PHARMACY,대전약국,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,e7abcc9fad63a858,2026-01-07
+chec_1569_9854,notice,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,ac7396cbc15f99da,2026-01-07
+phar_1570_6494,notice,PHARMACY,서울약국,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,66ddd4bed695f15b,2026-01-07
+phar_1571_2629,notice,PHARMACY,부산약국,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,f65f3823a52b066e,2026-01-07
+phar_1572_8264,notice,PHARMACY,대전약국,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,711495c1b30889ea,2026-01-07
+phar_1573_8245,notice,PHARMACY,광주약국,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,117f5c72a2ee6bec,2026-01-07
+phar_1574_6852,notice,PHARMACY,서울약국,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,35e3bac0be2470ea,2026-01-07
+hosp_1575_5360,notice,HOSPITAL,서울병원,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,b37ddff3f883ee78,2026-01-07
+hosp_1576_6177,notice,HOSPITAL,부산병원,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,2ae8264cb320422e,2026-01-07
+hosp_1577_2084,notice,HOSPITAL,서울병원,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,b5fe07adabc3a85e,2026-01-07
+hosp_1578_7033,notice,HOSPITAL,부산병원,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,b639dd435f71febe,2026-01-07
+phar_1579_3507,notice,PHARMACY,서울약국,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,11b91d6dc1d36792,2026-01-07
+hosp_1580_4481,notice,HOSPITAL,부산병원,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,9d2b883f1682a9ef,2026-01-07
+hosp_1581_1578,notice,HOSPITAL,강남병원,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,57ab0b8dad5c189c,2026-01-07
+phar_1582_4158,notice,PHARMACY,광주약국,2026-01-07,,neutral,prep,신규 검진 프로그램 도입 안내,,,신규 검진 프로그램 도입 안내,a0c76893484e58ee,2026-01-07
+chec_1583_5197,notice,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,wait,영업 시간 변경 안내드립니다,,,영업 시간 변경 안내드립니다,5fac142ebb5b9e66,2026-01-07
+chec_1584_1693,notice,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,ac7396cbc15f99da,2026-01-07
+chec_1585_3950,notice,CHECKUP_CENTER,강남검진센터,2026-01-07,,neutral,reservation,예약 시스템 점검 안내,,,예약 시스템 점검 안내,f298b2d70b638e57,2026-01-07
+chec_1586_1400,notice,CHECKUP_CENTER,부산검진센터,2026-01-07,,neutral,other,설날 연휴 휴무 안내드립니다,,,설날 연휴 휴무 안내드립니다,4e499a8f73d9369e,2026-01-07
+phar_1587_2839,notice,PHARMACY,대전약국,2026-01-07,,neutral,location,주차장 공사로 인한 불편 안내,,,주차장 공사로 인한 불편 안내,b2509ba9857a60ce,2026-01-07

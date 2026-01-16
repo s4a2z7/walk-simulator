@@ -1,0 +1,13 @@
+provider_type,name,branch_name,address,phone,services
+HOSPITAL,A내과,강남점,서울특별시 강남구 테헤란로 123,02-000-0001,CLINIC
+HOSPITAL,B이비인후과,강남역점,서울특별시 강남구 강남대로 456,02-000-0002,CLINIC
+HOSPITAL,C의원,홍대점,서울특별시 마포구 양화로 78,02-000-0003,CLINIC
+HOSPITAL,D정형외과,신촌점,서울특별시 서대문구 신촌로 12,02-000-0004,CLINIC
+PHARMACY,A약국,강남점,서울특별시 강남구 테헤란로 120,02-000-1001,PICKUP
+PHARMACY,B약국,홍대점,서울특별시 마포구 양화로 80,02-000-1002,PICKUP
+PHARMACY,C약국,신촌점,서울특별시 서대문구 신촌로 15,02-000-1003,PICKUP
+CHECKUP_CENTER,A검진센터,강남점,서울특별시 강남구 봉은사로 300,02-000-2001,CHECKUP
+CHECKUP_CENTER,B검진센터,여의도점,서울특별시 영등포구 국제금융로 10,02-000-2002,CHECKUP
+CHECKUP_CENTER,C검진센터,잠실점,서울특별시 송파구 올림픽로 240,02-000-2003,CHECKUP
+
+

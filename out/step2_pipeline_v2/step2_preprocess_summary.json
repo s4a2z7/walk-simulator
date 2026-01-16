@@ -1,0 +1,29 @@
+{
+  "input": {
+    "raw_path": "C:/Users/cutep/OneDrive/바탕 화면/yurim251202/VibeCoding/CareLog AI/data/step2_raw_text_expanded_mg_700_300.csv"
+  },
+  "before": {
+    "rows": 1000,
+    "null_or_blank_text": 0,
+    "null_or_blank_text_id": 0,
+    "dup_text": 515
+  },
+  "after": {
+    "rows": 566,
+    "min_len": 8,
+    "max_len": 50,
+    "avg_token_count": 5.181978798586573,
+    "dedup_removed": 424,
+    "dedup_before_rows": 990,
+    "dedup_after_rows": 566
+  },
+  "label_autofill": {
+    "enabled": true,
+    "filled_sentiment": 273,
+    "filled_topic": 273,
+    "sentiment_flag_col": "sentiment_auto",
+    "topic_flag_col": "topic_auto",
+    "remaining_missing_sentiment": 0,
+    "remaining_missing_topic": 0
+  }
+}
