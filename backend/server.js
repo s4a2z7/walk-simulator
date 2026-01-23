@@ -4,6 +4,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const cron = require('node-cron');
 const pool = require('./config/database');
+const path = require('path');
 
 // Import routes
 const authRoutes = require('./routes/auth');
@@ -13,6 +14,9 @@ const statisticsRoutes = require('./routes/statistics');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// React build 폴더를 정적 파일로 서빙
+app.use(express.static(path.resolve(__dirname, '../build')));
 
 // Middleware
 app.use(cors({
@@ -48,11 +52,16 @@ app.use('/api/ranking', rankingRoutes);
 app.use('/api/statistics', statisticsRoutes);
 
 // 404 handler
-app.use((req, res) => {
-  res.status(404).json({ 
-    error: 'Route not found',
-    path: req.path 
-  });
+
+// SPA 라우팅: API가 아닌 모든 요청에 대해 프론트엔드 index.html 반환
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api/')) {
+    return res.status(404).json({
+      error: 'Route not found',
+      path: req.path
+    });
+  }
+  res.sendFile(path.resolve(__dirname, '../build/index.html'));
 });
 
 // Error handler

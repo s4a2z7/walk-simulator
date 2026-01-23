@@ -1,46 +1,69 @@
 import React from 'react';
 
-const TopBar = ({ todaySteps = 8500, level = 5, progress = 65, hunger = 85, onRankingClick }) => {
-  return (
-    <div className="fixed top-0 left-0 right-0 z-40 flex justify-center pt-5 px-4">
-      <div className="bg-white rounded-full shadow-xl px-8 py-4 flex items-center gap-4 max-w-2xl">
-        
-        {/* 걸음수 */}
-        <div className="flex items-center gap-2 px-4 py-2 bg-sky/10 rounded-full">
-          <span className="text-2xl">👣</span>
-          <span className="font-bold text-gray-800">{todaySteps.toLocaleString()}</span>
-        </div>
+function TopBar({ pet, onRankingClick }) {
+  if (!pet) return null;
 
-        {/* 경험치 바 */}
-        <div className="flex items-center gap-3 px-4 py-2 bg-gradient-to-r from-red-100 to-orange-100 rounded-full">
-          <span className="text-2xl">🔥</span>
-          <div className="flex flex-col gap-1">
-            <div className="w-32 h-3 bg-gray-300 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-orange-400 to-red-500 transition-all duration-300"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-            <span className="text-xs font-bold text-gray-700">Lv. {level}</span>
+  const expProgress = pet.exp_to_next_stage > 0 
+    ? Math.min(100, (pet.current_exp / pet.exp_to_next_stage) * 100)
+    : 100;
+
+  const getHungerColor = () => {
+    if (pet.hunger_level >= 70) return 'text-green-600';
+    if (pet.hunger_level >= 40) return 'text-yellow-600';
+    return 'text-red-600';
+  };
+
+  return (
+    <div className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50 flex flex-wrap gap-3 justify-center px-4">
+      {/* 걸음수 */}
+      <div className="bg-white rounded-full px-5 py-3 shadow-lg flex items-center gap-3">
+        <span className="text-2xl">👣</span>
+        <span className="font-black text-lg text-gray-800">
+          {pet.today_steps?.toLocaleString() || 0}
+        </span>
+      </div>
+
+      {/* 경험치 */}
+      <div className="bg-white rounded-full px-5 py-3 shadow-lg flex items-center gap-3 min-w-[200px]">
+        <span className="text-2xl">🔥</span>
+        <div className="flex-1">
+          <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-gradient-to-r from-phoenix-red to-phoenix-gold transition-all duration-500"
+              style={{ width: `${expProgress}%` }}
+            />
           </div>
         </div>
-
-        {/* 배고픔 */}
-        <div className="flex items-center gap-2 px-4 py-2 bg-amber-100 rounded-full">
-          <span className="text-2xl">🍖</span>
-          <span className="font-bold text-gray-800">{hunger}%</span>
-        </div>
-
-        {/* 랭킹 버튼 */}
-        <button
-          onClick={onRankingClick}
-          className="text-3xl hover:scale-110 transition-transform duration-200 bg-gradient-to-b from-yellow-300 to-yellow-400 rounded-full p-3 shadow-lg hover:shadow-2xl"
-        >
-          🏆
-        </button>
+        <span className="font-black text-sm text-phoenix-red">
+          Lv.{pet.current_stage}
+        </span>
       </div>
+
+      {/* 배고픔 */}
+      <div className="bg-white rounded-full px-5 py-3 shadow-lg flex items-center gap-3">
+        <span className="text-2xl">🍖</span>
+        <span className={`font-black text-lg ${getHungerColor()}`}>
+          {pet.hunger_level}%
+        </span>
+      </div>
+
+      {/* 행복도 */}
+      <div className="bg-white rounded-full px-5 py-3 shadow-lg flex items-center gap-3">
+        <span className="text-2xl">{pet.happiness_level >= 70 ? '😊' : pet.happiness_level >= 40 ? '😐' : '😢'}</span>
+        <span className="font-black text-lg text-gray-800">
+          {pet.happiness_level}%
+        </span>
+      </div>
+
+      {/* 랭킹 버튼 */}
+      <button
+        onClick={onRankingClick}
+        className="w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center text-2xl hover:scale-110 transform transition-transform"
+      >
+        🏆
+      </button>
     </div>
   );
-};
+}
 
 export default TopBar;

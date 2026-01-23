@@ -1,276 +1,269 @@
-# Walk Simulator 🔥
+# Phoenix Pet Frontend 🔥
 
-React + Tailwind CSS로 만든 **3D 캐주얼 게임 스타일** 불사조 키우기 게임입니다.
-
-🚶 **걸음으로 키워봅시다! Walk Simulator - 불사조를 키우는 신나는 게임입니다!**
-
-✨ **생생한 3D 게임 스타일 UI**
-- 밝은 초록색 잔디 배경
-- 떠다니는 구름, 흔들리는 나무
-- 부드러운 애니메이션 효과
-
-🔥 **펫 진화 시스템**
-- 5단계 진화: 🥚 → 🐤 → 🐦 → 🔥 → ✨
-- 일반 진화 애니메이션 (불꽃 파티클)
-- 황금 불사조 진화 애니메이션 (황금 광선 + 왕관)
-
-👣 **걸음수 기반 성장**
-- 펫 클릭으로 걸음수 증가
-- 경험치를 통한 레벨 업
-- 배고픔 시스템
-
-🍖 **먹이 시스템**
-- 불꽃 베리: 무료
-- 신성한 고기: 100걸음
-- 황금 과일: 500걸음
-
-🏆 **랭킹 시스템**
-- 전체 사용자 랭킹
-- 레벨 및 걸음수 기반 순위
+걸음수를 세면서 불사조를 키우는 웹앱 - 프론트엔드
 
 ## 기술 스택
 
 - **React 18** - UI 라이브러리
-- **React Router v6** - 라우팅
+- **React Router** - 라우팅
 - **Tailwind CSS** - 스타일링
-- **Axios** - HTTP 클라이언트
+- **Axios** - API 통신
 
-## 프로젝트 구조
+## 디자인
 
-```
-src/
-├── components/
-│   ├── PetCharacter.js      # 펫 캐릭터
-│   ├── PetWorld.js          # 메인 게임 월드
-│   ├── TopBar.js            # 상단 스탯 바
-│   ├── FoodTray.js          # 하단 먹이 버튼
-│   ├── RankingModal.js      # 랭킹 모달
-│   └── EvolutionModal.js    # 진화 애니메이션
-├── pages/
-│   ├── LoginPage.js         # 로그인 페이지
-│   ├── RegisterPage.js      # 회원가입 페이지
-│   └── HomePage.js          # 메인 게임 페이지
-├── services/
-│   └── api.js               # API 통신
-├── App.js                   # 라우터 설정
-├── index.js                 # 진입점
-└── index.css                # 글로벌 스타일
-```
+**3D 캐주얼 게임 스타일** (Walkr, Pokémon GO 스타일)
+- 밝은 초록색 배경 (잔디)
+- 귀여운 펫 캐릭터
+- 부드러운 애니메이션
+- 직관적인 UI
 
 ## 설치 및 실행
 
-### 요구사항
-- Node.js 14+
-- npm 또는 yarn
-
-### 설치
+### 1. 패키지 설치
 
 ```bash
-# 패키지 설치
 npm install
-
-# 또는
-yarn install
 ```
 
-### 환경 설정
+### 2. 환경 변수 설정
 
-`.env.example` 파일을 참고하여 `.env` 파일을 생성하세요:
+`.env` 파일을 생성하세요:
 
-```bash
-cp .env.example .env
-```
-
-그리고 API URL을 설정하세요:
-```
+```env
 REACT_APP_API_URL=http://localhost:3000/api
 ```
 
-### 개발 서버 실행
+### 3. 개발 서버 실행
 
 ```bash
 npm start
 ```
 
-또는
+앱이 `http://localhost:3001`에서 실행됩니다.
 
-```bash
-yarn start
-```
-
-브라우저에서 [http://localhost:3000](http://localhost:3000) 으로 접속하세요.
-
-### 프로덕션 빌드
+### 4. 프로덕션 빌드
 
 ```bash
 npm run build
 ```
 
-또는
+## 프로젝트 구조
 
-```bash
-yarn build
+```
+src/
+├── components/           # 재사용 컴포넌트
+│   ├── PetWorld.js      # 메인 3D 월드
+│   ├── PetCharacter.js  # 펫 캐릭터 표시
+│   ├── TopBar.js        # 상단 스탯 바
+│   ├── FoodTray.js      # 하단 먹이 버튼
+│   ├── EvolutionModal.js # 진화 애니메이션
+│   └── RankingModal.js  # 랭킹 모달
+├── pages/               # 페이지
+│   ├── LoginPage.js     # 로그인
+│   ├── RegisterPage.js  # 회원가입
+│   └── HomePage.js      # 메인 게임
+├── services/
+│   └── api.js          # API 호출 함수
+├── App.js              # 메인 앱
+├── index.js            # 엔트리 포인트
+└── index.css           # 글로벌 스타일
 ```
 
-`build/` 폴더에 최적화된 빌드가 생성됩니다.
+## 주요 기능
 
-## API 명세
+### 1. 인증
+- 회원가입 (자동으로 펫 생성)
+- 로그인
+- JWT 토큰 기반 인증
 
-### 인증 (Auth)
+### 2. 펫 키우기
+- 걸음수 추가 (10걸음 = 1 EXP)
+- 5단계 진화 시스템
+- 실시간 상태 표시
 
-**회원가입**
-```
-POST /api/auth/register
-Body: { username, email, password, display_name }
-Response: { token, user }
-```
+### 3. 먹이 주기
+- 🍓 불꽃 베리 (무료)
+- 🍖 신성한 고기 (100 걸음)
+- 🍑 황금 과일 (500 걸음)
 
-**로그인**
-```
-POST /api/auth/login
-Body: { username, password }
-Response: { token, user }
-```
+### 4. 친구 시스템
+- 친구 추가
+- 랭킹 보기
+- 친구 펫 비교
 
-### 펫 (Pet)
+## 컴포넌트 설명
 
-**펫 정보 조회**
-```
-GET /api/pet
-Headers: { Authorization: Bearer <token> }
-Response: { id, name, stage, level, experience, steps, hunger }
-```
+### PetWorld
+메인 3D 월드 컴포넌트
+- 떠다니는 구름
+- 흔들리는 나무
+- 중앙의 펫
+- 친구 펫들
 
-**걸음수 추가**
-```
-POST /api/pet/steps
-Headers: { Authorization: Bearer <token> }
-Body: { steps }
-Response: { pet, evolved, evolution_info }
-```
+### PetCharacter
+펫 캐릭터 표시
+- 단계별 다른 이모지
+- 불꽃 효과 (3단계+)
+- 황금 반짝임 (5단계)
+- 애니메이션 (idle, happy, walking)
 
-**먹이 주기**
-```
-POST /api/pet/feed
-Headers: { Authorization: Bearer <token> }
-Body: { food_type: 'berry' | 'meat' | 'golden_fruit' }
-Response: { pet, evolved, evolution_info }
-```
-
-### 랭킹 (Ranking)
-
-**랭킹 조회**
-```
-GET /api/ranking
-Headers: { Authorization: Bearer <token> }
-Response: [{ id, display_name, level, steps, stage }]
-```
-
-## 색상 팔레트
-
-| 용도 | 색상 | 코드 |
-|------|------|------|
-| 배경 (하늘) | Light Blue | #B3E5FC |
-| 배경 (잔디) | Bright Green | #7ED321 |
-| 배경 (어두운 잔디) | Dark Green | #5FB304 |
-| 단계 1 (알) | Gray | #E0E0E0 |
-| 단계 2 (병아리) | Yellow | #FFD54F |
-| 단계 3 (날개 새) | Orange | #FFB74D |
-| 단계 4 (불꽃 새) | Red | #FF6B6B |
-| 단계 5 (황금 불사조) | Gold | #FFD700 |
-
-## 애니메이션
-
-- **cloudFloat**: 구름이 화면을 가로질러 이동 (20초)
-- **petFloat**: 펫이 부드럽게 떠올랐다 내려옴 (3초)
-- **petJump**: 펫이 점프하며 커짐 (0.6초)
-- **flameRise**: 불꽃 파티클이 위로 올라가며 사라짐 (1초)
-- **sparkleOrbit**: 황금 스파클이 회전하며 나타났다 사라짐 (2초)
-- **goldenGlow**: 황금 빛이 맥박치듯 점멸 (2초)
-
-## 기능 명세
-
-### 페이지
-
-#### 로그인 페이지
-- 사용자명, 비밀번호 입력
-- 회원가입 링크
-- 토큰 기반 인증
-
-#### 회원가입 페이지
-- 사용자명, 이메일, 비밀번호, 표시명 입력
-- 자동 로그인
-
-#### 홈 페이지 (게임)
-- 펫 표시 및 상호작용
-- 실시간 스탯 업데이트 (5초마다)
-- 진화 애니메이션
-- 랭킹 모달
-- 로그아웃 기능
-
-### 컴포넌트
-
-#### PetWorld
-- 게임 월드 배경
-- 구름 애니메이션
-- 나무 장식
-
-#### PetCharacter
-- 5단계 펫 표시
-- 단계별 이펙트 (불꽃, 날개, 황금 광채)
-- 펫 클릭 감지
-- 친구 펫 표시
-
-#### TopBar
-- 일일 걸음수
+### TopBar
+상단 스탯 바
+- 오늘 걸음수
 - 경험치 바
-- 레벨
-- 배고픔 상태
+- 배고픔
+- 행복도
 - 랭킹 버튼
 
-#### FoodTray
-- 3가지 먹이 옵션
-- 걸음수 기반 구매 가능 여부
-- 비활성화 상태 표시
+### FoodTray
+하단 먹이 버튼
+- 3가지 먹이 종류
+- 비용 표시
+- 호버 툴팁
 
-#### EvolutionModal
-- 일반 진화 (1-4단계): 불꽃 파티클, 3초 지속
-- 황금 불사조 진화 (5단계): 황금 광선, 왕관, 7초 지속
+### EvolutionModal
+진화 애니메이션
+- 전체 화면 오버레이
+- 이전→새 캐릭터 변화
+- 폭죽 효과
+- 황금 불사조 특별 애니메이션
 
-#### RankingModal
-- 상위 사용자 표시
-- 메달 표시 (🥇 🥈 🥉)
-- 레벨, 걸음수, 단계 표시
+### RankingModal
+랭킹 모달
+- 친구 목록
+- 친구 추가
+- EXP 기준 순위
 
-## 특수 기능
+## API 연동
 
-### 반응형 디자인
-- 모바일 친화적 레이아웃
-- 터치 이벤트 대응
+모든 API 호출은 `src/services/api.js`에서 관리합니다.
 
-### 에러 처리
-- API 호출 실패 시 에러 메시지
-- 401 Unauthorized 시 로그인 페이지로 이동
+```javascript
+import { petAPI, authAPI, rankingAPI } from './services/api';
 
-### 로딩 상태
-- 초기 로딩 화면
-- 비동기 작업 중 로딩 표시
+// 인증
+await authAPI.login({ username, password });
+await authAPI.register(formData);
 
-## 브라우저 지원
+// 펫
+await petAPI.getPet();
+await petAPI.addSteps(100);
+await petAPI.feedPet('berry');
 
-- Chrome (최신)
-- Firefox (최신)
-- Safari (최신)
-- Edge (최신)
+// 랭킹
+await rankingAPI.getRanking();
+await rankingAPI.addFriend('username');
+```
+
+## 스타일링
+
+### Tailwind 커스텀 색상
+
+```javascript
+// tailwind.config.js
+colors: {
+  grass: {
+    DEFAULT: '#7ED321',
+    dark: '#5FB304',
+  },
+  phoenix: {
+    red: '#FF6B6B',
+    orange: '#FFB74D',
+    gold: '#FFD700',
+  }
+}
+```
+
+### 커스텀 애니메이션
+
+```css
+@keyframes petFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes cloudFloat {
+  0% { transform: translateX(-10%); }
+  100% { transform: translateX(120vw); }
+}
+```
+
+## 환경별 설정
+
+### 개발 환경
+```env
+REACT_APP_API_URL=http://localhost:3000/api
+```
+
+### 프로덕션 환경
+```env
+REACT_APP_API_URL=https://your-backend.com/api
+```
+
+## 배포
+
+### Vercel 배포
+
+```bash
+# Vercel CLI 설치
+npm i -g vercel
+
+# 로그인
+vercel login
+
+# 배포
+vercel
+
+# 환경 변수 설정
+vercel env add REACT_APP_API_URL
+```
+
+### Netlify 배포
+
+1. GitHub에 푸시
+2. Netlify에서 저장소 연결
+3. 빌드 설정:
+   - Build command: `npm run build`
+   - Publish directory: `build`
+4. 환경 변수 추가:
+   - `REACT_APP_API_URL`
+
+## 문제 해결
+
+### CORS 오류
+백엔드 `.env`에서 `CORS_ORIGIN`을 프론트엔드 주소로 설정:
+```
+CORS_ORIGIN=http://localhost:3001
+```
+
+### API 연결 실패
+1. 백엔드가 실행 중인지 확인
+2. `.env`의 `REACT_APP_API_URL` 확인
+3. 브라우저 콘솔에서 네트워크 탭 확인
+
+### 빌드 오류
+```bash
+# 캐시 삭제
+rm -rf node_modules package-lock.json
+npm install
+
+# 다시 빌드
+npm run build
+```
+
+## 향후 개발 계획
+
+- [ ] 실제 걸음수 센서 연동
+- [ ] PWA (프로그레시브 웹 앱)
+- [ ] 푸시 알림
+- [ ] 다크 모드
+- [ ] 펫 커스터마이징
+- [ ] 업적 시스템
 
 ## 라이센스
 
 MIT
 
-## 문의
+## 기여
 
-문제가 있거나 제안사항이 있으면 이슈를 등록해주세요.
-
----
-
-**행복한 펫 키우기를 즐기세요!** 🔥✨
+이슈와 PR은 언제나 환영합니다! 🎉

@@ -1,62 +1,70 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
 
-// Helper to get token from localStorage
-const getToken = () => localStorage.getItem('token');
-
-// Create axios instance with default headers
-const axiosInstance = axios.create({
-  baseURL: API_URL
+// Create axios instance
+const api = axios.create({
+  baseURL: API_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 // Add token to requests
-axiosInstance.interceptors.request.use((config) => {
-  const token = getToken();
+api.interceptors.request.use((config) => {
+  const token = localStorage.getItem('token');
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
   return config;
 });
 
+// Handle response errors
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem('token');
+      window.location.href = '/login';
+    }
+    return Promise.reject(error);
+  }
+);
+
 // Auth API
 export const authAPI = {
-  register: (data) => axiosInstance.post('/auth/register', data),
-  login: (data) => axiosInstance.post('/auth/login', data),
-  getCurrentUser: () => axiosInstance.get('/auth/me'),
+  register: (data) => api.post('/auth/register', data),
+  login: (data) => api.post('/auth/login', data),
+  getCurrentUser: () => api.get('/auth/me'),
 };
 
 // Pet API
 export const petAPI = {
-  getPet: () => axiosInstance.get('/pet'),
-  getPetStatus: () => axiosInstance.get('/pet/status'),
-  addSteps: (steps) => axiosInstance.post('/pet/steps', { steps }),
-  feedPet: (food_type) => axiosInstance.post('/pet/feed', { food_type }),
-  updatePetName: (name) => axiosInstance.patch('/pet/name', { name }),
+  getPet: () => api.get('/pet'),
+  addSteps: (steps) => api.post('/pet/steps', { steps }),
+  feedPet: (food_type) => api.post('/pet/feed', { food_type }),
+  updateName: (name) => api.patch('/pet/name', { name }),
+  getStatus: () => api.get('/pet/status'),
+  drinkWater: (amount_ml = 200) => api.post('/pet/drink-water', { amount_ml }),
+  stretch: (exp_gained = 5) => api.post('/pet/stretch', { exp_gained }),
+  sleepEarly: (exp_gained = 10) => api.post('/pet/sleep-early', { exp_gained }),
 };
 
 // Ranking API
 export const rankingAPI = {
-  getRanking: (limit = 10) => axiosInstance.get(`/ranking?limit=${limit}`),
-  getLeaderboard: (limit = 50) => axiosInstance.get(`/ranking/leaderboard?limit=${limit}`),
-  addFriend: (username) => axiosInstance.post('/ranking/friends', { username }),
-  getFriends: () => axiosInstance.get('/ranking/friends'),
-  removeFriend: (friendshipId) => axiosInstance.delete(`/ranking/friends/${friendshipId}`),
+  getRanking: (limit = 10) => api.get(`/ranking?limit=${limit}`),
+  getLeaderboard: (limit = 50) => api.get(`/ranking/leaderboard?limit=${limit}`),
+  getFriends: () => api.get('/ranking/friends'),
+  addFriend: (username) => api.post('/ranking/friends', { username }),
+  removeFriend: (friendshipId) => api.delete(`/ranking/friends/${friendshipId}`),
 };
 
 // Statistics API
 export const statisticsAPI = {
-  getTodayStats: () => axiosInstance.get('/statistics/today'),
-  getHistory: (days = 7) => axiosInstance.get(`/statistics/history?days=${days}`),
-  getEvolutions: () => axiosInstance.get('/statistics/evolutions'),
-  getFeedings: (limit = 20) => axiosInstance.get(`/statistics/feedings?limit=${limit}`),
+  getTodayStats: () => api.get('/statistics/today'),
+  getHistory: (days = 7) => api.get(`/statistics/history?days=${days}`),
+  getEvolutions: () => api.get('/statistics/evolutions'),
+  getFeedings: (limit = 20) => api.get(`/statistics/feedings?limit=${limit}`),
 };
-// Allergy API
-export const allergyAPI = {
-  setAllergies: (allergies) => axiosInstance.post('/allergy/allergies', { allergies }),
-  getAllergies: () => axiosInstance.get('/allergy/allergies'),
-  checkAllergy: (imageBase64, ocrText) => 
-    axiosInstance.post('/allergy/check', { imageBase64, ocrText }),
-  getCheckHistory: (limit = 10) => 
-    axiosInstance.get(`/allergy/history?limit=${limit}`),
-};
+
+export default api;

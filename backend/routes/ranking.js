@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const rankingController = require('../controllers/rankingController');
-const { authenticateToken } = require('../middleware/auth');
+const authenticateToken = require('../middleware/auth');
 
 // All ranking routes require authentication
 router.use(authenticateToken);

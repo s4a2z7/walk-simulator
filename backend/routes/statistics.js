@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const statisticsController = require('../controllers/statisticsController');
-const { authenticateToken } = require('../middleware/auth');
+const authenticateToken = require('../middleware/auth');
 
 // All statistics routes require authentication
 router.use(authenticateToken);

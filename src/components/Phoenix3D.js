@@ -1,12 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 
-const Phoenix3D = ({ stage = 1, isAnimating = false }) => {
+const Phoenix3D = ({ stage = 1, isAnimating = false, useBaseModel = false }) => {
   const containerRef = useRef(null);
   const sceneRef = useRef(null);
   const cameraRef = useRef(null);
   const rendererRef = useRef(null);
   const phoenixRef = useRef(null);
+  const baseModelRef = useRef(null);
   const animationIdRef = useRef(null);
 
   useEffect(() => {
@@ -64,6 +66,42 @@ const Phoenix3D = ({ stage = 1, isAnimating = false }) => {
     // 불사조 생성
     const phoenix = new THREE.Group();
     phoenixRef.current = phoenix;
+
+    // base.obj 모델 로드 (옵션)
+    if (useBaseModel) {
+      const loader = new OBJLoader();
+      loader.load(
+        '/models/base.obj',
+        (object) => {
+          baseModelRef.current = object;
+
+          // 모델 스케일 조정
+          object.scale.set(0.002, 0.002, 0.002);
+          object.position.set(0, -1, 0);
+
+          // 모델의 모든 메시에 재질 적용
+          object.traverse((child) => {
+            if (child.isMesh) {
+              child.material = new THREE.MeshStandardMaterial({
+                color: 0x8B7355,
+                roughness: 0.8,
+                metalness: 0.2,
+              });
+              child.castShadow = true;
+              child.receiveShadow = true;
+            }
+          });
+
+          scene.add(object);
+        },
+        (progress) => {
+          console.log('Loading base model...', (progress.loaded / progress.total * 100).toFixed(0) + '%');
+        },
+        (error) => {
+          console.error('Failed to load base.obj:', error);
+        }
+      );
+    }
 
     // 색상 정의
     const getBodyColor = () => {
@@ -259,17 +297,18 @@ const Phoenix3D = ({ stage = 1, isAnimating = false }) => {
     window.addEventListener('resize', handleResize);
 
     // 정리
+    const containerElement = containerRef.current;
     return () => {
       window.removeEventListener('resize', handleResize);
       if (animationIdRef.current) {
         cancelAnimationFrame(animationIdRef.current);
       }
-      if (containerRef.current && renderer.domElement.parentNode === containerRef.current) {
-        containerRef.current.removeChild(renderer.domElement);
+      if (containerElement && renderer.domElement.parentNode === containerElement) {
+        containerElement.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };
-  }, [stage, isAnimating]);
+  }, [stage, isAnimating, useBaseModel]);
 
   return <div ref={containerRef} style={{ width: '100%', height: '100%', minHeight: '400px' }} />;
 };

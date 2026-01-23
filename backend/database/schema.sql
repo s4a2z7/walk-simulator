@@ -1,8 +1,34 @@
+-- 2-2. Stretching habit: 스트레칭 관련 필드 추가
+ALTER TABLE pets ADD COLUMN IF NOT EXISTS stretch_count INTEGER DEFAULT 0;
+ALTER TABLE pets ADD COLUMN IF NOT EXISTS last_stretched_at TIMESTAMP;
+
+-- 2-3. Sleep early habit: 일찍 자기 관련 필드 추가
+ALTER TABLE pets ADD COLUMN IF NOT EXISTS sleep_early_count INTEGER DEFAULT 0;
+ALTER TABLE pets ADD COLUMN IF NOT EXISTS last_sleep_early_at TIMESTAMP;
+-- 8. Stretch records table (스트레칭 기록)
+CREATE TABLE IF NOT EXISTS stretch_records (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    pet_id UUID NOT NULL REFERENCES pets(id) ON DELETE CASCADE,
+    exp_gained INTEGER NOT NULL DEFAULT 5,
+    stretched_at TIMESTAMP DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_stretch_records_pet ON stretch_records(pet_id);
+CREATE INDEX IF NOT EXISTS idx_stretch_records_date ON stretch_records(stretched_at DESC);
+
+-- 9. Sleep early records table (일찍 자기 기록)
+CREATE TABLE IF NOT EXISTS sleep_early_records (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    pet_id UUID NOT NULL REFERENCES pets(id) ON DELETE CASCADE,
+    exp_gained INTEGER NOT NULL DEFAULT 10,
+    slept_at TIMESTAMP DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_sleep_early_records_pet ON sleep_early_records(pet_id);
+CREATE INDEX IF NOT EXISTS idx_sleep_early_records_date ON sleep_early_records(slept_at DESC);
 -- Phoenix Pet Database Schema
 
 -- Drop existing tables
-DROP TABLE IF EXISTS allergy_check_records CASCADE;
-DROP TABLE IF EXISTS user_allergies CASCADE;
 DROP TABLE IF EXISTS evolution_records CASCADE;
 DROP TABLE IF EXISTS feeding_records CASCADE;
 DROP TABLE IF EXISTS step_records CASCADE;
@@ -25,7 +51,6 @@ CREATE TABLE users (
 CREATE INDEX idx_users_username ON users(username);
 CREATE INDEX idx_users_email ON users(email);
 
--- 2. Pets table
 CREATE TABLE pets (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id UUID NOT NULL UNIQUE REFERENCES users(id) ON DELETE CASCADE,
@@ -44,6 +69,22 @@ CREATE TABLE pets (
     born_at TIMESTAMP DEFAULT NOW(),
     updated_at TIMESTAMP DEFAULT NOW()
 );
+
+-- 2-1. Water habit: 물 마시기 관련 필드 추가
+ALTER TABLE pets ADD COLUMN IF NOT EXISTS water_count INTEGER DEFAULT 0;
+ALTER TABLE pets ADD COLUMN IF NOT EXISTS last_watered_at TIMESTAMP;
+-- 7. Water records table (물 마시기 기록)
+CREATE TABLE IF NOT EXISTS water_records (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    pet_id UUID NOT NULL REFERENCES pets(id) ON DELETE CASCADE,
+    amount_ml INTEGER NOT NULL DEFAULT 200, -- 한 번에 마신 물 양(ml)
+    exp_gained INTEGER NOT NULL DEFAULT 5, -- 물 마시기로 얻는 경험치
+    drank_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_water_records_pet ON water_records(pet_id);
+CREATE INDEX IF NOT EXISTS idx_water_records_date ON water_records(drank_at DESC);
 
 CREATE INDEX idx_pets_user_id ON pets(user_id);
 CREATE INDEX idx_pets_total_steps ON pets(total_steps DESC);
@@ -104,31 +145,7 @@ CREATE TABLE friendships (
 CREATE INDEX idx_friendships_user ON friendships(user_id, status);
 CREATE INDEX idx_friendships_friend ON friendships(friend_id);
 
--- 7. User allergies table
-CREATE TABLE user_allergies (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    allergy_name VARCHAR(100) NOT NULL,
-    created_at TIMESTAMP DEFAULT NOW(),
-    UNIQUE(user_id, allergy_name)
-);
-
-CREATE INDEX idx_user_allergies_user ON user_allergies(user_id);
-
--- 8. Allergy check records table
-CREATE TABLE allergy_check_records (
-    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    user_id UUID NOT NULL REFERENCES users(id) ON DELETE CASCADE,
-    image_url TEXT,
-    ocr_text TEXT,
-    verdict VARCHAR(20) NOT NULL,
-    core_message TEXT,
-    detected_ingredients TEXT[],
-    judgment_reason TEXT,
-    checked_at TIMESTAMP DEFAULT NOW()
-);
-
-CREATE INDEX idx_allergy_check_records_user ON allergy_check_records(user_id, checked_at DESC);
+-- Insert sample data for testing (optional)
 -- You can uncomment these if you want sample data
 
 /*

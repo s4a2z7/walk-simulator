@@ -1,34 +1,71 @@
 import React from 'react';
 
 const FOODS = [
-  { type: 'berry', emoji: '🍓', name: '불꽃 베리', cost: 0, costLabel: '무료' },
-  { type: 'meat', emoji: '🍖', name: '신성한 고기', cost: 100, costLabel: '100걸음' },
-  { type: 'golden_fruit', emoji: '🍑', name: '황금 과일', cost: 500, costLabel: '500걸음' }
+  { 
+    type: 'berry', 
+    emoji: '🍓', 
+    name: '불꽃 베리', 
+    cost: 0,
+    hunger: 15,
+    happiness: 5,
+    description: '무료'
+  },
+  { 
+    type: 'meat', 
+    emoji: '🍖', 
+    name: '신성한 고기', 
+    cost: 100,
+    hunger: 40,
+    happiness: 15,
+    description: '100 걸음'
+  },
+  { 
+    type: 'golden_fruit', 
+    emoji: '🍑', 
+    name: '황금 과일', 
+    cost: 500,
+    hunger: 100,
+    happiness: 30,
+    description: '500 걸음'
+  }
 ];
 
-const FoodTray = ({ onFeedClick, canAfford = { berry: true, meat: true, golden_fruit: true }, isLoading = false }) => {
+function FoodTray({ pet, onFeed, disabled }) {
+  const canAfford = (cost) => {
+    return pet && pet.today_steps >= cost;
+  };
+
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 flex justify-center pb-5 px-4">
-      <div className="bg-white rounded-3xl shadow-2xl px-8 py-6 flex items-center gap-8">
-        {FOODS.map((food) => (
+    <div className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex gap-4">
+      {FOODS.map((food) => {
+        const affordable = canAfford(food.cost);
+        
+        return (
           <button
             key={food.type}
-            onClick={() => onFeedClick(food.type)}
-            disabled={isLoading || !canAfford[food.type]}
-            className={`flex flex-col items-center gap-2 p-4 rounded-3xl transition-all duration-200 ${
-              canAfford[food.type]
-                ? 'bg-gradient-to-b from-amber-100 to-amber-200 hover:shadow-lg hover:scale-105 active:scale-95'
-                : 'bg-gray-200 opacity-50 cursor-not-allowed'
-            }`}
+            onClick={() => onFeed(food.type)}
+            disabled={disabled || !affordable}
+            className="group relative w-20 h-20 bg-white rounded-full shadow-xl flex flex-col items-center justify-center gap-1 transition-all duration-300 hover:scale-110 hover:shadow-2xl disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
+            title={`${food.name} - ${food.description}\n배고픔 +${food.hunger}, 행복 +${food.happiness}`}
           >
-            <span className="text-5xl">{food.emoji}</span>
-            <span className="text-xs font-bold text-gray-700 text-center">{food.name}</span>
-            <span className="text-xs text-gray-600">{food.costLabel}</span>
+            <div className="text-4xl">{food.emoji}</div>
+            <div className="text-xs font-black text-gray-600">
+              {food.cost === 0 ? '무료' : food.cost}
+            </div>
+
+            {/* 툴팁 */}
+            <div className="absolute bottom-full mb-2 hidden group-hover:block bg-gray-800 text-white px-3 py-2 rounded-lg text-xs whitespace-nowrap">
+              <div className="font-bold">{food.name}</div>
+              <div>🍖 +{food.hunger} | 😊 +{food.happiness}</div>
+              {!affordable && food.cost > 0 && (
+                <div className="text-red-300 mt-1">걸음수 부족!</div>
+              )}
+            </div>
           </button>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
-};
+}
 
 export default FoodTray;

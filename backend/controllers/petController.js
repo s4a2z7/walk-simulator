@@ -1,3 +1,264 @@
+// 스트레칭: 경험치, 기록, 상태 반영 (커스텀 경험치 지원)
+exports.stretch = async (req, res) => {
+  const client = await pool.connect();
+  try {
+    const exp_gained = req.body.exp_gained || 5;
+    await client.query('BEGIN');
+    const petResult = await client.query('SELECT * FROM pets WHERE user_id = $1', [req.userId]);
+    if (petResult.rows.length === 0) {
+      await client.query('ROLLBACK');
+      return res.status(404).json({ error: 'Pet not found' });
+    }
+    const pet = petResult.rows[0];
+    await client.query(
+      `INSERT INTO stretch_records (user_id, pet_id, exp_gained)
+       VALUES ($1, $2, $3)`,
+      [req.userId, pet.id, exp_gained]
+    );
+    let newTotalExp = pet.total_exp + exp_gained;
+    let newCurrentExp = pet.current_exp + exp_gained;
+    let currentStage = pet.current_stage;
+    let evolutionInfo = null;
+    let expToNextStage = pet.exp_to_next_stage;
+    while (newCurrentExp >= expToNextStage && currentStage < 5) {
+      const oldStageInfo = PET_STAGES[currentStage];
+      newCurrentExp -= expToNextStage;
+      currentStage++;
+      const newStageInfo = PET_STAGES[currentStage];
+      evolutionInfo = {
+        from_stage: currentStage - 1,
+        to_stage: currentStage,
+        from_name: oldStageInfo.name,
+        to_name: newStageInfo.name,
+        from_emoji: oldStageInfo.emoji,
+        to_emoji: newStageInfo.emoji,
+        celebration_message: `축하합니다! ${newStageInfo.name}(으)로 진화했습니다!`
+      };
+      await client.query(
+        `INSERT INTO evolution_records 
+         (pet_id, from_stage, to_stage, from_stage_name, to_stage_name, total_exp_at_evolution)
+         VALUES ($1, $2, $3, $4, $5, $6)`,
+        [pet.id, currentStage - 1, currentStage, oldStageInfo.name, newStageInfo.name, newTotalExp]
+      );
+      expToNextStage = newStageInfo.expRequired;
+    }
+    await client.query(
+      `UPDATE pets SET 
+        total_exp = $1,
+        current_exp = $2,
+        current_stage = $3,
+        stage_name = $4,
+        stage_emoji = $5,
+        exp_to_next_stage = $6,
+        stretch_count = COALESCE(stretch_count,0) + 1,
+        last_stretched_at = NOW(),
+        updated_at = NOW()
+       WHERE id = $7`,
+      [
+        newTotalExp,
+        newCurrentExp,
+        currentStage,
+        PET_STAGES[currentStage].name,
+        PET_STAGES[currentStage].emoji,
+        PET_STAGES[currentStage].expRequired,
+        pet.id
+      ]
+    );
+    // 최신 펫 정보 반환
+    const updatedPet = (await client.query('SELECT * FROM pets WHERE id = $1', [pet.id])).rows[0];
+    await client.query('COMMIT');
+    res.json({
+      message: `스트레칭 완료! (+${exp_gained} EXP)`,
+      exp_gained,
+      evolution: evolutionInfo,
+      pet: updatedPet
+    });
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error('Stretch error:', error);
+    res.status(500).json({ error: 'Failed to stretch', details: error.message });
+  } finally {
+    client.release();
+  }
+};
+
+// 일찍 자기: 경험치, 기록, 상태 반영 (커스텀 경험치 지원)
+exports.sleepEarly = async (req, res) => {
+  const client = await pool.connect();
+  try {
+    const exp_gained = req.body.exp_gained || 10;
+    await client.query('BEGIN');
+    const petResult = await client.query('SELECT * FROM pets WHERE user_id = $1', [req.userId]);
+    if (petResult.rows.length === 0) {
+      await client.query('ROLLBACK');
+      return res.status(404).json({ error: 'Pet not found' });
+    }
+    const pet = petResult.rows[0];
+    await client.query(
+      `INSERT INTO sleep_early_records (user_id, pet_id, exp_gained)
+       VALUES ($1, $2, $3)`,
+      [req.userId, pet.id, exp_gained]
+    );
+    let newTotalExp = pet.total_exp + exp_gained;
+    let newCurrentExp = pet.current_exp + exp_gained;
+    let currentStage = pet.current_stage;
+    let evolutionInfo = null;
+    let expToNextStage = pet.exp_to_next_stage;
+    while (newCurrentExp >= expToNextStage && currentStage < 5) {
+      const oldStageInfo = PET_STAGES[currentStage];
+      newCurrentExp -= expToNextStage;
+      currentStage++;
+      const newStageInfo = PET_STAGES[currentStage];
+      evolutionInfo = {
+        from_stage: currentStage - 1,
+        to_stage: currentStage,
+        from_name: oldStageInfo.name,
+        to_name: newStageInfo.name,
+        from_emoji: oldStageInfo.emoji,
+        to_emoji: newStageInfo.emoji,
+        celebration_message: `축하합니다! ${newStageInfo.name}(으)로 진화했습니다!`
+      };
+      await client.query(
+        `INSERT INTO evolution_records 
+         (pet_id, from_stage, to_stage, from_stage_name, to_stage_name, total_exp_at_evolution)
+         VALUES ($1, $2, $3, $4, $5, $6)`,
+        [pet.id, currentStage - 1, currentStage, oldStageInfo.name, newStageInfo.name, newTotalExp]
+      );
+      expToNextStage = newStageInfo.expRequired;
+    }
+    await client.query(
+      `UPDATE pets SET 
+        total_exp = $1,
+        current_exp = $2,
+        current_stage = $3,
+        stage_name = $4,
+        stage_emoji = $5,
+        exp_to_next_stage = $6,
+        sleep_early_count = COALESCE(sleep_early_count,0) + 1,
+        last_sleep_early_at = NOW(),
+        updated_at = NOW()
+       WHERE id = $7`,
+      [
+        newTotalExp,
+        newCurrentExp,
+        currentStage,
+        PET_STAGES[currentStage].name,
+        PET_STAGES[currentStage].emoji,
+        PET_STAGES[currentStage].expRequired,
+        pet.id
+      ]
+    );
+    // 최신 펫 정보 반환
+    const updatedPet = (await client.query('SELECT * FROM pets WHERE id = $1', [pet.id])).rows[0];
+    await client.query('COMMIT');
+    res.json({
+      message: `일찍 자기 성공! (+${exp_gained} EXP)`,
+      exp_gained,
+      evolution: evolutionInfo,
+      pet: updatedPet
+    });
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error('Sleep early error:', error);
+    res.status(500).json({ error: 'Failed to sleep early', details: error.message });
+  } finally {
+    client.release();
+  }
+};
+// 물 마시기: 경험치, 기록, 상태 반영
+exports.drinkWater = async (req, res) => {
+  const client = await pool.connect();
+  try {
+    const amount_ml = req.body.amount_ml || 200; // 기본 200ml
+    const exp_gained = Math.floor(amount_ml / 40); // 200ml당 5exp, 40ml당 1exp
+
+    await client.query('BEGIN');
+
+    // Get current pet
+    const petResult = await client.query('SELECT * FROM pets WHERE user_id = $1', [req.userId]);
+    if (petResult.rows.length === 0) {
+      await client.query('ROLLBACK');
+      return res.status(404).json({ error: 'Pet not found' });
+    }
+    const pet = petResult.rows[0];
+
+    // 기록 저장
+    await client.query(
+      `INSERT INTO water_records (user_id, pet_id, amount_ml, exp_gained)
+       VALUES ($1, $2, $3, $4)`,
+      [req.userId, pet.id, amount_ml, exp_gained]
+    );
+
+    // 펫 상태 업데이트
+    const newTotalExp = pet.total_exp + exp_gained;
+    const newCurrentExp = pet.current_exp + exp_gained;
+    let currentStage = pet.current_stage;
+    let evolutionInfo = null;
+    let expToNextStage = pet.exp_to_next_stage;
+
+    // 진화 체크
+    while (newCurrentExp >= expToNextStage && currentStage < 5) {
+      const oldStageInfo = PET_STAGES[currentStage];
+      newCurrentExp -= expToNextStage;
+      currentStage++;
+      const newStageInfo = PET_STAGES[currentStage];
+      evolutionInfo = {
+        from_stage: currentStage - 1,
+        to_stage: currentStage,
+        from_name: oldStageInfo.name,
+        to_name: newStageInfo.name,
+        from_emoji: oldStageInfo.emoji,
+        to_emoji: newStageInfo.emoji,
+        celebration_message: `축하합니다! ${newStageInfo.name}(으)로 진화했습니다!`
+      };
+      await client.query(
+        `INSERT INTO evolution_records 
+         (pet_id, from_stage, to_stage, from_stage_name, to_stage_name, total_exp_at_evolution)
+         VALUES ($1, $2, $3, $4, $5, $6)`,
+        [pet.id, currentStage - 1, currentStage, oldStageInfo.name, newStageInfo.name, newTotalExp]
+      );
+      expToNextStage = newStageInfo.expRequired;
+    }
+
+    // water_count, last_watered_at 갱신
+    await client.query(
+      `UPDATE pets SET 
+        total_exp = $1,
+        current_exp = $2,
+        current_stage = $3,
+        stage_name = $4,
+        stage_emoji = $5,
+        exp_to_next_stage = $6,
+        water_count = COALESCE(water_count,0) + 1,
+        last_watered_at = NOW(),
+        updated_at = NOW()
+       WHERE id = $7`,
+      [
+        newTotalExp,
+        newCurrentExp,
+        currentStage,
+        PET_STAGES[currentStage].name,
+        PET_STAGES[currentStage].emoji,
+        PET_STAGES[currentStage].expRequired,
+        pet.id
+      ]
+    );
+
+    await client.query('COMMIT');
+
+    res.json({
+      message: `물 ${amount_ml}ml 마시기! (+${exp_gained} EXP)`,
+      exp_gained,
+      evolution: evolutionInfo,
+    });
+  } catch (error) {
+    await client.query('ROLLBACK');
+    console.error('Drink water error:', error);
+    res.status(500).json({ error: 'Failed to drink water', details: error.message });
+  } finally {
+    client.release();
+  }
+};
 const pool = require('../config/database');
 
 // Pet stage information
