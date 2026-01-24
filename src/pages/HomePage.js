@@ -280,24 +280,6 @@ function HomePage({ setAuth, isDemo }) {
             * 실제 앱에서는 걸음수 센서, 물 마시기, 운동, 일찍 자기 등 다양한 건강습관이 연동됩니다
           </p>
         </div>
-  // ...existing code...
-
-  // 커스텀 경험치로 운동(스트레칭)
-  const handleStretchCustom = async (exp) => {
-    try {
-      const response = await petAPI.stretch(exp);
-      showNotification(`운동하기 +${exp} EXP!`, 'success');
-      setPet(response.data.pet);
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(err.response?.data?.error || '운동하기 실패', 'error');
-    }
-  };
-
-  // 커스텀 경험치로 일찍 자기
   const handleSleepEarlyCustom = async (exp) => {
     try {
       const response = await petAPI.sleepEarly(exp);
