@@ -256,7 +256,13 @@ const handleSleepEarlyCustom = async (exp) => {
             * 실제 앱에서는 걸음수 센서, 물 마시기, 운동, 일찍 자기 등 다양한 건강습관이 연동됩니다
       }
     } catch (err) {
-      showNotification(err.response?.data?.error || '일찍 자기 실패', 'error');
+      showNotification(
+        err?.response?.data?.error ||
+        err?.response?.data?.message ||
+        err?.message ||
+        '일찍 자기 실패',
+        'error'
+      );
     }
   };
 
