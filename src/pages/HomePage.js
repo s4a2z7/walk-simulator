@@ -112,7 +112,6 @@ function HomePage({ setAuth, isDemo }) {
       }, 5000);
       return () => clearInterval(interval);
     }, []);
-    );
   }
 
   // 커스텀 경험치로 물 마시기
