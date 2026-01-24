@@ -19,7 +19,15 @@ function HomePage({ setAuth, isDemo }) {
     hunger_level: 100,
     happiness_level: 100,
   };
-  const [pet, setPet] = useState(null);
+  const [pet, setPet] = useState({
+    user_id: "",
+    current_stage: 0,
+    current_exp: 0,
+    exp_to_next_stage: 0,
+    today_steps: 0,
+    hunger_level: 0,
+    happiness_level: 0,
+  });
   const [friends, setFriends] = useState([]); // getFriends 제거, 빈 배열 유지
   const [error, setError] = useState('');
   const [showEvolution, setShowEvolution] = useState(false);
