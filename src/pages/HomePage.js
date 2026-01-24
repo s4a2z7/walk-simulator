@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { petAPI } from '../services/api';
-import TopBar from '../components/TopBar';
 import PetWorld from '../components/PetWorld';
 import FoodTray from '../components/FoodTray';
 import EvolutionModal from '../components/EvolutionModal';
@@ -143,7 +142,7 @@ function HomePage({ setAuth, isDemo }) {
   const handleDrinkWaterCustom = async (exp) => {
     try {
       // 40ml = 1exp, exp*40 만큼 ml로 환산
-      const drinkWaterData = await petAPI.drinkWater(exp * 40);
+      await petAPI.drinkWater(exp * 40);
       showNotification(`물 마시기 +${exp} EXP!`, 'success');
     } catch (error) {
       console.error(error);
