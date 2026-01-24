@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { petAPI, rankingAPI } from '../services/api';
+import { petAPI } from '../services/api';
 import TopBar from '../components/TopBar';
 import PetWorld from '../components/PetWorld';
 import FoodTray from '../components/FoodTray';
@@ -90,55 +90,13 @@ function HomePage({ setAuth, isDemo }) {
   };
 
   // 물 마시기 버튼 핸들러
-  const handleDrinkWater = async () => {
-    try {
-      const response = await petAPI.drinkWater();
-      showNotification(response.data.message, 'success');
-      await loadPetData();
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(err.response?.data?.error || '물 마시기 실패', 'error');
-    }
-  };
+  // handleDrinkWater 제거 (미사용)
 
   // 스트레칭 버튼 핸들러
-  const handleStretch = async () => {
-    try {
-      const response = await petAPI.stretch();
-      showNotification(response.data.message, 'success');
-      await loadPetData();
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(err.response?.data?.error || '스트레칭 실패', 'error');
-    }
-  };
+  // handleStretch 제거 (미사용)
 
   // 일찍 자기 버튼 핸들러
-  const handleSleepEarly = async () => {
-    try {
-      const response = await petAPI.sleepEarly();
-      showNotification(response.data.message, 'success');
-      await loadPetData();
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(
-        err?.response?.data?.error ||
-        err?.response?.data?.message ||
-        err?.message ||
-        '일찍 자기 실패',
-        'error'
-      );
-    }
-  }
+  // handleSleepEarly 제거 (미사용)
 
   const handleLogout = () => {
     localStorage.removeItem('token');
