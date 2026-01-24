@@ -1,3 +1,12 @@
+
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { petAPI } from '../services/api';
+import PetWorld from '../components/PetWorld';
+import FoodTray from '../components/FoodTray';
+import EvolutionModal from '../components/EvolutionModal';
+import RankingModal from '../components/RankingModal';
+
 // 안전 숫자 변환 유틸
 const safeNum = (v, fallback = 0) => {
   if (typeof v === "number" && Number.isFinite(v)) return v;
@@ -17,13 +26,6 @@ const normalizePet = (raw) => ({
   exp_to_next_stage: safeNum(raw?.exp_to_next_stage, 0),
   user_id: typeof raw?.user_id === "string" ? raw.user_id : "",
 });
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { petAPI } from '../services/api';
-import PetWorld from '../components/PetWorld';
-import FoodTray from '../components/FoodTray';
-import EvolutionModal from '../components/EvolutionModal';
-import RankingModal from '../components/RankingModal';
 
 function HomePage({ setAuth, isDemo }) {
   // 안전한 기본값: mockPet
