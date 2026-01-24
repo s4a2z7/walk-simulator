@@ -134,7 +134,7 @@ const handleSleepEarlyCustom = async (exp) => {
         'error'
       );
     }
-  };
+  }
 
   const handleLogout = () => {
     localStorage.removeItem('token');
