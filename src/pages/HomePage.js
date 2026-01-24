@@ -171,8 +171,18 @@ function HomePage({ setAuth, isDemo }) {
     }
   };
 
-  return (
-    <div className="min-h-screen pb-32">
+      if (!pet) {
+        return (
+          <div className="min-h-screen flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-8xl mb-6 animate-bounce">🐾</div>
+              <p className="text-2xl font-bold text-gray-700">펫 정보를 불러오는 중...</p>
+            </div>
+          </div>
+        );
+      }
+      return (
+        <div className="min-h-screen pb-32">
         pet={pet} 
 
       <button
