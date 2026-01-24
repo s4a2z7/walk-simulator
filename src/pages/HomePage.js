@@ -231,11 +231,17 @@ function HomePage({ setAuth, isDemo }) {
                 <span className="text-gray-600">태어난 지</span>
                 <span className="font-bold">{(pet || mockPet).age_days || 0}일</span>
               </div>
-              {pet.current_stage < 5 && (
+              {(pet && typeof pet === 'object' && pet.current_stage < 5) && (
                 <div className="pt-3 border-t">
                   <div className="text-sm text-gray-600 mb-2">다음 진화까지</div>
                   <div className="font-bold text-phoenix-red">
-                    {((pet.exp_to_next_stage - pet.current_exp) * 10).toLocaleString()} 걸음 남음
+                    {(
+                      typeof pet === 'object' &&
+                      typeof pet.exp_to_next_stage === 'number' &&
+                      typeof pet.current_exp === 'number'
+                    )
+                      ? ((pet.exp_to_next_stage - pet.current_exp) * 10).toLocaleString()
+                      : '0'} 걸음 남음
                   </div>
                 </div>
               )}
