@@ -248,16 +248,6 @@ const handleSleepEarlyCustom = async (exp) => {
           </button>
           <p className="text-sm text-gray-600 mt-2">
             * 실제 앱에서는 걸음수 센서, 물 마시기, 운동, 일찍 자기 등 다양한 건강습관이 연동됩니다
-          </p>
-        </div>
-  const handleSleepEarlyCustom = async (exp) => {
-    try {
-      const response = await petAPI.sleepEarly(exp);
-      showNotification(`일찍 자기 +${exp} EXP!`, 'success');
-      setPet(response.data.pet);
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
       }
     } catch (err) {
       showNotification(err.response?.data?.error || '일찍 자기 실패', 'error');
