@@ -8,7 +8,7 @@ import RankingModal from '../components/RankingModal';
 
 function HomePage({ setAuth, isDemo }) {
   const [pet, setPet] = useState(null);
-  const [friends, setFriends] = useState([]);
+  const [friends, setFriends] = useState([]); // getFriends 제거, 빈 배열 유지
   const [error, setError] = useState('');
   const [showEvolution, setShowEvolution] = useState(false);
   const [evolutionInfo, setEvolutionInfo] = useState(null);
@@ -18,13 +18,11 @@ function HomePage({ setAuth, isDemo }) {
 
   useEffect(() => {
     loadPetData();
-    loadFriends();
-    
+    // getFriends 제거
     // 5초마다 펫 정보 갱신
     const interval = setInterval(() => {
       loadPetData(true);
     }, 5000);
-
     return () => clearInterval(interval);
   }, []);
 
@@ -45,14 +43,7 @@ function HomePage({ setAuth, isDemo }) {
     }
   };
 
-  const loadFriends = async () => {
-    try {
-      const friendsData = await petAPI.getFriends();
-      setFriends(friendsData.data.friends);
-    } catch (err) {
-      console.error('친구 정보 불러오기 실패:', err);
-    }
-  };
+
 
   // 커스텀 경험치로 운동(스트레칭)
   const handleStretchCustom = async (exp) => {
