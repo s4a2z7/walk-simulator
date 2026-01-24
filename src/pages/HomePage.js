@@ -264,7 +264,7 @@ const handleSleepEarlyCustom = async (exp) => {
         'error'
       );
     }
-  };
+  }
 
         {/* 펫 정보 카드 */}
         <div className="mt-8 bg-white rounded-3xl shadow-xl p-6 max-w-md mx-auto">
