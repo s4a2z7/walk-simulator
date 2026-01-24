@@ -195,19 +195,6 @@ const handleSleepEarlyCustom = async (exp) => {
 
 
   // 커스텀 경험치로 일찍 자기
-  const handleSleepEarlyCustom = async (exp) => {
-    try {
-      const response = await petAPI.sleepEarly(exp);
-      showNotification(`일찍 자기 +${exp} EXP!`, 'success');
-      setPet(response.data.pet);
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(err.response?.data?.error || '일찍 자기 실패', 'error');
-    }
-  };
 
   return (
     <div className="min-h-screen pb-32">
