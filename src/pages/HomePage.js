@@ -52,16 +52,7 @@ const handleStretchCustom = async (exp) => {
   }
 };
 
-// 커스텀 경험치로 일찍 자기
-const handleSleepEarlyCustom = async (exp) => {
-  try {
-    const response = await petAPI.sleepEarly(exp);
-    showNotification(`일찍 자기 +${exp} EXP!`, 'success');
-    setPet(response.data.pet);
-  } catch (err) {
-    showNotification('오류가 발생했습니다', 'error');
-  }
-};
+// ...existing code...
 
   const handleAddSteps = async () => {
     // 데모용: +100 걸음 추가
