@@ -10,7 +10,20 @@ const STAGE_INFO = {
 
 function PetCharacter({ pet, size = 'large', onClick, showEffects = true }) {
   const [animation, setAnimation] = useState('idle');
-  const stageInfo = STAGE_INFO[pet.current_stage] || STAGE_INFO[1];
+  // 안전한 기본값: mockPet
+  const mockPet = {
+    name: '불사조',
+    current_stage: 1,
+    stage_emoji: '🥚',
+    stage_name: '알',
+    total_exp: 0,
+    total_steps: 0,
+    age_days: 0,
+    hunger_level: 100,
+    happiness_level: 100,
+  };
+  const safePet = pet && typeof pet === 'object' ? { ...mockPet, ...pet } : mockPet;
+  const stageInfo = STAGE_INFO[safePet.current_stage] || STAGE_INFO[1];
   
   const sizeClasses = {
     small: 'w-16 h-16 text-4xl',
@@ -48,7 +61,7 @@ function PetCharacter({ pet, size = 'large', onClick, showEffects = true }) {
         {/* 이름표 */}
         {size === 'large' && (
           <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-white px-4 py-1 rounded-full text-sm font-black shadow-lg whitespace-nowrap">
-            {pet.name || '불사조'}
+            {safePet.name || '불사조'}
           </div>
         )}
 
@@ -103,7 +116,15 @@ function PetCharacter({ pet, size = 'large', onClick, showEffects = true }) {
         {/* 메시지 */}
         {size === 'large' && (
           <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 bg-yellow-100 border-2 border-yellow-300 px-4 py-2 rounded-2xl text-sm font-bold text-yellow-800 whitespace-nowrap max-w-xs">
-            {getMessage()}
+            {(() => {
+              // getMessage 함수에서 safePet 사용
+              if (safePet.hunger_level < 30) {
+                return '배고파요... 🥺';
+              } else if (safePet.happiness_level < 50) {
+                return '심심해요... 😢';
+              }
+              return stageInfo.message;
+            })()}
           </div>
         )}
       </div>
