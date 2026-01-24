@@ -205,12 +205,9 @@ function HomePage({ setAuth, isDemo }) {
       const response = await petAPI.stretch(exp);
       showNotification(`운동하기 +${exp} EXP!`, 'success');
       setPet(response.data.pet);
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(err.response?.data?.error || '운동하기 실패', 'error');
+    } catch (error) {
+      showNotification('운동 실패', 'error');
+      console.error(error);
     }
   };
 
