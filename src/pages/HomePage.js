@@ -32,8 +32,8 @@ function HomePage({ setAuth, isDemo }) {
   const loadPetData = async (silent = false) => {
     try {
 
-      const response = await petAPI.getPet();
-      setPet(response.data.pet);
+      const petData = await petAPI.getPet();
+      setPet(petData.data.pet);
       setError('');
     } catch (err) {
       if (err.response?.status === 401) {
@@ -48,8 +48,8 @@ function HomePage({ setAuth, isDemo }) {
 
   const loadFriends = async () => {
     try {
-      const response = await petAPI.getFriends();
-      setFriends(response.data.friends);
+      const friendsData = await petAPI.getFriends();
+      setFriends(friendsData.data.friends);
     } catch (err) {
       console.error('친구 정보 불러오기 실패:', err);
     }
@@ -58,9 +58,9 @@ function HomePage({ setAuth, isDemo }) {
   // 커스텀 경험치로 운동(스트레칭)
   const handleStretchCustom = async (exp) => {
     try {
-      const response = await petAPI.stretch(exp);
+      const stretchData = await petAPI.stretch(exp);
       showNotification(`운동하기 +${exp} EXP!`, 'success');
-      setPet(response.data.pet);
+      setPet(stretchData.data.pet);
     } catch (error) {
       showNotification('운동 실패', 'error');
       console.error(error);
@@ -71,11 +71,11 @@ function HomePage({ setAuth, isDemo }) {
     // 데모용: +100 걸음 추가
     const steps = 100;
     try {
-      const response = await petAPI.addSteps(steps);
-      setPet(response.data.pet);
+      const addStepsData = await petAPI.addSteps(steps);
+      setPet(addStepsData.data.pet);
       // 진화 체크
-      if (response.data.evolved && response.data.evolution_info) {
-        setEvolutionInfo(response.data.evolution_info);
+      if (addStepsData.data.evolved && addStepsData.data.evolution_info) {
+        setEvolutionInfo(addStepsData.data.evolution_info);
         setShowEvolution(true);
       }
       // 성공 알림
@@ -143,7 +143,7 @@ function HomePage({ setAuth, isDemo }) {
   const handleDrinkWaterCustom = async (exp) => {
     try {
       // 40ml = 1exp, exp*40 만큼 ml로 환산
-      const response = await petAPI.drinkWater(exp * 40);
+      const drinkWaterData = await petAPI.drinkWater(exp * 40);
       showNotification(`물 마시기 +${exp} EXP!`, 'success');
     } catch (error) {
       console.error(error);
@@ -154,11 +154,11 @@ function HomePage({ setAuth, isDemo }) {
   // 커스텀 경험치로 일찍 자기
   const handleSleepEarlyCustom = async (exp) => {
     try {
-      const response = await petAPI.sleepEarly(exp);
-      showNotification(response.data.message, 'success');
+      const sleepEarlyData = await petAPI.sleepEarly(exp);
+      showNotification(sleepEarlyData.data.message, 'success');
       await loadPetData();
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
+      if (sleepEarlyData.data.evolution) {
+        setEvolutionInfo(sleepEarlyData.data.evolution);
         setShowEvolution(true);
       }
     } catch (err) {

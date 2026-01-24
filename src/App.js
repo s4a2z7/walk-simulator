@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import DemoPage from './pages/DemoPage';
 
 function App() {
-  const [loading, setLoading] = useState(false);
 
   // 데모 모드: 앱 시작 시 데모 토큰 자동 주입
   useEffect(() => {
