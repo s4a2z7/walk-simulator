@@ -192,13 +192,9 @@ function HomePage({ setAuth, isDemo }) {
       // 40ml = 1exp, exp*40 만큼 ml로 환산
       const response = await petAPI.drinkWater(exp * 40);
       showNotification(`물 마시기 +${exp} EXP!`, 'success');
-      await loadPetData();
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(err.response?.data?.error || '물 마시기 실패', 'error');
+    } catch (error) {
+      console.error(error);
+      showNotification('물 마시기 실패', 'error');
     }
   };
 
@@ -286,21 +282,7 @@ function HomePage({ setAuth, isDemo }) {
             * 실제 앱에서는 걸음수 센서, 물 마시기, 운동, 일찍 자기 등 다양한 건강습관이 연동됩니다
           </p>
         </div>
-  // 커스텀 경험치로 물 마시기
-  const handleDrinkWaterCustom = async (exp) => {
-    try {
-      // 40ml = 1exp, exp*40 만큼 ml로 환산
-      const response = await petAPI.drinkWater(exp * 40);
-      showNotification(`물 마시기 +${exp} EXP!`, 'success');
-      await loadPetData();
-      if (response.data.evolution) {
-        setEvolutionInfo(response.data.evolution);
-        setShowEvolution(true);
-      }
-    } catch (err) {
-      showNotification(err.response?.data?.error || '물 마시기 실패', 'error');
-    }
-  };
+  // ...existing code...
 
   // 커스텀 경험치로 운동(스트레칭)
   const handleStretchCustom = async (exp) => {
