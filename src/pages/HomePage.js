@@ -14,7 +14,7 @@ function HomePage({ setAuth, isDemo }) {
   const [showEvolution, setShowEvolution] = useState(false);
   const [evolutionInfo, setEvolutionInfo] = useState(null);
   const [showRanking, setShowRanking] = useState(false);
-  // const [feedingDisabled, setFeedingDisabled] = useState(false);
+  // feedingDisabled 관련 코드 제거
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function HomePage({ setAuth, isDemo }) {
 
   const loadPetData = async (silent = false) => {
     try {
-      if (!silent) setLoading(true);
+      // if (!silent) setLoading(true); // 제거
       const response = await petAPI.getPet();
       setPet(response.data.pet);
       setError('');
@@ -42,7 +42,7 @@ function HomePage({ setAuth, isDemo }) {
         setError('펫 정보를 불러오는 데 실패했습니다.');
       }
     } finally {
-      if (!silent) setLoading(false);
+      // if (!silent) setLoading(false); // 제거
     }
   };
 
@@ -317,7 +317,7 @@ function HomePage({ setAuth, isDemo }) {
         <FoodTray 
           pet={pet}
           onFeed={handleFeedPet}
-          disabled={feedingDisabled}
+          disabled={false}
         />
         {/* 데모 모드 건강습관 버튼: /demo 경로 또는 isDemo prop이 true일 때만 노출 */}
         {(isDemo || window.location.pathname === '/demo') && (
