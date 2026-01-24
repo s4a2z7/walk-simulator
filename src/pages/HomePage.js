@@ -63,12 +63,17 @@ const handleSleepEarlyCustom = async (exp) => {
   }
 };
 
+  const handleAddSteps = async () => {
+    // 데모용: +100 걸음 추가
+    const steps = 100;
+    try {
+      const response = await petAPI.addSteps(steps);
+      setPet(response.data.pet);
       // 진화 체크
       if (response.data.evolved && response.data.evolution_info) {
         setEvolutionInfo(response.data.evolution_info);
         setShowEvolution(true);
       }
-
       // 성공 알림
       showNotification(`+${steps} 걸음! 🎉`, 'success');
     } catch (err) {
