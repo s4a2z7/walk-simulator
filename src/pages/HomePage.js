@@ -10,12 +10,11 @@ import RankingModal from '../components/RankingModal';
 function HomePage({ setAuth, isDemo }) {
   const [pet, setPet] = useState(null);
   const [friends, setFriends] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showEvolution, setShowEvolution] = useState(false);
   const [evolutionInfo, setEvolutionInfo] = useState(null);
   const [showRanking, setShowRanking] = useState(false);
-  const [feedingDisabled, setFeedingDisabled] = useState(false);
+  // const [feedingDisabled, setFeedingDisabled] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
