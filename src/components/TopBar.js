@@ -1,15 +1,23 @@
+// 안전 숫자 변환 유틸
+const safeNum = (v, fallback = 0) =>
+  typeof v === "number"
+    ? v
+    : typeof v === "string" && !isNaN(Number(v))
+      ? Number(v)
+      : fallback;
 import React from 'react';
 
 function TopBar({ pet, onRankingClick }) {
   if (!pet) return null;
 
-  const expProgress = pet.exp_to_next_stage > 0 
-    ? Math.min(100, (pet.current_exp / pet.exp_to_next_stage) * 100)
+  const expProgress = safeNum(pet.exp_to_next_stage) > 0 
+    ? Math.min(100, (safeNum(pet.current_exp) / safeNum(pet.exp_to_next_stage)) * 100)
     : 100;
 
   const getHungerColor = () => {
-    if (pet.hunger_level >= 70) return 'text-green-600';
-    if (pet.hunger_level >= 40) return 'text-yellow-600';
+    const hunger = safeNum(pet.hunger_level);
+    if (hunger >= 70) return 'text-green-600';
+    if (hunger >= 40) return 'text-yellow-600';
     return 'text-red-600';
   };
 
@@ -19,7 +27,7 @@ function TopBar({ pet, onRankingClick }) {
       <div className="bg-white rounded-full px-5 py-3 shadow-lg flex items-center gap-3">
         <span className="text-2xl">👣</span>
         <span className="font-black text-lg text-gray-800">
-          {pet.today_steps?.toLocaleString() || 0}
+          {safeNum(pet.today_steps).toLocaleString()}
         </span>
       </div>
 
@@ -35,7 +43,7 @@ function TopBar({ pet, onRankingClick }) {
           </div>
         </div>
         <span className="font-black text-sm text-phoenix-red">
-          Lv.{pet.current_stage}
+          Lv.{safeNum(pet.current_stage)}
         </span>
       </div>
 
@@ -43,15 +51,15 @@ function TopBar({ pet, onRankingClick }) {
       <div className="bg-white rounded-full px-5 py-3 shadow-lg flex items-center gap-3">
         <span className="text-2xl">🍖</span>
         <span className={`font-black text-lg ${getHungerColor()}`}>
-          {pet.hunger_level}%
+          {safeNum(pet.hunger_level)}%
         </span>
       </div>
 
       {/* 행복도 */}
       <div className="bg-white rounded-full px-5 py-3 shadow-lg flex items-center gap-3">
-        <span className="text-2xl">{pet.happiness_level >= 70 ? '😊' : pet.happiness_level >= 40 ? '😐' : '😢'}</span>
+        <span className="text-2xl">{safeNum(pet.happiness_level) >= 70 ? '😊' : safeNum(pet.happiness_level) >= 40 ? '😐' : '😢'}</span>
         <span className="font-black text-lg text-gray-800">
-          {pet.happiness_level}%
+          {safeNum(pet.happiness_level)}%
         </span>
       </div>
 
