@@ -83,16 +83,6 @@ const handleSleepEarlyCustom = async (exp) => {
 
   const handleFeedPet = async (foodType) => {
     if (feedingDisabled) return;
-    try {
-      setFeedingDisabled(true);
-      const response = await petAPI.feedPet(foodType);
-      setPet(response.data.pet);
-      showNotification(response.data.message, 'success');
-    } catch (err) {
-      showNotification(err.response?.data?.error || '먹이 주기 실패', 'error');
-    } finally {
-      setTimeout(() => setFeedingDisabled(false), 1000);
-    }
   };
 
   // 물 마시기 버튼 핸들러
