@@ -2,6 +2,13 @@ import React from 'react';
 import PetCharacter from './PetCharacter';
 
 function PetWorld({ pet, friends, onPetClick }) {
+  // 안전한 기본값: mockFriends
+  const mockFriends = [
+    { user_id: 1, pet_emoji: '🐦', display_name: '친구1', username: 'friend1' },
+    { user_id: 2, pet_emoji: '🐤', display_name: '친구2', username: 'friend2' },
+    { user_id: 3, pet_emoji: '🥚', display_name: '친구3', username: 'friend3' },
+  ];
+  const safeFriends = Array.isArray(friends) && friends.length > 0 ? friends : mockFriends;
   return (
     <div className="relative w-full max-w-4xl h-[500px] mx-auto rounded-3xl overflow-hidden shadow-2xl">
       {/* 구름 */}
@@ -47,20 +54,23 @@ function PetWorld({ pet, friends, onPetClick }) {
 
       {/* 친구 펫들 */}
       <div className="absolute bottom-8 left-0 right-0 flex justify-center gap-8 pointer-events-none">
-        {friends && friends.slice(0, 3).map((friend, index) => (
-          <div 
-            key={friend.user_id || index}
-            className="flex flex-col items-center animate-bounce-slow pointer-events-auto cursor-pointer hover:scale-110 transition-transform"
-            style={{ animationDelay: `${index * 0.2}s` }}
-          >
-            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-4xl shadow-lg">
-              {friend.pet_emoji || '🐦'}
+        {safeFriends.slice(0, 3).map((friend, index) => {
+          const safeFriend = friend && typeof friend === 'object' ? friend : mockFriends[index] || mockFriends[0];
+          return (
+            <div 
+              key={safeFriend.user_id || index}
+              className="flex flex-col items-center animate-bounce-slow pointer-events-auto cursor-pointer hover:scale-110 transition-transform"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-4xl shadow-lg">
+                {safeFriend.pet_emoji || '🐦'}
+              </div>
+              <div className="mt-2 text-xs font-black text-white bg-black bg-opacity-50 px-3 py-1 rounded-full">
+                {safeFriend.display_name || safeFriend.username}
+              </div>
             </div>
-            <div className="mt-2 text-xs font-black text-white bg-black bg-opacity-50 px-3 py-1 rounded-full">
-              {friend.display_name || friend.username}
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* CSS 애니메이션 스타일 */}
