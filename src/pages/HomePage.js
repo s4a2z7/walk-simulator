@@ -193,17 +193,6 @@ const handleSleepEarlyCustom = async (exp) => {
     }
   };
 
-  // 커스텀 경험치로 운동(스트레칭)
-  const handleStretchCustom = async (exp) => {
-    try {
-      const response = await petAPI.stretch(exp);
-      showNotification(`운동하기 +${exp} EXP!`, 'success');
-      setPet(response.data.pet);
-    } catch (error) {
-      showNotification('운동 실패', 'error');
-      console.error(error);
-    }
-  };
 
   // 커스텀 경험치로 일찍 자기
   const handleSleepEarlyCustom = async (exp) => {
