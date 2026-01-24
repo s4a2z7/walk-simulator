@@ -39,30 +39,29 @@ function HomePage({ setAuth, isDemo }) {
     } catch (err) {
       if (err.response?.status === 401) {
         handleLogout();
-      } else {
-        setError('펫 정보를 불러올 수 없습니다.');
-      }
-    } finally {
-      if (!silent) setLoading(false);
-    }
-  };
 
-  const loadFriends = async () => {
-    try {
-      const response = await rankingAPI.getRanking(5);
-      setFriends(response.data.rankings.filter(r => !r.is_me));
-    } catch (err) {
-      console.error('Failed to load friends:', err);
-    }
-  };
+// 커스텀 경험치로 운동(스트레칭)
+const handleStretchCustom = async (exp) => {
+  try {
+    const response = await petAPI.stretch(exp);
+    showNotification(`운동하기 +${exp} EXP!`, 'success');
+    setPet(response.data.pet);
+  } catch (error) {
+    showNotification('운동 실패', 'error');
+    console.error(error);
+  }
+};
 
-  const handleAddSteps = async () => {
-    // 데모용: +100 걸음 추가
-    const steps = 100;
-    
-    try {
-      const response = await petAPI.addSteps(steps);
-      setPet(response.data.pet);
+// 커스텀 경험치로 일찍 자기
+const handleSleepEarlyCustom = async (exp) => {
+  try {
+    const response = await petAPI.sleepEarly(exp);
+    showNotification(`일찍 자기 +${exp} EXP!`, 'success');
+    setPet(response.data.pet);
+  } catch (err) {
+    showNotification('오류가 발생했습니다', 'error');
+  }
+};
 
       // 진화 체크
       if (response.data.evolved && response.data.evolution_info) {
