@@ -174,13 +174,8 @@ function HomePage({ setAuth, isDemo }) {
 
   return (
     <div className="min-h-screen pb-32">
-      {/* 상단 스탯 바 */}
-      <TopBar 
         pet={pet} 
-        onRankingClick={() => setShowRanking(true)}
-      />
 
-      {/* 로그아웃 버튼 */}
       <button
         onClick={handleLogout}
         className="fixed top-5 right-5 z-40 px-4 py-2 bg-white rounded-full shadow-lg text-sm font-bold text-gray-700 hover:bg-gray-100 transition"
