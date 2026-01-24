@@ -103,15 +103,7 @@ function HomePage({ setAuth, isDemo }) {
     }`;
     notification.textContent = message;
     document.body.appendChild(notification);
-
-    useEffect(() => {
-      loadPetData().catch(() => {});
-      // 5초마다 펫 정보 갱신
-      const interval = setInterval(() => {
-        loadPetData(true);
-      }, 5000);
-      return () => clearInterval(interval);
-    }, []);
+    // useEffect 제거됨: React Hook은 함수 컴포넌트 또는 커스텀 Hook에서만 사용 가능
   }
 
   // 커스텀 경험치로 물 마시기
