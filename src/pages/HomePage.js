@@ -14,7 +14,7 @@ function HomePage({ setAuth, isDemo }) {
   const [showEvolution, setShowEvolution] = useState(false);
   const [evolutionInfo, setEvolutionInfo] = useState(null);
   const [showRanking, setShowRanking] = useState(false);
-  // feedingDisabled 관련 코드 제거
+
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,7 +31,7 @@ function HomePage({ setAuth, isDemo }) {
 
   const loadPetData = async (silent = false) => {
     try {
-      // if (!silent) setLoading(true); // 제거
+
       const response = await petAPI.getPet();
       setPet(response.data.pet);
       setError('');
@@ -42,7 +42,7 @@ function HomePage({ setAuth, isDemo }) {
         setError('펫 정보를 불러오는 데 실패했습니다.');
       }
     } finally {
-      // if (!silent) setLoading(false); // 제거
+
     }
   };
 
@@ -86,7 +86,7 @@ function HomePage({ setAuth, isDemo }) {
   };
 
   const handleFeedPet = async (foodType) => {
-    if (feedingDisabled) return;
+
   };
 
   // 물 마시기 버튼 핸들러
@@ -162,16 +162,7 @@ function HomePage({ setAuth, isDemo }) {
     }, 2000);
   };
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="text-8xl mb-6 animate-bounce">🔥</div>
-          <p className="text-2xl font-bold text-gray-700">불러오는 중...</p>
-        </div>
-      </div>
-    );
-  }
+
 
   if (error) {
     return (
