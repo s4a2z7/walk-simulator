@@ -39,20 +39,34 @@ function HomePage({ setAuth, isDemo }) {
     } catch (err) {
       if (err.response?.status === 401) {
         handleLogout();
+      } else {
+        setError('펫 정보를 불러오는 데 실패했습니다.');
+      }
+    } finally {
+      if (!silent) setLoading(false);
+    }
+  };
 
-// 커스텀 경험치로 운동(스트레칭)
-const handleStretchCustom = async (exp) => {
-  try {
-    const response = await petAPI.stretch(exp);
-    showNotification(`운동하기 +${exp} EXP!`, 'success');
-    setPet(response.data.pet);
-  } catch (error) {
-    showNotification('운동 실패', 'error');
-    console.error(error);
-  }
-};
+  const loadFriends = async () => {
+    try {
+      const response = await petAPI.getFriends();
+      setFriends(response.data.friends);
+    } catch (err) {
+      console.error('친구 정보 불러오기 실패:', err);
+    }
+  };
 
-// ...existing code...
+  // 커스텀 경험치로 운동(스트레칭)
+  const handleStretchCustom = async (exp) => {
+    try {
+      const response = await petAPI.stretch(exp);
+      showNotification(`운동하기 +${exp} EXP!`, 'success');
+      setPet(response.data.pet);
+    } catch (error) {
+      showNotification('운동 실패', 'error');
+      console.error(error);
+    }
+  };
 
   const handleAddSteps = async () => {
     // 데모용: +100 걸음 추가
@@ -177,7 +191,6 @@ const handleStretchCustom = async (exp) => {
     );
   }
 
-
   // 커스텀 경험치로 물 마시기
   const handleDrinkWaterCustom = async (exp) => {
     try {
@@ -264,43 +277,37 @@ const handleStretchCustom = async (exp) => {
           <p className="text-sm text-gray-600 mt-2">
             * 실제 앱에서는 걸음수 센서, 물 마시기, 운동, 일찍 자기 등 다양한 건강습관이 연동됩니다
           </p>
-// ...existing code...
-
-        {/* 펫 정보 카드 */}
-        <div className="mt-8 bg-white rounded-3xl shadow-xl p-6 max-w-md mx-auto">
-          <h3 className="text-2xl font-black text-gray-800 mb-4 text-center">
-            {pet.name}의 정보
-          </h3>
-          
-          <div className="space-y-3">
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">현재 단계</span>
-              <span className="font-bold text-lg">{pet.stage_emoji} {pet.stage_name}</span>
-            </div>
-            
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">총 경험치</span>
-              <span className="font-bold">{pet.total_exp?.toLocaleString() || 0} EXP</span>
-            </div>
-            
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">총 걸음수</span>
-              <span className="font-bold">{pet.total_steps?.toLocaleString() || 0} 걸음</span>
-            </div>
-
-            <div className="flex justify-between items-center">
-              <span className="text-gray-600">태어난 지</span>
-              <span className="font-bold">{pet.age_days || 0}일</span>
-            </div>
-
-            {pet.current_stage < 5 && (
-              <div className="pt-3 border-t">
-                <div className="text-sm text-gray-600 mb-2">다음 진화까지</div>
-                <div className="font-bold text-phoenix-red">
-                  {((pet.exp_to_next_stage - pet.current_exp) * 10).toLocaleString()} 걸음 남음
-                </div>
+          {/* 펫 정보 카드 */}
+          <div className="mt-8 bg-white rounded-3xl shadow-xl p-6 max-w-md mx-auto">
+            <h3 className="text-2xl font-black text-gray-800 mb-4 text-center">
+              {pet.name}의 정보
+            </h3>
+            <div className="space-y-3">
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600">현재 단계</span>
+                <span className="font-bold text-lg">{pet.stage_emoji} {pet.stage_name}</span>
               </div>
-            )}
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600">총 경험치</span>
+                <span className="font-bold">{pet.total_exp?.toLocaleString() || 0} EXP</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600">총 걸음수</span>
+                <span className="font-bold">{pet.total_steps?.toLocaleString() || 0} 걸음</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span className="text-gray-600">태어난 지</span>
+                <span className="font-bold">{pet.age_days || 0}일</span>
+              </div>
+              {pet.current_stage < 5 && (
+                <div className="pt-3 border-t">
+                  <div className="text-sm text-gray-600 mb-2">다음 진화까지</div>
+                  <div className="font-bold text-phoenix-red">
+                    {((pet.exp_to_next_stage - pet.current_exp) * 10).toLocaleString()} 걸음 남음
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
