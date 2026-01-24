@@ -186,6 +186,7 @@ function HomePage({ setAuth, isDemo }) {
     );
   }
 
+
   // 커스텀 경험치로 물 마시기
   const handleDrinkWaterCustom = async (exp) => {
     try {
