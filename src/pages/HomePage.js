@@ -7,6 +7,18 @@ import EvolutionModal from '../components/EvolutionModal';
 import RankingModal from '../components/RankingModal';
 
 function HomePage({ setAuth, isDemo }) {
+  // 안전한 기본값: mockPet
+  const mockPet = {
+    name: '불사조',
+    current_stage: 1,
+    stage_emoji: '🥚',
+    stage_name: '알',
+    total_exp: 0,
+    total_steps: 0,
+    age_days: 0,
+    hunger_level: 100,
+    happiness_level: 100,
+  };
   const [pet, setPet] = useState(null);
   const [friends, setFriends] = useState([]); // getFriends 제거, 빈 배열 유지
   const [error, setError] = useState('');
@@ -163,7 +175,7 @@ function HomePage({ setAuth, isDemo }) {
       {/* 메인 컨텐츠 */}
       <div className="container mx-auto px-4 pt-32">
         <PetWorld 
-          pet={pet}
+          pet={pet || mockPet}
           friends={friends}
           onPetClick={handleAddSteps}
         />
@@ -200,24 +212,24 @@ function HomePage({ setAuth, isDemo }) {
           {/* 펫 정보 카드 */}
           <div className="mt-8 bg-white rounded-3xl shadow-xl p-6 max-w-md mx-auto">
             <h3 className="text-2xl font-black text-gray-800 mb-4 text-center">
-              {pet.name}의 정보
+              {(pet || mockPet).name}의 정보
             </h3>
             <div className="space-y-3">
               <div className="flex justify-between items-center">
                 <span className="text-gray-600">현재 단계</span>
-                <span className="font-bold text-lg">{pet.stage_emoji} {pet.stage_name}</span>
+                <span className="font-bold text-lg">{(pet || mockPet).stage_emoji} {(pet || mockPet).stage_name}</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-600">총 경험치</span>
-                <span className="font-bold">{pet.total_exp?.toLocaleString() || 0} EXP</span>
+                <span className="font-bold">{(pet || mockPet).total_exp?.toLocaleString() || 0} EXP</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-600">총 걸음수</span>
-                <span className="font-bold">{pet.total_steps?.toLocaleString() || 0} 걸음</span>
+                <span className="font-bold">{(pet || mockPet).total_steps?.toLocaleString() || 0} 걸음</span>
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-gray-600">태어난 지</span>
-                <span className="font-bold">{pet.age_days || 0}일</span>
+                <span className="font-bold">{(pet || mockPet).age_days || 0}일</span>
               </div>
               {pet.current_stage < 5 && (
                 <div className="pt-3 border-t">
