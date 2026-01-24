@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3000/api';
+const API_BASE_URL = process.env.REACT_APP_API_URL;
 
 // Create axios instance
 const api = axios.create({
@@ -40,14 +40,47 @@ export const authAPI = {
 
 // Pet API
 export const petAPI = {
-  getPet: () => api.get('/pet'),
-  addSteps: (steps) => api.post('/pet/steps', { steps }),
-  feedPet: (food_type) => api.post('/pet/feed', { food_type }),
-  updateName: (name) => api.patch('/pet/name', { name }),
-  getStatus: () => api.get('/pet/status'),
-  drinkWater: (amount_ml = 200) => api.post('/pet/drink-water', { amount_ml }),
-  stretch: (exp_gained = 5) => api.post('/pet/stretch', { exp_gained }),
-  sleepEarly: (exp_gained = 10) => api.post('/pet/sleep-early', { exp_gained }),
+  getPet: async () => {
+    if (!API_BASE_URL) {
+      // MOCK: API 주소가 없으면 데모용 데이터 반환
+      return {
+        data: {
+          pet: {
+            name: '데모펫',
+            stage_emoji: '🐶',
+            stage_name: '아기',
+            total_exp: 100,
+            total_steps: 5000,
+            age_days: 3,
+            current_stage: 1,
+            exp_to_next_stage: 200,
+            current_exp: 100,
+            user_id: 'demo',
+          },
+        },
+      };
+    }
+    return api.get('/pet');
+  },
+  addSteps: (steps) => API_BASE_URL ? api.post('/pet/steps', { steps }) : Promise.resolve({ data: { pet: { ...petAPI._mockPet, total_steps: (petAPI._mockPet?.total_steps || 0) + steps } } }),
+  feedPet: (food_type) => API_BASE_URL ? api.post('/pet/feed', { food_type }) : Promise.resolve({ data: {} }),
+  updateName: (name) => API_BASE_URL ? api.patch('/pet/name', { name }) : Promise.resolve({ data: {} }),
+  getStatus: () => API_BASE_URL ? api.get('/pet/status') : Promise.resolve({ data: {} }),
+  drinkWater: (amount_ml = 200) => API_BASE_URL ? api.post('/pet/drink-water', { amount_ml }) : Promise.resolve({ data: {} }),
+  stretch: (exp_gained = 5) => API_BASE_URL ? api.post('/pet/stretch', { exp_gained }) : Promise.resolve({ data: {} }),
+  sleepEarly: (exp_gained = 10) => API_BASE_URL ? api.post('/pet/sleep-early', { exp_gained }) : Promise.resolve({ data: {} }),
+  _mockPet: {
+    name: '데모펫',
+    stage_emoji: '🐶',
+    stage_name: '아기',
+    total_exp: 100,
+    total_steps: 5000,
+    age_days: 3,
+    current_stage: 1,
+    exp_to_next_stage: 200,
+    current_exp: 100,
+    user_id: 'demo',
+  },
 };
 
 // Ranking API

@@ -104,28 +104,14 @@ function HomePage({ setAuth, isDemo }) {
     notification.textContent = message;
     document.body.appendChild(notification);
 
-    setTimeout(() => {
-      notification.style.animation = 'slideUp 0.3s ease-in';
-      setTimeout(() => notification.remove(), 300);
-    }, 2000);
-  };
-
-
-
-  if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <div className="text-8xl mb-6">😢</div>
-          <p className="text-2xl font-bold text-gray-700 mb-4">{error}</p>
-          <button
-            onClick={() => loadPetData()}
-            className="px-6 py-3 bg-phoenix-red text-white font-bold rounded-xl hover:bg-phoenix-orange transition"
-          >
-            다시 시도
-          </button>
-        </div>
-      </div>
+    useEffect(() => {
+      loadPetData().catch(() => {});
+      // 5초마다 펫 정보 갱신
+      const interval = setInterval(() => {
+        loadPetData(true);
+      }, 5000);
+      return () => clearInterval(interval);
+    }, []);
     );
   }
 
