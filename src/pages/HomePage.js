@@ -126,7 +126,13 @@ const handleSleepEarlyCustom = async (exp) => {
         setShowEvolution(true);
       }
     } catch (err) {
-      showNotification(err.response?.data?.error || '일찍 자기 실패', 'error');
+      showNotification(
+        err?.response?.data?.error ||
+        err?.response?.data?.message ||
+        err?.message ||
+        '일찍 자기 실패',
+        'error'
+      );
     }
   };
 
