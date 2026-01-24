@@ -1,3 +1,22 @@
+// 안전 숫자 변환 유틸
+const safeNum = (v, fallback = 0) => {
+  if (typeof v === "number" && Number.isFinite(v)) return v;
+  if (typeof v === "string") {
+    const n = Number(v);
+    return Number.isFinite(n) ? n : fallback;
+  }
+  return fallback;
+};
+
+const normalizePet = (raw) => ({
+  today_steps: safeNum(raw?.today_steps, 0),
+  hunger_level: safeNum(raw?.hunger_level, 0),
+  happiness_level: safeNum(raw?.happiness_level, 0),
+  current_stage: safeNum(raw?.current_stage, 0),
+  current_exp: safeNum(raw?.current_exp, 0),
+  exp_to_next_stage: safeNum(raw?.exp_to_next_stage, 0),
+  user_id: typeof raw?.user_id === "string" ? raw.user_id : "",
+});
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { petAPI } from '../services/api';
@@ -50,7 +69,7 @@ function HomePage({ setAuth, isDemo }) {
     try {
 
       const petData = await petAPI.getPet();
-      setPet(petData.data.pet);
+      setPet(normalizePet(petData.data.pet));
       setError('');
     } catch (err) {
       if (err.response?.status === 401) {
@@ -70,7 +89,7 @@ function HomePage({ setAuth, isDemo }) {
     try {
       const stretchData = await petAPI.stretch(exp);
       showNotification(`운동하기 +${exp} EXP!`, 'success');
-      setPet(stretchData.data.pet);
+      setPet(normalizePet(stretchData.data.pet));
     } catch (error) {
       showNotification('운동 실패', 'error');
       console.error(error);
@@ -82,7 +101,11 @@ function HomePage({ setAuth, isDemo }) {
     const steps = 100;
     try {
       const addStepsData = await petAPI.addSteps(steps);
-      setPet(addStepsData.data.pet);
+      setPet(normalizePet(addStepsData.data.pet));
+            {/* 빌드 버전 표시 (배포 반영 확인용) */}
+            <div style={{position:"fixed", bottom: 8, right: 8, fontSize: 12, opacity: 0.7}}>
+              build: v2026-01-24-1
+            </div>
       // 진화 체크
       if (addStepsData.data.evolved && addStepsData.data.evolution_info) {
         setEvolutionInfo(addStepsData.data.evolution_info);
